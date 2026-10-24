@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kinesmith.local/schemas/av-contract-v1",
+  "title": "Kinesmith Audio-Visual Interchange Contract 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "mode", "timebase", "sources", "capabilities", "tempo_map", "meter_map", "events", "audio", "lyrics", "licenses", "requests", "links", "warnings", "duration"],
+  "properties": {
+    "contract_version": {"const": "1.0"},
+    "mode": {"enum": ["music-first", "visual-first", "joint"]},
+    "timebase": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fps", "beat_unit", "frame_rule"],
+      "properties": {
+        "fps": {"type": "string", "pattern": "^[0-9]+(/[0-9]+)?$"},
+        "beat_unit": {"const": "quarter-note"},
+        "frame_rule": {"const": "ceil-start-ceil-end-exclusive"}
+      }
+    },
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "capabilities": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "tempo_map": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false, "required": ["beat", "bpm"],
+        "properties": {"beat": {"type": "number", "minimum": 0}, "bpm": {"type": "number", "exclusiveMinimum": 0}}
+      }
+    },
+    "meter_map": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false, "required": ["beat", "numerator", "denominator"],
+        "properties": {"beat": {"type": "number", "minimum": 0}, "numerator": {"type": "integer", "minimum": 1}, "denominator": {"enum": [1, 2, 4, 8, 16, 32, 64]}}
+      }
+    },
+    "events": {"type": "array", "items": {"$ref": "#/$defs/event"}},
+    "audio": {"type": "array", "items": {"$ref": "#/$defs/audio"}},
+    "lyrics": {"type": "array", "items": {"$ref": "#/$defs/event"}},
+    "licenses": {"type": "array", "items": {"type": "object", "required": ["kind", "status"], "properties": {"kind": {"type": "string"}, "status": {"type": "string"}}, "additionalProperties": true}},
+    "requests": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "target", "scope", "text", "status"],
+        "properties": {"id": {"type": "string", "minLength": 1}, "target": {"enum": ["music", "visual"]}, "scope": {"enum": ["music", "visual", "both"]}, "text": {"type": "string", "minLength": 1}, "status": {"enum": ["proposed", "accepted", "completed", "rejected"]}}
+      }
+    },
+    "links": {"type": "array", "items": {"type": "object", "required": ["relation"], "properties": {"relation": {"type": "string"}}, "additionalProperties": {"type": "string"}}},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "duration": {
+      "type": "object", "additionalProperties": false,
+      "required": ["musical_seconds", "audio_seconds", "timeline_seconds", "offset_seconds", "declared_tail_seconds", "audio_measured"],
+      "properties": {
+        "musical_seconds": {"type": ["number", "null"], "minimum": 0},
+        "audio_seconds": {"type": ["number", "null"], "minimum": 0},
+        "timeline_seconds": {"type": "number", "minimum": 0},
+        "offset_seconds": {"type": "number"},
+        "declared_tail_seconds": {"type": ["number", "null"], "minimum": 0},
+        "audio_measured": {"type": "boolean"}
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tool", "path", "sha256"],
+      "properties": {
+        "tool": {"type": "string"}, "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "format_version": {"type": ["string", "integer", "null"]},
+        "project_version": {"type": ["string", "null"]},
+        "software_version": {"type": ["string", "null"]},
+        "schema_profile": {"type": ["string", "null"]},
+        "relative_path": {"type": "string", "description": "Portable path relative to the directory containing this AV contract; never relative to a different source root."}
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "start_seconds", "end_seconds", "start_frame", "end_frame"],
+      "properties": {
+        "kind": {"type": "string"}, "id": {"type": "string"}, "name": {"type": "string"}, "intent": {"type": "string"},
+        "track_id": {"type": "string"}, "track_name": {"type": "string"},
+        "start_seconds": {"type": "number"}, "end_seconds": {"type": "number"},
+        "start_frame": {"type": "integer"}, "end_frame": {"type": "integer"},
+        "start_beat": {"type": "number", "minimum": 0}, "end_beat": {"type": "number", "minimum": 0},
+        "pitch": {"type": "integer", "minimum": 0, "maximum": 127}, "velocity": {"type": "integer", "minimum": 0, "maximum": 127},
+        "text": {"type": "string"}, "timing_precision": {"enum": ["score-note", "ustx-note", "midi-note", "estimated", "phoneme-measured"]},
+        "parameter": {"type": "string"}, "value": {"type": "number"}, "number": {"type": "integer"},
+        "source": {"type": "string"}
+      }
+    },
+    "audio": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "role", "offset_seconds", "measured", "duration_seconds"],
+      "properties": {
+        "path": {"type": "string"}, "relative_path": {"type": "string", "description": "Portable path relative to the directory containing this AV contract."},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "role": {"type": "string"}, "track_id": {"type": "string"},
+        "offset_seconds": {"type": "number"}, "measured": {"type": "boolean"},
+        "duration_seconds": {"type": "number", "minimum": 0},
+        "sample_rate": {"type": "integer", "minimum": 1}, "samples": {"type": "integer", "minimum": 0}, "channels": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

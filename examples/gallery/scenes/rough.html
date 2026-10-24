@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kinesmith / Rough</title>
+<style>html,body{margin:0;background:#101c2e}canvas{display:block}</style><canvas id="stage"></canvas>
+<script src="/vendor/rough/rough.js"></script><script>
+const c=document.querySelector('#stage'),g=c.getContext('2d');
+window.renderFrame=(frame,ctx)=>{
+ c.width=ctx.width;c.height=ctx.height;g.setTransform(ctx.width/640,0,0,ctx.height/360,0,0);
+ let t=ctx.time,p=Math.min(1,t/.65),ease=1-(1-p)**3,rc=rough.canvas(c),seed=ctx.seed||42;
+ g.fillStyle='#101c2e';g.fillRect(0,0,640,360);g.fillStyle='#f2e6cf';g.font='11px Arial';g.fillText('02 / IDEAS HAVE TEXTURE',34,34);
+ g.fillStyle='#8294a9';g.fillText('ROUGH.JS / A DRAWING THAT BREATHES',34,330);
+ let opt={seed,roughness:1.3,bowing:.8,stroke:'#f2e6cf',strokeWidth:1.5};
+ rc.ellipse(321,178,202*ease+1,202*ease+1,{...opt,stroke:'#65d4cf',fill:'#65d4cf',fillStyle:'hachure',hachureGap:9,fillWeight:.6});
+ for(let i=0;i<3;i++){
+  let angle=i*Math.PI*2/3+t*.4,x=321+Math.cos(angle)*155,y=178+Math.sin(angle)*97;
+  rc.line(321,178,x,y,{...opt,seed:seed+i+5,stroke:'#5c7187'});
+  rc.rectangle(x-33,y-22,66,44,{...opt,seed:seed+i+10,fill:'#101c2e',fillStyle:'solid',stroke:i===1?'#ff775a':'#f2e6cf'});
+  g.textAlign='center';g.fillStyle='#f2e6cf';g.font='bold 12px Arial';g.fillText(['IDEA','PLAY','CRAFT'][i],x,y+4);
+ }
+ if(ease>0)rc.arc(321,178,282,282,-2.8,-2.8+Math.PI*1.7*ease,false,{...opt,stroke:'#ff775a',strokeWidth:2});
+ g.textAlign='left';g.fillStyle='#f2e6cf';g.font='bold 20px Arial';g.fillText('MAKE A MARK.',34,79);g.fillStyle='#65d4cf';g.font='12px Arial';g.fillText('Find the gesture before the polish.',34,100);
+};
+</script></html>

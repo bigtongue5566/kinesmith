@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kinesmith / Flow</title>
+<style>html,body{margin:0;background:#101c2e}canvas{display:block}</style>
+<script src="/vendor/p5/p5.min.js"></script><script>
+let art;
+window.kinesmithReady=new Promise(resolve=>{art=new p5(p=>{
+ p.setup=()=>{let c=p.createCanvas(640,360);c.id('stage');p.pixelDensity(1);p.noLoop();resolve()};
+ p.draw=()=>{};
+})});
+window.renderFrame=async(frame,ctx)=>{
+ await window.kinesmithReady;let p=art,t=ctx.time;p.resizeCanvas(ctx.width,ctx.height,true);p.push();p.scale(ctx.width/640,ctx.height/360);p.randomSeed(ctx.seed);p.noiseSeed(ctx.seed);p.background('#101c2e');
+ p.noStroke();p.fill('#f2e6cf');p.textFont('Arial');p.textSize(11);p.text('03 / ORDER FROM A FLOW FIELD',34,34);p.fill('#8294a9');p.text('P5.JS / PROCEDURAL MOTION',34,330);
+ p.strokeWeight(.9);let colors=['#65d4cf','#f2e6cf','#ff775a'];
+ for(let i=0;i<230;i++){
+  let seedAngle=p.random(p.TWO_PI),radius=p.random(34,126),phase=p.random(p.TWO_PI),speed=p.random(.22,.72);
+  p.noFill();p.stroke(colors[i%3]);p.beginShape();
+  for(let k=0;k<15;k++){
+   let age=k/14,a=seedAngle+t*speed-age*.24,n=p.noise(i*.07,age*.3,t*.17),r=radius+(n-.5)*43+Math.sin(phase+t*1.5)*7;
+   p.vertex(365+Math.cos(a)*r*1.35,178+Math.sin(a)*r*.92);
+  }p.endShape();
+ }
+ p.noStroke();p.fill('#101c2e');p.circle(365,178,64);p.fill('#65d4cf');p.circle(365,178,10+Math.sin(t*3)*3);
+ p.fill('#f2e6cf');p.textStyle(p.BOLD);p.textSize(24);p.text('LET IT',34,167);p.text('FLOW.',34,196);p.textStyle(p.NORMAL);p.textSize(12);p.fill('#65d4cf');p.text('Noise becomes choreography.',34,224);p.pop();
+};
+</script></html>

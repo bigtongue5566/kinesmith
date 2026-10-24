@@ -1,0 +1,465 @@
+{
+  "contract_version": "1.0",
+  "mode": "music-first",
+  "timebase": {
+    "fps": "24",
+    "beat_unit": "quarter-note",
+    "frame_rule": "ceil-start-ceil-end-exclusive"
+  },
+  "sources": [
+    {
+      "tool": "opusmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\project.json",
+      "sha256": "49df6b8ac74a5502897725fdda6ecc2324241726bf51bbec771c70a60002c21f",
+      "format_version": 1,
+      "relative_path": "project.json"
+    },
+    {
+      "tool": "opusmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\CURRENT.json",
+      "sha256": "890dce59b0dd9026cc9f303ecdc6b805e194aeb06d5f6f56ee30e5968da9369d",
+      "relative_path": "CURRENT.json"
+    },
+    {
+      "tool": "opusmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\version.json",
+      "sha256": "4fb606388089b435c98795d969413895bd908268e32944023be0321b6f2c937c",
+      "project_version": "v001",
+      "relative_path": "version.json"
+    },
+    {
+      "tool": "opusmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\score.json",
+      "sha256": "69aeb286068b26096a44364ddfed01ed1cbc1773113ef1c977847986ae7872f2",
+      "format_version": 1,
+      "project_version": "v001",
+      "software_version": null,
+      "schema_profile": "opusmith-score-v1-v0.2.schema.json",
+      "relative_path": "score.json"
+    },
+    {
+      "tool": "opusmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\multitrack.mid",
+      "sha256": "29485172b89d462b6509de774dde2b6c9cd7ff700b44507351d7eec3685eddd5",
+      "relative_path": "multitrack.mid"
+    },
+    {
+      "tool": "opusmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\assets.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "relative_path": "assets.json"
+    }
+  ],
+  "capabilities": [
+    "master-audio",
+    "meter",
+    "midi-reference",
+    "notes",
+    "score",
+    "sections",
+    "stems",
+    "tempo",
+    "velocity"
+  ],
+  "tempo_map": [
+    {
+      "beat": 0.0,
+      "bpm": 120.0
+    }
+  ],
+  "meter_map": [
+    {
+      "beat": 0,
+      "numerator": 4,
+      "denominator": 4
+    }
+  ],
+  "events": [
+    {
+      "kind": "section",
+      "start_seconds": 0.0,
+      "end_seconds": 3.0,
+      "start_frame": 0,
+      "end_frame": 72,
+      "id": "section-0",
+      "name": "form",
+      "intent": "形狀展開，留白",
+      "start_beat": 0.0,
+      "end_beat": 6.0
+    },
+    {
+      "kind": "section",
+      "start_seconds": 3.0,
+      "end_seconds": 6.0,
+      "start_frame": 72,
+      "end_frame": 144,
+      "id": "section-1",
+      "name": "motion",
+      "intent": "動作擴張，增加密度",
+      "start_beat": 6.0,
+      "end_beat": 12.0
+    },
+    {
+      "kind": "note",
+      "start_seconds": 0.0,
+      "end_seconds": 0.325,
+      "start_frame": 0,
+      "end_frame": 8,
+      "id": "pluck-note-0",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 62,
+      "velocity": 92,
+      "start_beat": 0.0,
+      "end_beat": 0.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 0.75,
+      "end_seconds": 1.075,
+      "start_frame": 18,
+      "end_frame": 26,
+      "id": "pluck-note-1",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 65,
+      "velocity": 80,
+      "start_beat": 1.5,
+      "end_beat": 2.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 1.5,
+      "end_seconds": 1.825,
+      "start_frame": 36,
+      "end_frame": 44,
+      "id": "pluck-note-2",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 69,
+      "velocity": 85,
+      "start_beat": 3.0,
+      "end_beat": 3.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 2.25,
+      "end_seconds": 2.575,
+      "start_frame": 54,
+      "end_frame": 62,
+      "id": "pluck-note-3",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 65,
+      "velocity": 76,
+      "start_beat": 4.5,
+      "end_beat": 5.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 3.0,
+      "end_seconds": 3.325,
+      "start_frame": 72,
+      "end_frame": 80,
+      "id": "pluck-note-4",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 74,
+      "velocity": 100,
+      "start_beat": 6.0,
+      "end_beat": 6.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 3.5,
+      "end_seconds": 3.825,
+      "start_frame": 84,
+      "end_frame": 92,
+      "id": "pluck-note-5",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 72,
+      "velocity": 85,
+      "start_beat": 7.0,
+      "end_beat": 7.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 4.0,
+      "end_seconds": 4.325,
+      "start_frame": 96,
+      "end_frame": 104,
+      "id": "pluck-note-6",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 69,
+      "velocity": 90,
+      "start_beat": 8.0,
+      "end_beat": 8.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 4.5,
+      "end_seconds": 4.825,
+      "start_frame": 108,
+      "end_frame": 116,
+      "id": "pluck-note-7",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 65,
+      "velocity": 80,
+      "start_beat": 9.0,
+      "end_beat": 9.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 5.0,
+      "end_seconds": 5.325,
+      "start_frame": 120,
+      "end_frame": 128,
+      "id": "pluck-note-8",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 69,
+      "velocity": 90,
+      "start_beat": 10.0,
+      "end_beat": 10.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 5.5,
+      "end_seconds": 5.825,
+      "start_frame": 132,
+      "end_frame": 140,
+      "id": "pluck-note-9",
+      "track_id": "pluck",
+      "track_name": "Form motif",
+      "pitch": 62,
+      "velocity": 82,
+      "start_beat": 11.0,
+      "end_beat": 11.65
+    },
+    {
+      "kind": "note",
+      "start_seconds": 0.0,
+      "end_seconds": 0.075,
+      "start_frame": 0,
+      "end_frame": 2,
+      "id": "pulse-note-0",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 0.0,
+      "end_beat": 0.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 1.5,
+      "end_seconds": 1.575,
+      "start_frame": 36,
+      "end_frame": 38,
+      "id": "pulse-note-1",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 3.0,
+      "end_beat": 3.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 3.0,
+      "end_seconds": 3.075,
+      "start_frame": 72,
+      "end_frame": 74,
+      "id": "pulse-note-2",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 6.0,
+      "end_beat": 6.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 3.5,
+      "end_seconds": 3.575,
+      "start_frame": 84,
+      "end_frame": 86,
+      "id": "pulse-note-3",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 7.0,
+      "end_beat": 7.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 4.0,
+      "end_seconds": 4.075,
+      "start_frame": 96,
+      "end_frame": 98,
+      "id": "pulse-note-4",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 8.0,
+      "end_beat": 8.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 4.5,
+      "end_seconds": 4.575,
+      "start_frame": 108,
+      "end_frame": 110,
+      "id": "pulse-note-5",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 9.0,
+      "end_beat": 9.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 5.0,
+      "end_seconds": 5.075,
+      "start_frame": 120,
+      "end_frame": 122,
+      "id": "pulse-note-6",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 10.0,
+      "end_beat": 10.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 5.5,
+      "end_seconds": 5.575,
+      "start_frame": 132,
+      "end_frame": 134,
+      "id": "pulse-note-7",
+      "track_id": "pulse",
+      "track_name": "Motion accents",
+      "pitch": 36,
+      "velocity": 92,
+      "start_beat": 11.0,
+      "end_beat": 11.15
+    },
+    {
+      "kind": "note",
+      "start_seconds": 0.0,
+      "end_seconds": 2.75,
+      "start_frame": 0,
+      "end_frame": 66,
+      "id": "foundation-note-0",
+      "track_id": "foundation",
+      "track_name": "Low anchor",
+      "pitch": 38,
+      "velocity": 80,
+      "start_beat": 0.0,
+      "end_beat": 5.5
+    },
+    {
+      "kind": "note",
+      "start_seconds": 3.0,
+      "end_seconds": 5.75,
+      "start_frame": 72,
+      "end_frame": 138,
+      "id": "foundation-note-1",
+      "track_id": "foundation",
+      "track_name": "Low anchor",
+      "pitch": 38,
+      "velocity": 88,
+      "start_beat": 6.0,
+      "end_beat": 11.5
+    }
+  ],
+  "audio": [
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\audio\\master.wav",
+      "sha256": "a930514c0f58e5dac07df97dd851ba595236fbbf9917bc6f2f12609e29f4f589",
+      "role": "master",
+      "offset_seconds": 0.0,
+      "measured": true,
+      "duration_seconds": 6.4,
+      "sample_rate": 44100,
+      "samples": 282240,
+      "channels": 2,
+      "relative_path": "audio/master.wav"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\audio\\stems\\foundation.flac",
+      "sha256": "6e9af4d68185883ddd59007a8da467f9001fb64efeb32d13fc846f64ad08656b",
+      "role": "stem",
+      "offset_seconds": 0.0,
+      "measured": true,
+      "duration_seconds": 6.4,
+      "sample_rate": 44100,
+      "samples": 282240,
+      "channels": 2,
+      "relative_path": "audio/stems/foundation.flac",
+      "track_id": "foundation"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\audio\\stems\\pluck.flac",
+      "sha256": "4ee71509d931ed577ff0b18025fcdca82691e2e07396d679a626f8bb0fbfc5ca",
+      "role": "stem",
+      "offset_seconds": 0.0,
+      "measured": true,
+      "duration_seconds": 6.4,
+      "sample_rate": 44100,
+      "samples": 282240,
+      "channels": 2,
+      "relative_path": "audio/stems/pluck.flac",
+      "track_id": "pluck"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\music\\versions\\v001\\audio\\stems\\pulse.flac",
+      "sha256": "31929b6615f8e06ecd033f0d2b207ae15a4cf7dfb7aa13f754e3185e58b8499f",
+      "role": "stem",
+      "offset_seconds": 0.0,
+      "measured": true,
+      "duration_seconds": 6.4,
+      "sample_rate": 44100,
+      "samples": 282240,
+      "channels": 2,
+      "relative_path": "audio/stems/pulse.flac",
+      "track_id": "pulse"
+    }
+  ],
+  "lyrics": [],
+  "licenses": [
+    {
+      "kind": "asset-ledger",
+      "status": "upstream-record-requires-review",
+      "records": [],
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "requests": [],
+  "links": [
+    {
+      "relation": "score-for-picture",
+      "visual_sha256": "0cf90f3fbb14e4e3242643e93d1dac49a888503741de5e249b584899b078bf97",
+      "music_sha256": "69aeb286068b26096a44364ddfed01ed1cbc1773113ef1c977847986ae7872f2",
+      "request_sha256": "2d8277061f7ca072540c8f038029b406f2e231fcb8eff3754e527047425154d9"
+    }
+  ],
+  "warnings": [
+    "音符／歌詞時間來自樂譜，並非實際演唱 onset 或音素的量測；授權帳本仍需依用途核對。"
+  ],
+  "duration": {
+    "musical_seconds": 6.0,
+    "audio_seconds": 6.4,
+    "timeline_seconds": 6.4,
+    "offset_seconds": 0.0,
+    "declared_tail_seconds": 0.4,
+    "audio_measured": true
+  }
+}

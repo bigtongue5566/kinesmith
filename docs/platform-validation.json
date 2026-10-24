@@ -1,0 +1,441 @@
+{
+  "static": {
+    "status": "passed",
+    "skills": [
+      "kinesmith",
+      "kinesmith-audio-visual",
+      "kinesmith-render",
+      "kinesmith-revise",
+      "kinesmith-setup"
+    ],
+    "shared_roles": 5,
+    "version": "0.1.0"
+  },
+  "commands": [
+    {
+      "platform": "codex",
+      "arguments": [
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "codex-cli 0.164.0-alpha.11.1\n",
+      "stderr": ""
+    },
+    {
+      "platform": "codex",
+      "arguments": [
+        "plugin",
+        "marketplace",
+        "add",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"marketplaceName\": \"kinesmith-local\",\n  \"installedRoot\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\dist\\\\marketplace\",\n  \"alreadyAdded\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "platform": "codex",
+      "arguments": [
+        "plugin",
+        "add",
+        "kinesmith@kinesmith-local",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"pluginId\": \"kinesmith@kinesmith-local\",\n  \"name\": \"kinesmith\",\n  \"marketplaceName\": \"kinesmith-local\",\n  \"version\": \"0.1.0\",\n  \"installedPath\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\.cache\\\\platform-validation-d128df2c\\\\codex-config\\\\plugins\\\\cache\\\\kinesmith-local\\\\kinesmith\\\\0.1.0\",\n  \"authPolicy\": \"ON_INSTALL\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "platform": "codex",
+      "arguments": [
+        "plugin",
+        "list",
+        "--marketplace",
+        "kinesmith-local",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"installed\": [\n    {\n      \"pluginId\": \"kinesmith@kinesmith-local\",\n      \"name\": \"kinesmith\",\n      \"marketplaceName\": \"kinesmith-local\",\n      \"version\": \"0.1.0\",\n      \"installed\": true,\n      \"enabled\": true,\n      \"source\": {\n        \"source\": \"local\",\n        \"path\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\dist\\\\marketplace\\\\plugins\\\\kinesmith\"\n      },\n      \"marketplaceSource\": {\n        \"sourceType\": \"local\",\n        \"source\": \"\\\\\\\\?\\\\C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\dist\\\\marketplace\"\n      },\n      \"installPolicy\": \"AVAILABLE\",\n      \"authPolicy\": \"ON_INSTALL\"\n    }\n  ],\n  \"available\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "platform": "codex-agents",
+      "arguments": [
+        "debug",
+        "prompt-input"
+      ],
+      "exit_code": 0,
+      "stdout": "完整 model-visible prompt 未收錄；只保留原生 agent_type inventory。",
+      "stderr": "",
+      "agent_type_description": "Agent type override for the new agent. Omit unless explicitly asked. The selected role applies regardless of how much parent history is inherited.\nAvailable roles:\nkinesmith_audio_visual_designer: {\n音樂樂句、拍點、能量、歌詞、人聲及 Opusmith 雙向協作；用於 Music-First、Visual-First 和 Joint Creation。\n}\nkinesmith_generative_3d_artist: {\n程序化藝術、粒子、Three.js、Shader、Blender 與 Geometry Nodes；用於生成式視覺及 3D 場景。\n}\nkinesmith_motion_designer: {\n2D 動畫、Typography、構圖、形狀、遮罩與轉場；用於 Canvas、Rough.js 或動態文字設計。\n}\nkinesmith_motion_director: {\n視覺概念、藝術指導、分鏡及場景協調；用於需要完整敘事或設計方向的動態作品。\n}\nkinesmith_render_visual_critic: {\n真實渲染、影格及音畫查核、Contact Sheet 與修訂建議；用於品質驗收和可重現性檢查。\n}\ndefault: {\nDefault agent.\n}\nexplorer: {\nUse `explorer` for specific codebase questions.\nExplorers are fast and authoritative.\nThey must be used to ask specific, well-scoped questions on the codebase.\nRules:\n- In order to avoid redundant work, you should avoid exploring the same problem that explorers have already covered. Typically, you should trust the explorer results without additional verification. You are still allowed to inspect the code yourself to gain the needed context!\n- You are encouraged to spawn up multiple explorers in parallel when you have multiple distinct questions to ask about the codebase that can be answered independently. This allows you to get more information faster without waiting for one question to finish before asking the next. While waiting for the explorer results, you can continue working on other local tasks that do not depend on those results. This parallelism is a key advantage of delegation, so use it whenever you have multiple questions to ask.\n- Reuse existing explorers for related questions.\n}\nworker: {\nUse for execution and production work.\nTypical tasks:\n- Implement part of a feature\n- Fix tests or bugs\n- Split large refactors into independent chunks\nRules:\n- Explicitly assign **ownership** of the task (files / responsibility). When the subtask involves code changes, you should clearly specify which files or modules the worker is responsible for. This helps avoid merge conflicts and ensures accountability. For example, you can say \"Worker 1 is responsible for updating the authentication module, while Worker 2 will handle the database layer.\" By defining clear ownership, you can delegate more effectively and reduce coordination overhead.\n- Always tell workers they are **not alone in the codebase**, and they should not revert the edits made by others, and they should adjust their implementation to accommodate the changes made by others. This is important because there may be multiple workers making changes in parallel, and they need to be aware of each other's work to avoid conflicts and ensure a cohesive final product.\n}",
+      "roles_found": [
+        "kinesmith_audio_visual_designer",
+        "kinesmith_generative_3d_artist",
+        "kinesmith_motion_designer",
+        "kinesmith_motion_director",
+        "kinesmith_render_visual_critic"
+      ]
+    },
+    {
+      "platform": "claude",
+      "arguments": [
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "2.1.310 (Claude Code)\n",
+      "stderr": ""
+    },
+    {
+      "platform": "claude",
+      "arguments": [
+        "plugin",
+        "validate",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace\\plugins\\kinesmith"
+      ],
+      "exit_code": 0,
+      "stdout": "Validating plugin manifest: C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace\\plugins\\kinesmith\\.claude-plugin\\plugin.json\n\nPlugin directory checks for C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace\\plugins\\kinesmith. The plugin directory is the catalog that plugins are submitted to; this is a subset of what it runs.\n\n√ These checks found nothing to report\n\nThe directory also runs a safety scan and a policy review that this command does not.\n\ni Advice (does not change the verdict):\n\n  > C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace\\plugins\\kinesmith\\README.md: This README has no line that installs \"kinesmith\" from a marketplace. Add the install line, which works in one step on Claude Code 2.1.275 or later. Validate the folder that holds its marketplace.json to have <owner>/<repo> filled in, and the name its marketplace lists it under.\n      /plugin install kinesmith --marketplace <owner>/<repo>\n\n√ Validation passed\n",
+      "stderr": ""
+    },
+    {
+      "platform": "claude",
+      "arguments": [
+        "plugin",
+        "validate",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace\\plugins\\kinesmith\\agents"
+      ],
+      "exit_code": 0,
+      "stdout": "Validating components in: C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace\\plugins\\kinesmith\\agents\n\n√ Validation passed\n",
+      "stderr": ""
+    },
+    {
+      "platform": "claude",
+      "arguments": [
+        "plugin",
+        "marketplace",
+        "add",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\dist\\marketplace"
+      ],
+      "exit_code": 0,
+      "stdout": "Adding marketplace…√ Successfully added marketplace: kinesmith-local (declared in user settings)\n",
+      "stderr": ""
+    },
+    {
+      "platform": "claude",
+      "arguments": [
+        "plugin",
+        "install",
+        "kinesmith@kinesmith-local",
+        "--scope",
+        "user",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"command\":\"install\",\"outcome\":\"ok\",\"plugin\":\"kinesmith@kinesmith-local\",\"pluginId\":\"kinesmith@kinesmith-local\",\"scope\":\"user\",\"message\":\"Successfully installed plugin: kinesmith@kinesmith-local (scope: user)\"}\n",
+      "stderr": ""
+    },
+    {
+      "platform": "claude",
+      "arguments": [
+        "plugin",
+        "list",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n  {\n    \"id\": \"kinesmith@kinesmith-local\",\n    \"version\": \"0.1.0\",\n    \"scope\": \"user\",\n    \"enabled\": true,\n    \"installPath\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\.cache\\\\platform-validation-d128df2c\\\\claude-config\\\\plugins\\\\cache\\\\kinesmith-local\\\\kinesmith\\\\0.1.0\",\n    \"readFromFolder\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\dist\\\\marketplace\\\\plugins\\\\kinesmith\",\n    \"folderVersion\": \"0.1.0\",\n    \"installedAt\": \"2026-10-24T20:41:30.116Z\",\n    \"lastUpdated\": \"2026-10-24T20:41:30.116Z\",\n    \"projectEnabled\": false\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "platform": "claude-components",
+      "arguments": [
+        "plugin",
+        "details",
+        "kinesmith@kinesmith-local"
+      ],
+      "exit_code": 0,
+      "stdout": "kinesmith 0.1.0\n  Description: Agent-native motion graphics with six native engines, reproducible renders and audio-visual collaboration.\n  Source: kinesmith@kinesmith-local\n\nComponent inventory\n  Skills (5)  kinesmith, kinesmith-audio-visual, kinesmith-render, kinesmith-revise, kinesmith-setup\n  Agents (5)  audio-visual-designer, generative-3d-artist, motion-designer, motion-director, render-visual-critic\n  Hooks (0)\n  MCP servers (0)\n  LSP servers (0)\n\nProjected token cost\n  Always-on:   ~369 tok   added to every session\n\nPer-component (rounded)\n  component               always-on  on-invoke\n  kinesmith                     ~60       ~370\n  kinesmith-audio-visual        ~60       ~250\n  kinesmith-render              ~50       ~220\n  kinesmith-revise              ~60       ~100\n  kinesmith-setup               ~50       ~240\n  audio-visual-designer         ~30       ~110\n  generative-3d-artist          ~20       ~100\n  motion-designer              < 20        ~90\n  motion-director              < 20        ~80\n  render-visual-critic         < 20        ~90\n\n  On-invoke cost is paid each time a skill or agent fires.\n  Token counts are estimates and may differ from actual usage.\n",
+      "stderr": ""
+    },
+    {
+      "platform": "codex-runtime",
+      "arguments": [
+        "run",
+        "--offline",
+        "--no-dev",
+        "--python",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv\\Scripts\\python.exe",
+        "--project",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0",
+        "kinesmith",
+        "validate",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\examples\\gallery\\project-canvas.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"path\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\.cache\\\\platform-validation-d128df2c\\\\codex-config\\\\plugins\\\\cache\\\\kinesmith-local\\\\kinesmith\\\\0.1.0\\\\examples\\\\gallery\\\\project-canvas.json\",\n  \"scenes\": 1\n}\n",
+      "stderr": "warning: `VIRTUAL_ENV=C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv` does not match the project environment path `codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\.venv` and will be ignored; use `--active` to target the active environment instead\nUsing CPython 3.11.13 interpreter at: C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv\\Scripts\\python.exe\nCreating virtual environment at: codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\.venv\n   Building kinesmith @ file:///C:/Users/BigTongue/Documents/git%20project/kinesmith/.cache/platform-validation-d128df2c/codex-config/plugins/cache/kinesmith-local/kinesmith/0.1.0\n      Built kinesmith @ file:///C:/Users/BigTongue/Documents/git%20project/kinesmith/.cache/platform-validation-d128df2c/codex-config/plugins/cache/kinesmith-local/kinesmith/0.1.0\nInstalled 20 packages in 1.33s\n"
+    },
+    {
+      "platform": "codex-render",
+      "arguments": [
+        "run",
+        "--offline",
+        "--no-dev",
+        "--python",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv\\Scripts\\python.exe",
+        "--project",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0",
+        "kinesmith",
+        "render",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-render\\project-canvas.json",
+        "--output",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-render\\canvas.webm"
+      ],
+      "exit_code": 0,
+      "stdout": "render canvas (canvas): 48 frames\n{\n  \"output\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\.cache\\\\platform-validation-d128df2c\\\\codex-render\\\\canvas.webm\",\n  \"output_sha256\": \"61297fffcf5a9bc06ae031de63f939f381ba766208bb0e928e4d27eef183d290\",\n  \"measured\": {\n    \"width\": 640,\n    \"height\": 360,\n    \"fps\": 24.0,\n    \"frame_count\": 48,\n    \"duration_seconds\": 2.0,\n    \"codec\": \"vp9\",\n    \"pixel_format\": \"yuv420p(tv, progressive)\",\n    \"fps_display\": \"24\"\n  },\n  \"revision\": 1\n}\n",
+      "stderr": "warning: `VIRTUAL_ENV=C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv` does not match the project environment path `codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\.venv` and will be ignored; use `--active` to target the active environment instead\n"
+    },
+    {
+      "platform": "claude-runtime",
+      "arguments": [
+        "run",
+        "--offline",
+        "--no-dev",
+        "--python",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv\\Scripts\\python.exe",
+        "--project",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0",
+        "kinesmith",
+        "validate",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\examples\\gallery\\project-canvas.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"path\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\.cache\\\\platform-validation-d128df2c\\\\claude-config\\\\plugins\\\\cache\\\\kinesmith-local\\\\kinesmith\\\\0.1.0\\\\examples\\\\gallery\\\\project-canvas.json\",\n  \"scenes\": 1\n}\n",
+      "stderr": "warning: `VIRTUAL_ENV=C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv` does not match the project environment path `claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\.venv` and will be ignored; use `--active` to target the active environment instead\nUsing CPython 3.11.13 interpreter at: C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv\\Scripts\\python.exe\nCreating virtual environment at: claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\.venv\n   Building kinesmith @ file:///C:/Users/BigTongue/Documents/git%20project/kinesmith/.cache/platform-validation-d128df2c/claude-config/plugins/cache/kinesmith-local/kinesmith/0.1.0\n      Built kinesmith @ file:///C:/Users/BigTongue/Documents/git%20project/kinesmith/.cache/platform-validation-d128df2c/claude-config/plugins/cache/kinesmith-local/kinesmith/0.1.0\nInstalled 20 packages in 1.44s\n"
+    },
+    {
+      "platform": "claude-render",
+      "arguments": [
+        "run",
+        "--offline",
+        "--no-dev",
+        "--python",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv\\Scripts\\python.exe",
+        "--project",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0",
+        "kinesmith",
+        "render",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\claude-render\\project-canvas.json",
+        "--output",
+        "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\claude-render\\canvas.webm"
+      ],
+      "exit_code": 0,
+      "stdout": "render canvas (canvas): 48 frames\n{\n  \"output\": \"C:\\\\Users\\\\BigTongue\\\\Documents\\\\git project\\\\kinesmith\\\\.cache\\\\platform-validation-d128df2c\\\\claude-render\\\\canvas.webm\",\n  \"output_sha256\": \"198e8e5dab1728ada8e02a157a6facbb5b2b9a41ba450965cfe28e876621a730\",\n  \"measured\": {\n    \"width\": 640,\n    \"height\": 360,\n    \"fps\": 24.0,\n    \"frame_count\": 48,\n    \"duration_seconds\": 2.0,\n    \"codec\": \"vp9\",\n    \"pixel_format\": \"yuv420p(tv, progressive)\",\n    \"fps_display\": \"24\"\n  },\n  \"revision\": 1\n}\n",
+      "stderr": "warning: `VIRTUAL_ENV=C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.venv` does not match the project environment path `claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\.venv` and will be ignored; use `--active` to target the active environment instead\n"
+    }
+  ],
+  "codex_skill_discovery": {
+    "id": 2,
+    "result": {
+      "data": [
+        {
+          "cwd": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\motion-project",
+          "skills": [
+            {
+              "name": "kinesmith:kinesmith",
+              "description": "Create professional editable motion graphics, animated explainers, typography, generative art or 3D films using Canvas, Rough.js, p5.js, Three.js, Manim or Blender. Use for Kinesmith visual creation and art direction.",
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\skills\\kinesmith\\SKILL.md",
+              "scope": "user",
+              "enabled": true,
+              "pluginId": "kinesmith@kinesmith-local"
+            },
+            {
+              "name": "kinesmith:kinesmith-audio-visual",
+              "description": "Synchronize motion graphics to ordinary audio, Opusmith scores, lyrics or vocals; create music-first, visual-first and jointly revised audio-visual projects without modifying the other project's sources.",
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\skills\\kinesmith-audio-visual\\SKILL.md",
+              "scope": "user",
+              "enabled": true,
+              "pluginId": "kinesmith@kinesmith-local"
+            },
+            {
+              "name": "kinesmith:kinesmith-render",
+              "description": "Render, composite, inspect and verify Kinesmith animation projects with deterministic frames and FFmpeg. Use for final video, contact sheets, multi-engine composition or rendering failures.",
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\skills\\kinesmith-render\\SKILL.md",
+              "scope": "user",
+              "enabled": true,
+              "pluginId": "kinesmith@kinesmith-local"
+            },
+            {
+              "name": "kinesmith:kinesmith-revise",
+              "description": "Revise selected Kinesmith scenes, typography, timing or effects while preserving unrelated sources, renders and linked music projects. Use for targeted animation changes and reproducible version history.",
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\skills\\kinesmith-revise\\SKILL.md",
+              "scope": "user",
+              "enabled": true,
+              "pluginId": "kinesmith@kinesmith-local"
+            },
+            {
+              "name": "kinesmith:kinesmith-setup",
+              "description": "Install, inspect or repair Kinesmith local dependencies and native Codex or Claude Code plugin roles. Use for Kinesmith setup and environment diagnostics.",
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0\\skills\\kinesmith-setup\\SKILL.md",
+              "scope": "user",
+              "enabled": true,
+              "pluginId": "kinesmith@kinesmith-local"
+            },
+            {
+              "name": "kinesmith:imagegen",
+              "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas.",
+              "interface": {
+                "displayName": "Image Gen",
+                "shortDescription": "Generate or edit images for websites, games, and more",
+                "iconSmall": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\imagegen\\assets\\imagegen-small.svg",
+                "iconLarge": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\imagegen\\assets\\imagegen.png",
+                "iconSmallUrl": null,
+                "iconLargeUrl": null,
+                "brandColor": null,
+                "defaultPrompt": "Use $imagegen to make or edit an image for this project."
+              },
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\imagegen\\SKILL.md",
+              "scope": "system",
+              "enabled": true,
+              "pluginId": null
+            },
+            {
+              "name": "kinesmith:openai-docs",
+              "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex.",
+              "shortDescription": "Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, and self-knowledge; OpenAI APIs and ChatGPT Work. 'You'/'this app' means Codex only.",
+              "interface": {
+                "displayName": "OpenAI Docs",
+                "shortDescription": "OpenAI and Codex docs for models, skills, tasks, and setup",
+                "iconSmall": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\openai-docs\\assets\\openai-small.svg",
+                "iconLarge": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\openai-docs\\assets\\openai.png",
+                "iconSmallUrl": null,
+                "iconLargeUrl": null,
+                "brandColor": null,
+                "defaultPrompt": "Use OpenAI Docs for official docs lookup, questions about Codex itself or Codex surfaces, model selection, model migration, and prompt-upgrade work."
+              },
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\openai-docs\\SKILL.md",
+              "scope": "system",
+              "enabled": true,
+              "pluginId": null
+            },
+            {
+              "name": "kinesmith:review-agent",
+              "description": "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions.",
+              "interface": {
+                "displayName": "Review Agent",
+                "shortDescription": "Find actionable bugs in code changes",
+                "iconSmall": null,
+                "iconLarge": null,
+                "iconSmallUrl": null,
+                "iconLargeUrl": null,
+                "brandColor": null,
+                "defaultPrompt": "Use $review-agent to review the requested code changes and return actionable findings."
+              },
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\review-agent\\SKILL.md",
+              "scope": "system",
+              "enabled": true,
+              "pluginId": null
+            },
+            {
+              "name": "kinesmith:skill-creator",
+              "description": "Create or update a Codex skill with appropriately scoped instructions and any needed supporting resources.",
+              "shortDescription": "Create or update a skill",
+              "interface": {
+                "displayName": "Skill Creator",
+                "shortDescription": "Create or update a skill",
+                "iconSmall": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\skill-creator\\assets\\skill-creator-small.svg",
+                "iconLarge": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\skill-creator\\assets\\skill-creator.png",
+                "iconSmallUrl": null,
+                "iconLargeUrl": null,
+                "brandColor": null,
+                "defaultPrompt": null
+              },
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\skill-creator\\SKILL.md",
+              "scope": "system",
+              "enabled": true,
+              "pluginId": null
+            },
+            {
+              "name": "kinesmith:skill-installer",
+              "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
+              "shortDescription": "Install curated skills from openai/skills or other repos",
+              "interface": {
+                "displayName": "Skill Installer",
+                "shortDescription": "Install curated skills from openai/skills or other repos",
+                "iconSmall": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\skill-installer\\assets\\skill-installer-small.svg",
+                "iconLarge": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\skill-installer\\assets\\skill-installer.png",
+                "iconSmallUrl": null,
+                "iconLargeUrl": null,
+                "brandColor": null,
+                "defaultPrompt": null
+              },
+              "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\skills\\.system\\skill-installer\\SKILL.md",
+              "scope": "system",
+              "enabled": true,
+              "pluginId": null
+            }
+          ],
+          "errors": []
+        }
+      ]
+    }
+  },
+  "codex_skill_discovery_passed": true,
+  "codex_native_agent_inventory_passed": true,
+  "claude_component_inventory_passed": true,
+  "installed": {
+    "codex": [
+      {
+        "root": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\codex-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0",
+        "skills": [
+          "kinesmith",
+          "kinesmith-audio-visual",
+          "kinesmith-render",
+          "kinesmith-revise",
+          "kinesmith-setup"
+        ],
+        "claude_agents": [
+          "audio-visual-designer.md",
+          "generative-3d-artist.md",
+          "motion-designer.md",
+          "motion-director.md",
+          "render-visual-critic.md"
+        ],
+        "source_matches": true
+      }
+    ],
+    "claude": [
+      {
+        "root": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\claude-config\\plugins\\cache\\kinesmith-local\\kinesmith\\0.1.0",
+        "skills": [
+          "kinesmith",
+          "kinesmith-audio-visual",
+          "kinesmith-render",
+          "kinesmith-revise",
+          "kinesmith-setup"
+        ],
+        "claude_agents": [
+          "audio-visual-designer.md",
+          "generative-3d-artist.md",
+          "motion-designer.md",
+          "motion-director.md",
+          "render-visual-critic.md"
+        ],
+        "source_matches": true
+      }
+    ]
+  },
+  "codex_project_role_files": [
+    "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\motion-project\\.codex\\agents\\kinesmith_audio_visual_designer.toml",
+    "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\motion-project\\.codex\\agents\\kinesmith_generative_3d_artist.toml",
+    "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\motion-project\\.codex\\agents\\kinesmith_motion_designer.toml",
+    "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\motion-project\\.codex\\agents\\kinesmith_motion_director.toml",
+    "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\platform-validation-d128df2c\\motion-project\\.codex\\agents\\kinesmith_render_visual_critic.toml"
+  ],
+  "model_invocations": 0,
+  "limits": [
+    "未執行已登入模型的自然語言創作。",
+    "兩平台已探索五個可用原生角色，但未實際委派模型執行。",
+    "原生 inventory、validator 及安裝後渲染成功，不等於模型已呼叫 Skills。"
+  ],
+  "status": "passed"
+}

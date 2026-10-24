@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kinesmith / Dimensional</title>
+<style>html,body{margin:0;background:#101c2e}canvas{display:block}</style><canvas id="stage"></canvas>
+<script type="module">
+import * as THREE from '/vendor/three/three.module.min.js';
+const canvas=document.querySelector('#stage');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,preserveDrawingBuffer:true});
+renderer.setPixelRatio(1);renderer.setClearColor('#101c2e',1);renderer.outputColorSpace=THREE.SRGBColorSpace;
+const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(35,640/360,.1,100);camera.position.set(0,.2,7);camera.lookAt(0,0,0);
+scene.add(new THREE.AmbientLight('#8ea7ca',1.7));let key=new THREE.DirectionalLight('#f2e6cf',5);key.position.set(-3,4,5);scene.add(key);let fill=new THREE.PointLight('#65d4cf',60);fill.position.set(3,-1,2);scene.add(fill);
+const group=new THREE.Group();scene.add(group);group.position.x=.65;
+const knot=new THREE.Mesh(new THREE.TorusKnotGeometry(.83,.21,160,24,2,3),new THREE.MeshStandardMaterial({color:'#65d4cf',roughness:.29,metalness:.56}));group.add(knot);
+const ring=new THREE.Mesh(new THREE.TorusGeometry(1.48,.012,8,144),new THREE.MeshBasicMaterial({color:'#f2e6cf'}));group.add(ring);
+const bead=new THREE.Mesh(new THREE.IcosahedronGeometry(.13,2),new THREE.MeshStandardMaterial({color:'#ff775a',roughness:.2,metalness:.2}));group.add(bead);
+const overlay=document.createElement('canvas'),og=overlay.getContext('2d');overlay.width=1280;overlay.height=720;
+og.scale(2,2);og.fillStyle='#f2e6cf';og.font='11px Arial';og.fillText('04 / GIVE THE IDEA DEPTH',34,34);og.fillStyle='#8294a9';og.fillText('THREE.JS / REALTIME 3D',34,330);og.fillStyle='#f2e6cf';og.font='bold 27px Arial';og.fillText('A NEW',34,157);og.fillText('DIMENSION.',34,190);og.fillStyle='#65d4cf';og.font='12px Arial';og.fillText('Light, material, perspective.',34,222);
+const os=new THREE.Scene(),oc=new THREE.OrthographicCamera(-320,320,180,-180,0,10);oc.position.z=1;const tex=new THREE.CanvasTexture(overlay);tex.colorSpace=THREE.SRGBColorSpace;const plane=new THREE.Mesh(new THREE.PlaneGeometry(640,360),new THREE.MeshBasicMaterial({map:tex,transparent:true,depthTest:false}));os.add(plane);
+window.kinesmithReady=Promise.resolve();
+window.renderFrame=(frame,ctx)=>{
+ renderer.setSize(ctx.width,ctx.height,false);camera.aspect=ctx.width/ctx.height;camera.updateProjectionMatrix();let t=ctx.time;
+ knot.rotation.set(.3+t*.32,t*.48,-.2);ring.rotation.set(.7+t*.1,.2,-.4);bead.position.set(Math.cos(t*2)*1.48,Math.sin(t*2)*1.48,0);group.rotation.y=.2;
+ renderer.autoClear=true;renderer.render(scene,camera);renderer.autoClear=false;renderer.clearDepth();renderer.render(os,oc);
+};
+</script></html>

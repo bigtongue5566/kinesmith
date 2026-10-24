@@ -1,0 +1,131 @@
+{
+  "schema": "kinesmith.video-qa",
+  "version": "1.0.0",
+  "source": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\preview.webm",
+  "sha256": "d33401caed9bca3513b811e0a1e8519c7e3ad4ffdda118b493afd6e80d07e93c",
+  "measurements": {
+    "width": 640,
+    "height": 360,
+    "fps": 24.0,
+    "frame_count": 144,
+    "duration_seconds": 6.0,
+    "container_duration_seconds": 6.01,
+    "codec": "vp9",
+    "pixel_format": "yuv420p(tv, progressive)",
+    "fps_rational": "24/1",
+    "audio_codec": "opus,"
+  },
+  "checks": {
+    "full_decode": {
+      "passed": true,
+      "diagnostic": ""
+    },
+    "width": {
+      "passed": true,
+      "actual": 640.0,
+      "expected": 640.0,
+      "tolerance": 0
+    },
+    "height": {
+      "passed": true,
+      "actual": 360.0,
+      "expected": 360.0,
+      "tolerance": 0
+    },
+    "fps": {
+      "passed": true,
+      "actual": 24.0,
+      "expected": 24.0,
+      "tolerance": 0.002
+    },
+    "duration_seconds": {
+      "passed": true,
+      "actual": 6.0,
+      "expected": 6.0,
+      "tolerance": 0.043666666666666666
+    }
+  },
+  "technical_checks_passed": true,
+  "heuristic_flags": {
+    "possible_black_ranges": [],
+    "possible_freeze_ranges": [],
+    "large_brightness_changes": []
+  },
+  "visual_review": "required",
+  "manual_checks": {
+    "text_clipping": "not_verified",
+    "intentional_black_or_holds": "not_verified",
+    "transitions": "not_verified",
+    "audio_visual_sync": "not_verified",
+    "flicker_and_motion_continuity": "not_verified",
+    "license_clearance": "not_verified"
+  },
+  "notes": [
+    "黑畫面、定格、亮度跳變是低解析度啟發式提示；片頭黑、留白、定格與剪接可能是刻意設計。",
+    "完整解碼與格式檢查通過，不代表文字、同步、轉場或美感已通過人工檢查。",
+    "frame_count / fps 為 CFR 時間；VFR 影片需以逐幀 PTS 另行驗證同步。"
+  ],
+  "representative_frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-001.png"
+    },
+    {
+      "frame": 13,
+      "time_seconds": 0.5416666666666666,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-002.png"
+    },
+    {
+      "frame": 26,
+      "time_seconds": 1.0833333333333333,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-003.png"
+    },
+    {
+      "frame": 39,
+      "time_seconds": 1.625,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-004.png"
+    },
+    {
+      "frame": 52,
+      "time_seconds": 2.1666666666666665,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-005.png"
+    },
+    {
+      "frame": 65,
+      "time_seconds": 2.7083333333333335,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-006.png"
+    },
+    {
+      "frame": 78,
+      "time_seconds": 3.25,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-007.png"
+    },
+    {
+      "frame": 91,
+      "time_seconds": 3.7916666666666665,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-008.png"
+    },
+    {
+      "frame": 104,
+      "time_seconds": 4.333333333333333,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-009.png"
+    },
+    {
+      "frame": 117,
+      "time_seconds": 4.875,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-010.png"
+    },
+    {
+      "frame": 130,
+      "time_seconds": 5.416666666666667,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-011.png"
+    },
+    {
+      "frame": 143,
+      "time_seconds": 5.958333333333333,
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\frame-012.png"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa\\contact-sheet.jpg"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "music-first-lyric-excerpt",
+  "title": "music-first-lyric-excerpt",
+  "revision": 1,
+  "fps": "24",
+  "width": 640,
+  "height": 360,
+  "duration_frames": 144,
+  "seed": 73,
+  "prompt": "Kinesmith 與 Opusmith 雙向協作驗收；不宣稱為使用者指定完整創作。",
+  "scenes": [
+    {
+      "id": "lyric",
+      "engine": "canvas",
+      "source": "scenes/lyrics.html",
+      "start_frame": 0,
+      "duration_frames": 144
+    }
+  ],
+  "audio": {
+    "source": "excerpt.wav",
+    "offset_seconds": 0
+  },
+  "interchange": "music.av.json",
+  "licenses": [
+    {
+      "file": "excerpt.wav",
+      "kind": "upstream-original-music-and-vocal",
+      "source": "https://github.com/bigtongue5566/opusmith/releases/tag/v0.2.0",
+      "review": "保留原人聲收據；聲庫與角色圖像權利另計，不含角色圖像。",
+      "receipt": "vocal-receipt.json"
+    }
+  ]
+}

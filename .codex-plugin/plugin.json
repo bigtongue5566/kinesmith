@@ -1,0 +1,17 @@
+{
+  "name": "kinesmith",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bigtongue5566/kinesmith",
+  "repository": "https://github.com/bigtongue5566/kinesmith",
+  "description": "Craft motion, not just animate it. Editable, reproducible multi-engine motion graphics.",
+  "author": {"name": "Kinesmith contributors"},
+  "license": "MIT",
+  "skills": "./skills/",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "Kinesmith",
+    "shortDescription": "Craft motion, not just animate it.",
+    "developerName": "Kinesmith contributors",
+    "category": "Productivity"
+  }
+}

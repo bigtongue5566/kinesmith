@@ -1,0 +1,6016 @@
+{
+  "format_version": 1,
+  "renderer": "OpenUtau 0.1.576",
+  "ustx_sha256": "9cf21a2d48d6f2e5c02c0d5e0d980b6f64bf920aea3a2c6c44af4e30c2b103b0",
+  "bank_sha256": "e5a008f46beed2fbf7354376bb2ec59beec779eb76d33a139efe58cd3c85e918",
+  "engine_sha256": "98e3b00dbdc9e952e1ade34feee4dee76491c9576762264c9edb5eb1a39123de",
+  "bridge_sha256": "bfff40e2a2902f352377cfce91ee4f293e89fad24e5bfe341e6fdaae920865c7",
+  "dependencies_sha256": "b55277f4f433ff8c0940691f2c86fc8b86c3a600e36deae1a0c011170e558857",
+  "steps": 20,
+  "license": {
+    "name": "波音リツ UTAU 音源使用規約",
+    "terms_url": "https://www.canon-voice.com/terms/",
+    "commercial_output_verified": true,
+    "credit": "歌聲：波音リツ；OpenUtau / WORLDLINE（自願署名）",
+    "evidence": "2026-10-25 核對作者現行 UTAU 規約：免費、商業利用可；現行網站規約優先於舊音源附帶規約。無神經網路聲碼器。角色插畫權利另計，不使用插畫。",
+    "terms_sha256": "e4e2b7c7a431688e916fe2cc4da60a2086d79aa58f3e63bdb155b48dd078100b"
+  },
+  "evaluation_only": false,
+  "audio": {
+    "sample_rate": 44100,
+    "channels": 1,
+    "frames": 6034508,
+    "duration_seconds": 136.83691609977325,
+    "source_bit_depth": 16,
+    "peak": 0.54876708984375,
+    "rms": 0.10093846917152405,
+    "non_silent": true
+  },
+  "notes": [
+    {
+      "track": 0,
+      "position": 15360,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "よ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 15840,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "る",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 16320,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "の",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 16800,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ま",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 17280,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "ち",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 17760,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "に",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 18240,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "ひ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 18720,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "か",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 19200,
+      "duration": 1344,
+      "tone": 64,
+      "lyric": "り",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 23040,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "と",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 23520,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "お",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 24000,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 24480,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 24960,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "し",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 25440,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 25920,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "を",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 26400,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "え",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 26880,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "が",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 27360,
+      "duration": 1344,
+      "tone": 64,
+      "lyric": "く",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 30720,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 31200,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "わ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 31680,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "れ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 32160,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 32640,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ゆ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 33120,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "め",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 33600,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "を",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 34080,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 34560,
+      "duration": 480,
+      "tone": 60,
+      "lyric": "つ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 35040,
+      "duration": 1344,
+      "tone": 62,
+      "lyric": "め",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 38400,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 38880,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ま",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 39360,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "は",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 39840,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 40320,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 40800,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "か",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 41280,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 41760,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "う",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 42240,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 42720,
+      "duration": 1344,
+      "tone": 69,
+      "lyric": "う",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 46080,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "そ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 46560,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 47040,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "に",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 47520,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "の",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 48000,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "ば",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 48480,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "し",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 48960,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 49440,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 49920,
+      "duration": 1344,
+      "tone": 69,
+      "lyric": "え",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 53760,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 54240,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "さ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 54720,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "の",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 55200,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "と",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 55680,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "び",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 56160,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 56640,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ひ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 57120,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 57600,
+      "duration": 1344,
+      "tone": 73,
+      "lyric": "け",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 61440,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ひ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 61920,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "か",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 62400,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "り",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 62880,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "を",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 63360,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ぬ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 63840,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 64320,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 64800,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "わ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 65280,
+      "duration": 1344,
+      "tone": 69,
+      "lyric": "せ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 69120,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 69600,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 70080,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 70560,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "し",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 71040,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 71520,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "そ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 72000,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 72480,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "へ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 72960,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "ゆ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 73440,
+      "duration": 1344,
+      "tone": 65,
+      "lyric": "く",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 76800,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "は",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 77280,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "な",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 77760,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "れ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 78240,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 78720,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ゆ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 79200,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "め",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 79680,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "も",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 80160,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 80640,
+      "duration": 1344,
+      "tone": 69,
+      "lyric": "ま",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 84480,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "き",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 84960,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "み",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 85440,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "の",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 85920,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 86400,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "え",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 86880,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "と",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 87360,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "ひ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 87840,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "び",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 88320,
+      "duration": 1344,
+      "tone": 62,
+      "lyric": "く",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 94080,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "し",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 94560,
+      "duration": 480,
+      "tone": 70,
+      "lyric": "ず",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 95040,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "か",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 95520,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "な",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 96000,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "よ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 96480,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "る",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 96960,
+      "duration": 480,
+      "tone": 62,
+      "lyric": "を",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 97440,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 97920,
+      "duration": 1344,
+      "tone": 65,
+      "lyric": "え",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 101760,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "も",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 102240,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "う",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 102720,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 103200,
+      "duration": 480,
+      "tone": 73,
+      "lyric": "ち",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 103680,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "ど",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 104160,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 104640,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "の",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 105120,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "て",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 105600,
+      "duration": 1344,
+      "tone": 61,
+      "lyric": "で",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 107520,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ひ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 108000,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "か",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 108480,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "り",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 108960,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "を",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 109440,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ぬ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 109920,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 110400,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 110880,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "わ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 111360,
+      "duration": 1344,
+      "tone": 69,
+      "lyric": "せ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 115200,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 115680,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 116160,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 116640,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "し",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 117120,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 117600,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "そ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 118080,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "ら",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 118560,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "へ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 119040,
+      "duration": 480,
+      "tone": 64,
+      "lyric": "ゆ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 119520,
+      "duration": 1344,
+      "tone": 65,
+      "lyric": "く",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 122880,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "こ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 123360,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "わ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 123840,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "れ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 124320,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 124800,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "ゆ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 125280,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "め",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 125760,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "も",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 126240,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "い",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 126720,
+      "duration": 1344,
+      "tone": 69,
+      "lyric": "ま",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 28,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 130560,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "き",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 131040,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "み",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 131520,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "と",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 132000,
+      "duration": 480,
+      "tone": 74,
+      "lyric": "あ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 132480,
+      "duration": 480,
+      "tone": 72,
+      "lyric": "さ",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 132960,
+      "duration": 480,
+      "tone": 69,
+      "lyric": "を",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 133440,
+      "duration": 480,
+      "tone": 67,
+      "lyric": "う",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 72.44094488188976
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 133920,
+      "duration": 480,
+      "tone": 65,
+      "lyric": "た",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 0,
+        "period": 180,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    },
+    {
+      "track": 0,
+      "position": 134400,
+      "duration": 1344,
+      "tone": 62,
+      "lyric": "う",
+      "pitch": {
+        "data": [
+          {
+            "x": -40.0,
+            "y": -1.8,
+            "shape": "io"
+          },
+          {
+            "x": 40.0,
+            "y": 0.0,
+            "shape": "io"
+          }
+        ],
+        "snap_first": true
+      },
+      "vibrato": {
+        "length": 40,
+        "period": 185,
+        "depth": 20,
+        "in": 20,
+        "out": 20,
+        "shift": 0,
+        "drift": 0,
+        "vol_link": 0
+      },
+      "phoneme_expressions": [
+        {
+          "index": 0,
+          "abbr": "vol",
+          "value": 65.35433070866141
+        }
+      ],
+      "phoneme_overrides": []
+    }
+  ],
+  "audio_sha256": "5c94d955f19918d9158eca4b636261b671a33e56be324ca78aae8d72a004dd75",
+  "phonemes_sha256": "3405ccbaf72508857ddf6b5983e4258c8366bb475571828ebe50e81058112b30",
+  "subjective_listening": "未進行聽覺評估",
+  "engine_log": "u306BG4\",\"error\":false},{\"alias\":\"i \\u306EC5\",\"error\":false},{\"alias\":\"o \\u3070C5\",\"error\":false},{\"alias\":\"a \\u3057C5\",\"error\":false},{\"alias\":\"i \\u305FG4\",\"error\":false},{\"alias\":\"a \\u3053G4\",\"error\":false},{\"alias\":\"o \\u3048G4\",\"error\":false},{\"alias\":\"- \\u3042G4\",\"error\":false},{\"alias\":\"a \\u3055G4\",\"error\":false},{\"alias\":\"a \\u306EC5\",\"error\":false},{\"alias\":\"o \\u3068C5\",\"error\":false},{\"alias\":\"o \\u3073C5\",\"error\":false},{\"alias\":\"i \\u3089G4\",\"error\":false},{\"alias\":\"a \\u3072G4\",\"error\":false},{\"alias\":\"i \\u3089G4\",\"error\":false},{\"alias\":\"a \\u3051C5\",\"error\":false},{\"alias\":\"- \\u3072G4\",\"error\":false},{\"alias\":\"i \\u304BC5\",\"error\":false},{\"alias\":\"a \\u308AC5\",\"error\":false},{\"alias\":\"i \\u3092C5\",\"error\":false},{\"alias\":\"o \\u306CG4\",\"error\":false},{\"alias\":\"u \\u3044G4\",\"error\":false},{\"alias\":\"i \\u3042D4\",\"error\":false},{\"alias\":\"a \\u308FG4\",\"error\":false},{\"alias\":\"a \\u305BG4\",\"error\":false},{\"alias\":\"- \\u3042D4\",\"error\":false},{\"alias\":\"a \\u305FG4\",\"error\":false},{\"alias\":\"a \\u3089C5\",\"error\":false},{\"alias\":\"a \\u3057C5\",\"error\":false},{\"alias\":\"i \\u3044C5\",\"error\":false},{\"alias\":\"i \\u305DG4\",\"error\":false},{\"alias\":\"o \\u3089G4\",\"error\":false},{\"alias\":\"a \\u3078D4\",\"error\":false},{\"alias\":\"e \\u3086D4\",\"error\":false},{\"alias\":\"u \\u304FD4\",\"error\":false},{\"alias\":\"- \\u306FG4\",\"error\":false},{\"alias\":\"a \\u306AG4\",\"error\":false},{\"alias\":\"a \\u308CD4\",\"error\":false},{\"alias\":\"e \\u305FG4\",\"error\":false},{\"alias\":\"a \\u3086G4\",\"error\":false},{\"alias\":\"u \\u3081C5\",\"error\":false},{\"alias\":\"e \\u3082C5\",\"error\":false},{\"alias\":\"o \\u3044C5\",\"error\":false},{\"alias\":\"i \\u307EG4\",\"error\":false},{\"alias\":\"- \\u304DG4\",\"error\":false},{\"alias\":\"i \\u307FG4\",\"error\":false},{\"alias\":\"i \\u306EC5\",\"error\":false},{\"alias\":\"o \\u3053G4\",\"error\":false},{\"alias\":\"o \\u3048G4\",\"error\":false},{\"alias\":\"e \\u3068D4\",\"error\":false},{\"alias\":\"o \\u3072D4\",\"error\":false},{\"alias\":\"i \\u3073D4\",\"error\":false},{\"alias\":\"i \\u304FD4\",\"error\":false},{\"alias\":\"- \\u3057G4\",\"error\":false},{\"alias\":\"i \\u305AG4\",\"error\":false},{\"alias\":\"u \\u304BG4\",\"error\":false},{\"alias\":\"a \\u306AG4\",\"error\":false},{\"alias\":\"a \\u3088D4\",\"error\":false},{\"alias\":\"o \\u308BD4\",\"error\":false},{\"alias\":\"u \\u3092D4\",\"error\":false},{\"alias\":\"o \\u3053D4\",\"error\":false},{\"alias\":\"o \\u3048D4\",\"error\":false},{\"alias\":\"- \\u3082D4\",\"error\":false},{\"alias\":\"o \\u3046G4\",\"error\":false},{\"alias\":\"u \\u3044G4\",\"error\":false},{\"alias\":\"i \\u3061C5\",\"error\":false},{\"alias\":\"i \\u3069C5\",\"error\":false},{\"alias\":\"o \\u3053G4\",\"error\":false},{\"alias\":\"o \\u306EG4\",\"error\":false},{\"alias\":\"o \\u3066D4\",\"error\":false},{\"alias\":\"e \\u3067D4\",\"error\":false},{\"alias\":\"- \\u3072G4\",\"error\":false},{\"alias\":\"i \\u304BC5\",\"error\":false},{\"alias\":\"a \\u308AC5\",\"error\":false},{\"alias\":\"i \\u3092C5\",\"error\":false},{\"alias\":\"o \\u306CG4\",\"error\":false},{\"alias\":\"u \\u3044G4\",\"error\":false},{\"alias\":\"i \\u3042D4\",\"error\":false},{\"alias\":\"a \\u308FG4\",\"error\":false},{\"alias\":\"a \\u305BG4\",\"error\":false},{\"alias\":\"- \\u3042D4\",\"error\":false},{\"alias\":\"a \\u305FG4\",\"error\":false},{\"alias\":\"a \\u3089C5\",\"error\":false},{\"alias\":\"a \\u3057C5\",\"error\":false},{\"alias\":\"i \\u3044C5\",\"error\":false},{\"alias\":\"i \\u305DG4\",\"error\":false},{\"alias\":\"o \\u3089G4\",\"error\":false},{\"alias\":\"a \\u3078D4\",\"error\":false},{\"alias\":\"e \\u3086D4\",\"error\":false},{\"alias\":\"u \\u304FD4\",\"error\":false},{\"alias\":\"- \\u3053G4\",\"error\":false},{\"alias\":\"o \\u308FG4\",\"error\":false},{\"alias\":\"a \\u308CD4\",\"error\":false},{\"alias\":\"e \\u305FG4\",\"error\":false},{\"alias\":\"a \\u3086G4\",\"error\":false},{\"alias\":\"u \\u3081C5\",\"error\":false},{\"alias\":\"e \\u3082C5\",\"error\":false},{\"alias\":\"o \\u3044C5\",\"error\":false},{\"alias\":\"i \\u307EG4\",\"error\":false},{\"alias\":\"- \\u304DG4\",\"error\":false},{\"alias\":\"i \\u307FG4\",\"error\":false},{\"alias\":\"i \\u3068C5\",\"error\":false},{\"alias\":\"o \\u3042C5\",\"error\":false},{\"alias\":\"a \\u3055C5\",\"error\":false},{\"alias\":\"a \\u3092G4\",\"error\":false},{\"alias\":\"o \\u3046G4\",\"error\":false},{\"alias\":\"u \\u305FD4\",\"error\":false},{\"alias\":\"a \\u3046D4\",\"error\":false}],\"phrases\":16}]}\n",
+  "support_files": {
+    "base/dry.wav": "caf68cc4d213f07e0509e40334e000187cc444d091bb6b4162cbbc9a0da3a562",
+    "base/project.ustx": "79861173fdd32ef127d90e219efd447ed5e527ca1c9d586a964c8c2b0ed70572",
+    "base/receipt.json": "c41c978993a7d60864000dbbcb1e6df0557f6059a5dd32edcfc19cd5eb5dd737",
+    "base/phonemes.json": "d9309a8ede2114d179244c762380112ba3226b08e949de1378c1af8648f7f320"
+  },
+  "revision": {
+    "method": "Retain original PCM; crossfade only the revised phrase context",
+    "base_audio_sha256": "caf68cc4d213f07e0509e40334e000187cc444d091bb6b4162cbbc9a0da3a562",
+    "ticks": [
+      122880,
+      128640
+    ],
+    "replaced_samples": [
+      5440660,
+      5740824
+    ],
+    "context_seconds": 0.5,
+    "crossfade_seconds": 0.04,
+    "untouched_dry_pcm_identical": true
+  }
+}

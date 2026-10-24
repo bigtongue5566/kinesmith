@@ -1,0 +1,65 @@
+{
+  "status": "portable-alternatives-created-copied-and-hash-verified",
+  "destination": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\collaboration-moved-1",
+  "alternatives": [
+    {
+      "original": "music-first/music.av.json",
+      "portable": "music-first/music.portable.av.json",
+      "original_sha256": "d1141fd2a8567fecba684b3f083e633ad3df82cb3fa1ced89b5e5680395d5a97",
+      "portable_sha256": "8b0411eaac2a4efe179754ecd1f2cd61f789d8c883587eb98e186f9725301a52"
+    },
+    {
+      "original": "visual-first/music-return.av.json",
+      "portable": "visual-first/music-return.portable.av.json",
+      "original_sha256": "7da29d627e694c287170a67ad78bd9aab66a039f8fea4ae193325b34e15d1396",
+      "portable_sha256": "4eac252de4b1c1ab9d52417eab9a5bd4d0a753fcf76c21c33a751884dfe84c80"
+    },
+    {
+      "original": "visual-first/joint-request.av.json",
+      "portable": "visual-first/joint-request.portable.av.json",
+      "original_sha256": "0c9742e38275e432c148a68107de2a7397412050d366c8bae24f3eb04316b10e",
+      "portable_sha256": "2b78399c717dbe61049940985096bc0603d1a149da2fa374d7692b8ad7e79b0e"
+    },
+    {
+      "original": "visual-first/visual-request.av.json",
+      "portable": "visual-first/visual-request.portable.av.json",
+      "original_sha256": "80a5b7b80a91a00e19cb92ccd6ed3e105d9ab0e765a75168f6ac94aff94b3329",
+      "portable_sha256": "03c66a6d07a574be7932d5fe45b3d125937e8545df41023f25b0744e63815178"
+    }
+  ],
+  "records": [
+    {
+      "contract": "music-first/music.portable.av.json",
+      "references_verified": 3,
+      "all_sources_inside_moved_work": true,
+      "explicit_rebase_verified": true
+    },
+    {
+      "contract": "visual-first/music-return.portable.av.json",
+      "references_verified": 10,
+      "all_sources_inside_moved_work": true,
+      "explicit_rebase_verified": true
+    },
+    {
+      "contract": "visual-first/joint-request.portable.av.json",
+      "references_verified": 10,
+      "all_sources_inside_moved_work": true,
+      "explicit_rebase_verified": true
+    },
+    {
+      "contract": "visual-first/visual-request.portable.av.json",
+      "references_verified": 1,
+      "all_sources_inside_moved_work": true,
+      "explicit_rebase_verified": true
+    }
+  ],
+  "original_files_verified_unchanged": 20,
+  "original_sources_modified": false,
+  "editable_music_copies_added_to_examples": 0,
+  "scope": "移動來源與合約核對及 project validation；本次不宣稱重新編碼或主觀品質驗收。",
+  "cli_checks": {
+    "verify_sources_on_moved_music_first": "passed; all 3 declared paths resolved inside moved work and hashes unchanged",
+    "rebase_contract_on_moved_visual_first": "passed; 6 sources and 4 audio references",
+    "validate_moved_project_portable": "passed; 2 scenes"
+  }
+}

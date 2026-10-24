@@ -1,0 +1,12 @@
+{
+  "upstream": "https://github.com/bigtongue5566/opusmith",
+  "release": "v0.2.0",
+  "snapshot": "v003",
+  "master_sha256": "95f893ccbf641bee91bb7ddb9e7696a48484f64623aae9f7f73f41540b2d3d29",
+  "excerpt_start_rational_seconds": "480/31",
+  "excerpt_duration_seconds": 6,
+  "score_sha256": "8ff48d74baa82d3c3f415e2ead4fba1ee864917ba76ae7a72fab7332fe218055",
+  "timing_precision": "score-note",
+  "audio_excerpt_sha256": "3ead753219ea81334e926e2fd50b071a88ecd7cb01c2b986f4a80968b830c0ec",
+  "listening_review": "未完成主觀聆聽"
+}

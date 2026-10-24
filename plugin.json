@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kinesmith",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bigtongue5566/kinesmith",
+  "repository": "https://github.com/bigtongue5566/kinesmith",
+  "description": "Agent-native, skill-driven, code-first motion graphics studio.",
+  "author": {"name": "Kinesmith contributors"},
+  "license": "MIT",
+  "keywords": ["motion-graphics", "animation", "canvas", "p5js", "threejs", "manim", "blender", "opusmith"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/kinesmith-setup/SKILL.md",
+      "interface": {
+        "displayName": "Kinesmith",
+        "shortDescription": "Craft motion, not just animate it.",
+        "longDescription": "Create editable motion graphics with six native engines, deterministic frames, local audio analysis, visual review and portable Opusmith collaboration.",
+        "developerName": "Kinesmith contributors",
+        "category": "Productivity",
+        "capabilities": ["Create motion graphics", "Render animation", "Synchronize audio"],
+        "defaultPrompt": ["使用 Kinesmith 創作有清楚視覺概念的動態短片，保留可編輯來源並實際渲染檢查。"]
+      }
+    }
+  }
+}

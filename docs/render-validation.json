@@ -1,0 +1,84 @@
+{
+  "status": "rendered-and-technically-checked",
+  "engines": [
+    {
+      "engine": "canvas",
+      "source": "scenes/canvas.html",
+      "source_sha256": "3998ae0eb09f0aff2e51919f8ec5f585c9891dcfc427ab56b49fefb7e75667e3",
+      "video": "outputs\\engines\\canvas.webm",
+      "sha256": "b2b3c2ab2241380054a198525f4fa3b9fa7c1b109f7219ddecf1f059148a4675",
+      "frame_count": 48,
+      "different_representative_frames": true,
+      "technical_checks_passed": true
+    },
+    {
+      "engine": "rough",
+      "source": "scenes/rough.html",
+      "source_sha256": "c5694dd9e8ca5ff16a476fdc35558a14ebe84ac456dd9ae0ef576deab2e2f37e",
+      "video": "outputs\\engines\\rough.webm",
+      "sha256": "3e3bc5a7c23953d896a0c8dd593338c7bcda229ab8227a1daf51b21f68b1f960",
+      "frame_count": 48,
+      "different_representative_frames": true,
+      "technical_checks_passed": true
+    },
+    {
+      "engine": "p5",
+      "source": "scenes/p5.html",
+      "source_sha256": "aa29234f4d02f9789129cfcc06cc680e164f300738c86741885451e721f5b99f",
+      "video": "outputs\\engines\\p5.webm",
+      "sha256": "c445a42ee1a117aebac21aa8fdb75d679a1def110daaade43b09071d2a488ccf",
+      "frame_count": 48,
+      "different_representative_frames": true,
+      "technical_checks_passed": true
+    },
+    {
+      "engine": "three",
+      "source": "scenes/three.html",
+      "source_sha256": "b09a7a209afaca9cfa9557947a7f8265412e8fea7cc64074a39aa1115e278d01",
+      "video": "outputs\\engines\\three.webm",
+      "sha256": "cc2ab5a43b7bc7e9eb362d3aec540bc2c6b5b1ceec0adce7994912d0da69c8b7",
+      "frame_count": 48,
+      "different_representative_frames": true,
+      "technical_checks_passed": true
+    },
+    {
+      "engine": "manim",
+      "source": "scenes/manim_scene.py",
+      "source_sha256": "ddade35e0776946e0835a0282316f41504236459440b8b53fea0df73c6e21ce1",
+      "video": "outputs\\engines\\manim.webm",
+      "sha256": "fb21c6600a866c6c63ab660e9b0c8d689df444cb10096e4af7cfe3be93ee12df",
+      "frame_count": 48,
+      "different_representative_frames": true,
+      "technical_checks_passed": true
+    },
+    {
+      "engine": "blender",
+      "source": "scenes/blender_scene.py",
+      "source_sha256": "7ae7940114a6dd661bf3ee1f4bf51ac7c6f93af9dfc692c08b651a06c3e82bb0",
+      "video": "outputs\\engines\\blender.webm",
+      "sha256": "d348821380d1a026dcad3aadc4a11f568e93ea39b899cc72f2963039593f8374",
+      "frame_count": 48,
+      "different_representative_frames": true,
+      "technical_checks_passed": true
+    }
+  ],
+  "gallery": {
+    "technical_checks_passed": true,
+    "frame_count": 288,
+    "seconds": 12
+  },
+  "cross_engine_transitions": true,
+  "standalone_audio_reactive": true,
+  "local_revision": {
+    "unrelated_scenes_identical": true,
+    "changed_output": true,
+    "music_sha256_unchanged": true
+  },
+  "formats": {
+    "webm": true,
+    "mp4": true,
+    "gif_decoded_frames": 48,
+    "png_sequence_frames": 3
+  },
+  "subjective_review": "Separate actual contact-sheet inspection; audio listening not verified."
+}

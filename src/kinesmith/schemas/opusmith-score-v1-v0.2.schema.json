@@ -1,0 +1,659 @@
+{
+  "$defs": {
+    "Automation": {
+      "additionalProperties": false,
+      "properties": {
+        "parameter": {
+          "enum": [
+            "gain_db",
+            "pan",
+            "cutoff_hz",
+            "lfo_hz"
+          ],
+          "title": "Parameter",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "minItems": 1,
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "parameter",
+        "points"
+      ],
+      "title": "Automation",
+      "type": "object"
+    },
+    "Bend": {
+      "additionalProperties": false,
+      "properties": {
+        "beat": {
+          "minimum": 0,
+          "title": "Beat",
+          "type": "number"
+        },
+        "value": {
+          "maximum": 8191,
+          "minimum": -8192,
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "beat",
+        "value"
+      ],
+      "title": "Bend",
+      "type": "object"
+    },
+    "Control": {
+      "additionalProperties": false,
+      "properties": {
+        "beat": {
+          "minimum": 0,
+          "title": "Beat",
+          "type": "number"
+        },
+        "number": {
+          "maximum": 127,
+          "minimum": 0,
+          "title": "Number",
+          "type": "integer"
+        },
+        "value": {
+          "maximum": 127,
+          "minimum": 0,
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "beat",
+        "number",
+        "value"
+      ],
+      "title": "Control",
+      "type": "object"
+    },
+    "Effects": {
+      "additionalProperties": false,
+      "properties": {
+        "highpass_hz": {
+          "default": 25,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Highpass Hz",
+          "type": "number"
+        },
+        "lowpass_hz": {
+          "default": 18000,
+          "maximum": 20000,
+          "minimum": 20,
+          "title": "Lowpass Hz",
+          "type": "number"
+        },
+        "compressor_db": {
+          "default": -18,
+          "maximum": 0,
+          "minimum": -60,
+          "title": "Compressor Db",
+          "type": "number"
+        },
+        "ratio": {
+          "default": 2,
+          "maximum": 20,
+          "minimum": 1,
+          "title": "Ratio",
+          "type": "number"
+        },
+        "delay_seconds": {
+          "default": 0.375,
+          "maximum": 4,
+          "minimum": 0.001,
+          "title": "Delay Seconds",
+          "type": "number"
+        },
+        "delay_mix": {
+          "default": 0,
+          "maximum": 0.6,
+          "minimum": 0,
+          "title": "Delay Mix",
+          "type": "number"
+        },
+        "reverb_mix": {
+          "default": 0,
+          "maximum": 0.7,
+          "minimum": 0,
+          "title": "Reverb Mix",
+          "type": "number"
+        },
+        "reverb_size": {
+          "default": 0.5,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Reverb Size",
+          "type": "number"
+        },
+        "sidechain_from": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sidechain From"
+        },
+        "duck_db": {
+          "default": 0,
+          "maximum": 24,
+          "minimum": 0,
+          "title": "Duck Db",
+          "type": "number"
+        },
+        "duck_release": {
+          "default": 0.18,
+          "maximum": 2,
+          "minimum": 0.01,
+          "title": "Duck Release",
+          "type": "number"
+        }
+      },
+      "title": "Effects",
+      "type": "object"
+    },
+    "Note": {
+      "additionalProperties": false,
+      "properties": {
+        "lyric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lyric"
+        },
+        "pitch": {
+          "maximum": 127,
+          "minimum": 0,
+          "title": "Pitch",
+          "type": "integer"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "number"
+        },
+        "duration": {
+          "exclusiveMinimum": 0,
+          "title": "Duration",
+          "type": "number"
+        },
+        "velocity": {
+          "default": 96,
+          "maximum": 127,
+          "minimum": 1,
+          "title": "Velocity",
+          "type": "integer"
+        },
+        "articulation": {
+          "default": "normal",
+          "enum": [
+            "normal",
+            "staccato",
+            "tenuto",
+            "accent"
+          ],
+          "title": "Articulation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pitch",
+        "start",
+        "duration"
+      ],
+      "title": "Note",
+      "type": "object"
+    },
+    "Patch": {
+      "additionalProperties": false,
+      "properties": {
+        "engine": {
+          "enum": [
+            "supersaw",
+            "pluck",
+            "acid",
+            "wobble",
+            "reese",
+            "pad",
+            "fm",
+            "additive",
+            "wavetable",
+            "kick",
+            "snare",
+            "hat",
+            "noise",
+            "sample"
+          ],
+          "title": "Engine",
+          "type": "string"
+        },
+        "attack": {
+          "default": 0.008,
+          "maximum": 10,
+          "minimum": 0.001,
+          "title": "Attack",
+          "type": "number"
+        },
+        "decay": {
+          "default": 0.2,
+          "maximum": 10,
+          "minimum": 0.001,
+          "title": "Decay",
+          "type": "number"
+        },
+        "sustain": {
+          "default": 0.55,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Sustain",
+          "type": "number"
+        },
+        "release": {
+          "default": 0.25,
+          "maximum": 10,
+          "minimum": 0.005,
+          "title": "Release",
+          "type": "number"
+        },
+        "cutoff_hz": {
+          "default": 6000,
+          "maximum": 20000,
+          "minimum": 20,
+          "title": "Cutoff Hz",
+          "type": "number"
+        },
+        "resonance": {
+          "default": 0.7,
+          "maximum": 15,
+          "minimum": 0.1,
+          "title": "Resonance",
+          "type": "number"
+        },
+        "detune_cents": {
+          "default": 12,
+          "maximum": 60,
+          "minimum": 0,
+          "title": "Detune Cents",
+          "type": "number"
+        },
+        "voices": {
+          "default": 5,
+          "maximum": 9,
+          "minimum": 1,
+          "title": "Voices",
+          "type": "integer"
+        },
+        "lfo_hz": {
+          "default": 2,
+          "exclusiveMinimum": 0,
+          "maximum": 40,
+          "title": "Lfo Hz",
+          "type": "number"
+        },
+        "fm_ratio": {
+          "default": 2,
+          "exclusiveMinimum": 0,
+          "maximum": 16,
+          "title": "Fm Ratio",
+          "type": "number"
+        },
+        "fm_index": {
+          "default": 2,
+          "maximum": 20,
+          "minimum": 0,
+          "title": "Fm Index",
+          "type": "number"
+        },
+        "drive": {
+          "default": 1,
+          "maximum": 10,
+          "minimum": 0.1,
+          "title": "Drive",
+          "type": "number"
+        },
+        "sample": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sample"
+        },
+        "root_note": {
+          "default": 60,
+          "maximum": 127,
+          "minimum": 0,
+          "title": "Root Note",
+          "type": "integer"
+        },
+        "wavetable": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 65536,
+          "title": "Wavetable",
+          "type": "array"
+        },
+        "partials": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 64,
+          "title": "Partials",
+          "type": "array"
+        }
+      },
+      "required": [
+        "engine"
+      ],
+      "title": "Patch",
+      "type": "object"
+    },
+    "Section": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "number"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "title": "End",
+          "type": "number"
+        },
+        "intent": {
+          "default": "",
+          "title": "Intent",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "start",
+        "end"
+      ],
+      "title": "Section",
+      "type": "object"
+    },
+    "Track": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z][a-z0-9_-]{0,47}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "default": "instrument",
+          "title": "Role",
+          "type": "string"
+        },
+        "program": {
+          "default": 0,
+          "maximum": 127,
+          "minimum": 0,
+          "title": "Program",
+          "type": "integer"
+        },
+        "is_drum": {
+          "default": false,
+          "title": "Is Drum",
+          "type": "boolean"
+        },
+        "gain_db": {
+          "default": -12,
+          "maximum": 12,
+          "minimum": -96,
+          "title": "Gain Db",
+          "type": "number"
+        },
+        "pan": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": -1,
+          "title": "Pan",
+          "type": "number"
+        },
+        "patch": {
+          "$ref": "#/$defs/Patch"
+        },
+        "vocal": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/VocalRender"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "effects": {
+          "$ref": "#/$defs/Effects"
+        },
+        "notes": {
+          "items": {
+            "$ref": "#/$defs/Note"
+          },
+          "title": "Notes",
+          "type": "array"
+        },
+        "controls": {
+          "items": {
+            "$ref": "#/$defs/Control"
+          },
+          "title": "Controls",
+          "type": "array"
+        },
+        "bends": {
+          "items": {
+            "$ref": "#/$defs/Bend"
+          },
+          "title": "Bends",
+          "type": "array"
+        },
+        "automation": {
+          "items": {
+            "$ref": "#/$defs/Automation"
+          },
+          "title": "Automation",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "patch"
+      ],
+      "title": "Track",
+      "type": "object"
+    },
+    "VocalRender": {
+      "additionalProperties": false,
+      "description": "Frozen, aligned OpenUtau audio plus editable source and provenance.",
+      "properties": {
+        "file": {
+          "title": "File",
+          "type": "string"
+        },
+        "ustx": {
+          "title": "Ustx",
+          "type": "string"
+        },
+        "receipt": {
+          "title": "Receipt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "file",
+        "ustx",
+        "receipt"
+      ],
+      "title": "VocalRender",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "format_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Format Version",
+      "type": "integer"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "bpm": {
+      "exclusiveMinimum": 0,
+      "maximum": 400,
+      "title": "Bpm",
+      "type": "number"
+    },
+    "key": {
+      "default": "unspecified",
+      "title": "Key",
+      "type": "string"
+    },
+    "meter": {
+      "default": [
+        4,
+        4
+      ],
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ],
+      "title": "Meter",
+      "type": "array"
+    },
+    "length_beats": {
+      "exclusiveMinimum": 0,
+      "title": "Length Beats",
+      "type": "number"
+    },
+    "seed": {
+      "default": 42,
+      "maximum": 4294967295,
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "genres": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Genres",
+      "type": "array"
+    },
+    "sections": {
+      "items": {
+        "$ref": "#/$defs/Section"
+      },
+      "minItems": 1,
+      "title": "Sections",
+      "type": "array"
+    },
+    "tracks": {
+      "items": {
+        "$ref": "#/$defs/Track"
+      },
+      "minItems": 1,
+      "title": "Tracks",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "target_lufs": {
+      "default": -14,
+      "maximum": -6,
+      "minimum": -30,
+      "title": "Target Lufs",
+      "type": "number"
+    },
+    "ceiling_db": {
+      "default": -1,
+      "maximum": -0.3,
+      "minimum": -6,
+      "title": "Ceiling Db",
+      "type": "number"
+    },
+    "tail_seconds": {
+      "default": 3,
+      "maximum": 20,
+      "minimum": 0.1,
+      "title": "Tail Seconds",
+      "type": "number"
+    }
+  },
+  "required": [
+    "title",
+    "bpm",
+    "length_beats",
+    "sections",
+    "tracks"
+  ],
+  "title": "Score",
+  "type": "object"
+}

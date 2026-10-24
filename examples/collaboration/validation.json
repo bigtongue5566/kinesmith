@@ -1,0 +1,33 @@
+{
+  "status": "rendered-and-technically-checked",
+  "upstream_files_checked_unchanged": 169,
+  "upstream_snapshot": "v003",
+  "imported_notes": 1989,
+  "imported_lyrics": 165,
+  "excerpt_lyric_events": 9,
+  "vocal_timing_precision": "score-note; no phoneme timings supplied by upstream",
+  "visual_request_cues": 2,
+  "returned_music_notes": 20,
+  "music_audio_unchanged_by_visual_revision": true,
+  "unrelated_scene_unchanged": true,
+  "original_editable_source_unchanged": true,
+  "results": {
+    "music-first": {
+      "video_sha256": "89b6e83a6c454b10bcd523b35e7a9828389c43c2a014aede78adf69f872a5b2a",
+      "qa": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\music-first\\qa"
+    },
+    "visual-first": {
+      "video_sha256": "d33401caed9bca3513b811e0a1e8519c7e3ad4ffdda118b493afd6e80d07e93c",
+      "qa": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\qa"
+    },
+    "joint": {
+      "video_sha256": "64ae3f5072db2e2a8fb6a9a42e967ff496c40dbfe21e97eefb31b0ae515b4c90",
+      "qa": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\joint-qa",
+      "unrelated_scene_raw_frames_identical": true,
+      "unrelated_scene_cache_reused": true
+    }
+  },
+  "subjective_audio_visual_review": "尚待人工聆聽／視覺評審；技術量測不是藝術品質驗收",
+  "visual_request_source_snapshot": "visual-first/picture-v1-request.json",
+  "original_request_preserved": "visual-first/visual-request-v1-original.av.json"
+}

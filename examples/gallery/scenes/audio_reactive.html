@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kinesmith / Audio reactive</title>
+<style>html,body{margin:0;background:#101c2e}canvas{display:block}</style><canvas id="stage"></canvas>
+<script>
+const c=document.querySelector('#stage'),g=c.getContext('2d');
+window.renderFrame=(frame,ctx)=>{
+ c.width=ctx.width;c.height=ctx.height;g.setTransform(ctx.width/640,0,0,ctx.height/360,0,0);g.fillStyle='#101c2e';g.fillRect(0,0,640,360);
+ let features=ctx.features,t=ctx.globalFrame/ctx.fps_number-(ctx.params.audioOffset||0),samples=features?.frames||[];
+ function at(time){if(!features||time<0||time>=features.duration_seconds)return{energy:0,low:0,mid:0,high:0,onset:0};return samples[Math.min(samples.length-1,Math.floor(time/features.hop_seconds))]}
+ let f=at(t);g.fillStyle='#f2e6cf';g.font='11px Arial';g.fillText('AUDIO REACTIVE / NO MUSIC PLUGIN REQUIRED',34,34);g.fillStyle='#8294a9';g.fillText('RMS + FREQUENCY BANDS / ONSETS ARE ESTIMATES',34,330);
+ for(let j=0;j<3;j++){
+  let val=f[['low','mid','high'][j]],r=34+j*22+val*15;g.beginPath();g.arc(320,150,r,-Math.PI/2,-Math.PI/2+Math.PI*2*(.2+val*.8));g.strokeStyle=['#65d4cf','#f2e6cf','#ff775a'][j];g.lineWidth=3;g.stroke();
+ }
+ g.fillStyle='#65d4cf';g.beginPath();g.arc(320,150,8+f.energy*14,0,Math.PI*2);g.fill();
+ for(let i=0;i<90;i++){
+  let sf=at(t-2+i/45),h=sf.energy*40,x=50+i*6;g.fillStyle=i>86?'#ff775a':'#65d4cf';g.fillRect(x,263-h,3,h*2+1);
+ }
+ for(let j=0;j<3;j++){let x=48+j*180;g.fillStyle='#8294a9';g.font='11px Arial';g.fillText(['LOW / 20–250 HZ','MID / 250–4K HZ','HIGH / 4K–11K HZ'][j],x,77)}
+};
+</script></html>

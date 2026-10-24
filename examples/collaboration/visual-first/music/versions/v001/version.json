@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "time_utc": "2026-10-24T20:30:59.608956+00:00",
+  "sha256": {
+    "assets.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "ASSET_CREDITS.md": "2f8acb8b25d1478fd0d9bd74afdbde8ab042b3a1b42608c2587bf52b6ea40531",
+    "COMPOSITION_REPORT.md": "0ffad0e949269903f0018d1cb6e72337d7de856d71b24329089b5c7c1ee1748d",
+    "CREATIVE_BRIEF.md": "aa400760b643ab939f197016e65f9ae324c39617847ab7566f543f0fb4aed199",
+    "multitrack.mid": "29485172b89d462b6509de774dde2b6c9cd7ff700b44507351d7eec3685eddd5",
+    "QUALITY_REPORT.md": "8ee0dc6e2ee4781f701841198cf34f9121ab5152af36ba8a73c8a8a392d0df36",
+    "score.json": "69aeb286068b26096a44364ddfed01ed1cbc1773113ef1c977847986ae7872f2",
+    "source.py": "8ad31b2b629454d9ab93c05bc87531e4e1f1b197be3517e7a2958582d7427897",
+    "audio/master.wav": "a930514c0f58e5dac07df97dd851ba595236fbbf9917bc6f2f12609e29f4f589",
+    "audio/premaster.wav": "5984f73d37b9132acedba3156941eeb5792a2944b105357ed09756f78658082f",
+    "audio/render.json": "7197753baf60a7d6463bad3eb64cffb851f0aa57deac92ecf4e22235acf0e2ab",
+    "audio/stems/foundation.flac": "6e9af4d68185883ddd59007a8da467f9001fb64efeb32d13fc846f64ad08656b",
+    "audio/stems/pluck.flac": "4ee71509d931ed577ff0b18025fcdca82691e2e07396d679a626f8bb0fbfc5ca",
+    "audio/stems/pulse.flac": "31929b6615f8e06ecd033f0d2b207ae15a4cf7dfb7aa13f754e3185e58b8499f"
+  },
+  "commercial_ready": true
+}

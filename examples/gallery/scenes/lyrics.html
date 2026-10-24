@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kinesmith / Lyrics</title>
+<style>html,body{margin:0;background:#101c2e}canvas{display:block}</style><canvas id="stage"></canvas>
+<script>
+const c=document.querySelector('#stage'),g=c.getContext('2d');
+window.renderFrame=(frame,ctx)=>{
+ c.width=ctx.width;c.height=ctx.height;g.setTransform(ctx.width/640,0,0,ctx.height/360,0,0);g.fillStyle='#101c2e';g.fillRect(0,0,640,360);
+ let t=ctx.globalFrame/ctx.fps_number,lyrics=ctx.interchange?.lyrics||[],active=lyrics.find(x=>t>=x.start_seconds&&t<x.end_seconds);
+ g.fillStyle='#8294a9';g.font='11px Arial';g.fillText('LYRIC TIMING / EXPLICIT SOURCES',34,34);
+ if(!active){g.fillStyle='#f2e6cf';g.font='bold 28px Arial';g.textAlign='center';g.fillText(lyrics.length?'Listen to the space.':'Import timed lyrics to begin.',320,183);g.textAlign='left';return}
+ let progress=Math.max(0,Math.min(1,(t-active.start_seconds)/(active.end_seconds-active.start_seconds))),text=active.text||active.lyric||'';
+ // Font size adapts to the complete line before clipping the highlight.
+ let size=42;do{g.font=`bold ${size}px Arial`;if(g.measureText(text).width<=560)break;size--}while(size>12);
+ let width=g.measureText(text).width,x=(640-width)/2,y=185;
+ g.fillStyle='#5c7187';g.fillText(text,x,y);g.save();g.beginPath();g.rect(x-1,110,width*progress+1,100);g.clip();g.fillStyle='#65d4cf';g.fillText(text,x,y);g.restore();
+ g.fillStyle='#ff775a';g.fillRect(40,233,560*progress,3);g.fillStyle='#8294a9';g.font='12px Arial';g.fillText(`${active.timing_precision||'unspecified'} / ${active.source||'contract timing'}`,40,286);
+ g.fillStyle='#f2e6cf';g.fillText('A line sweep is typography, not inferred phoneme alignment.',40,326);
+};
+</script></html>

@@ -1,0 +1,14 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+**/renders/
+**/media/
+**/.render-cache/
+vendor/
+outputs/
+debug.log
+*.log

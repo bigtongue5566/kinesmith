@@ -1,0 +1,353 @@
+{
+  "format_version": 1,
+  "title": "Form becomes motion / visual cue response",
+  "bpm": 120.0,
+  "key": "D minor",
+  "meter": [
+    4,
+    4
+  ],
+  "length_beats": 12.0,
+  "seed": 73,
+  "genres": [],
+  "sections": [
+    {
+      "name": "form",
+      "start": 0.0,
+      "end": 6.0,
+      "intent": "形狀展開，留白"
+    },
+    {
+      "name": "motion",
+      "start": 6.0,
+      "end": 12.0,
+      "intent": "動作擴張，增加密度"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pluck",
+      "name": "Form motif",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -21.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "pluck",
+        "attack": 0.004,
+        "decay": 0.3,
+        "sustain": 0.1,
+        "release": 0.28,
+        "cutoff_hz": 3500.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.0,
+        "fm_index": 2.0,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "vocal": null,
+      "effects": {
+        "highpass_hz": 25.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.08,
+        "reverb_size": 0.35,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "lyric": null,
+          "pitch": 62,
+          "start": 0.0,
+          "duration": 0.65,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 65,
+          "start": 1.5,
+          "duration": 0.65,
+          "velocity": 80,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 69,
+          "start": 3.0,
+          "duration": 0.65,
+          "velocity": 85,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 65,
+          "start": 4.5,
+          "duration": 0.65,
+          "velocity": 76,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 74,
+          "start": 6.0,
+          "duration": 0.65,
+          "velocity": 100,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 72,
+          "start": 7.0,
+          "duration": 0.65,
+          "velocity": 85,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 69,
+          "start": 8.0,
+          "duration": 0.65,
+          "velocity": 90,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 65,
+          "start": 9.0,
+          "duration": 0.65,
+          "velocity": 80,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 69,
+          "start": 10.0,
+          "duration": 0.65,
+          "velocity": 90,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 62,
+          "start": 11.0,
+          "duration": 0.65,
+          "velocity": 82,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    },
+    {
+      "id": "pulse",
+      "name": "Motion accents",
+      "role": "drums",
+      "program": 0,
+      "is_drum": true,
+      "gain_db": -20.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "kick",
+        "attack": 0.003,
+        "decay": 0.12,
+        "sustain": 0.0,
+        "release": 0.06,
+        "cutoff_hz": 6000.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.0,
+        "fm_index": 2.0,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "vocal": null,
+      "effects": {
+        "highpass_hz": 25.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.0,
+        "reverb_size": 0.5,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 0.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 3.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 6.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 7.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 8.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 9.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 10.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 36,
+          "start": 11.0,
+          "duration": 0.15,
+          "velocity": 92,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    },
+    {
+      "id": "foundation",
+      "name": "Low anchor",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -27.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "fm",
+        "attack": 0.02,
+        "decay": 0.2,
+        "sustain": 0.25,
+        "release": 0.15,
+        "cutoff_hz": 900.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 1.0,
+        "fm_index": 0.2,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "vocal": null,
+      "effects": {
+        "highpass_hz": 25.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.0,
+        "reverb_size": 0.5,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "lyric": null,
+          "pitch": 38,
+          "start": 0.0,
+          "duration": 5.5,
+          "velocity": 80,
+          "articulation": "normal"
+        },
+        {
+          "lyric": null,
+          "pitch": 38,
+          "start": 6.0,
+          "duration": 5.5,
+          "velocity": 88,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    }
+  ],
+  "decisions": [
+    "Responds to two 3-second picture cues at quarter-note beats 0 and 6.",
+    "Six-second body plus 0.4-second effects tail, intentionally trimmed by picture edit.",
+    "Original local synthesis only, no third-party samples or generative model."
+  ],
+  "target_lufs": -14.0,
+  "ceiling_db": -1.0,
+  "tail_seconds": 0.4
+}

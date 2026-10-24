@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "id": "visual-first-cue-response",
+  "title": "visual-first-cue-response",
+  "revision": 2,
+  "fps": "24",
+  "width": 640,
+  "height": 360,
+  "duration_frames": 144,
+  "seed": 73,
+  "prompt": "Kinesmith 與 Opusmith 雙向協作驗收；不宣稱為使用者指定完整創作。",
+  "scenes": [
+    {
+      "id": "form",
+      "engine": "canvas",
+      "source": "scenes/canvas.html",
+      "start_frame": 0,
+      "duration_frames": 72,
+      "params": {
+        "accent": "#65d4cf"
+      }
+    },
+    {
+      "id": "motion",
+      "engine": "canvas",
+      "source": "scenes/canvas.html",
+      "start_frame": 72,
+      "duration_frames": 72,
+      "params": {
+        "accent": "#b8a0ff"
+      }
+    }
+  ],
+  "audio": {
+    "source": "music/versions/v001/audio/master.wav",
+    "offset_seconds": 0
+  },
+  "interchange": "music-return.av.json",
+  "revisions": [
+    {
+      "revision": 2,
+      "scene": "motion",
+      "prompt": "只改第二場景為紫色；音樂與其他場景保持原樣。",
+      "timestamp": "2026-10-24T20:32:24.542924+00:00",
+      "previous_source_sha256": "3998ae0eb09f0aff2e51919f8ec5f585c9891dcfc427ab56b49fefb7e75667e3",
+      "source_sha256": "3998ae0eb09f0aff2e51919f8ec5f585c9891dcfc427ab56b49fefb7e75667e3",
+      "params": {
+        "accent": "#b8a0ff"
+      }
+    }
+  ]
+}

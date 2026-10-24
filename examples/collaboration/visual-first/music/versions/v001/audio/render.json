@@ -1,0 +1,108 @@
+{
+  "master": {
+    "duration_seconds": 6.4,
+    "sample_rate": 44100,
+    "channels": 2,
+    "finite": true,
+    "non_silent": true,
+    "rms_dbfs": -23.458221946149735,
+    "sample_peak_dbfs": -1.0339458238268024,
+    "estimated_true_peak_dbfs": -1.0000002900227403,
+    "integrated_lufs": -20.814426909026775,
+    "clipped_samples": 0,
+    "dc_offset": [
+      -2.516084805392893e-06,
+      -2.5147471660602605e-06
+    ],
+    "stereo_correlation": 0.9957277958621608,
+    "mid_rms_dbfs": -23.467510119420982,
+    "side_rms_dbfs": -50.161667704314254,
+    "active_fraction": 1.0,
+    "subjective_listening": "未進行；訊號分析不能代替聆聽。"
+  },
+  "tracks": [
+    {
+      "id": "pluck",
+      "notes": 10,
+      "peak_dbfs": -23.537940092995683,
+      "rms_dbfs": -44.58589747342002,
+      "frames": 282240,
+      "effects": {
+        "highpass_hz": 25.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.08,
+        "reverb_size": 0.35,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      }
+    },
+    {
+      "id": "pulse",
+      "notes": 8,
+      "peak_dbfs": -26.723693974728185,
+      "rms_dbfs": -47.62483008876483,
+      "frames": 282240,
+      "effects": {
+        "highpass_hz": 25.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.0,
+        "reverb_size": 0.5,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      }
+    },
+    {
+      "id": "foundation",
+      "notes": 2,
+      "peak_dbfs": -35.68139473688516,
+      "rms_dbfs": -49.73572764262713,
+      "frames": 282240,
+      "effects": {
+        "highpass_hz": 25.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.0,
+        "reverb_size": 0.5,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      }
+    }
+  ],
+  "mastering": {
+    "method": "LUFS 量測後施加固定增益，以 4 倍過取樣峰值限制增益，無動態 limiter。",
+    "target_lufs": -14.0,
+    "ceiling_dbfs": -1.0,
+    "gain_db": 18.52367828629967,
+    "target_attained": false
+  },
+  "dependencies": {
+    "opusmith": "0.2.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "mido": "1.3.3",
+    "soundfile": "0.14.0",
+    "pedalboard": "0.9.26",
+    "pyloudnorm": "0.2.0"
+  },
+  "sha256": {
+    "master.wav": "a930514c0f58e5dac07df97dd851ba595236fbbf9917bc6f2f12609e29f4f589",
+    "premaster.wav": "5984f73d37b9132acedba3156941eeb5792a2944b105357ed09756f78658082f",
+    "stems/foundation.flac": "6e9af4d68185883ddd59007a8da467f9001fb64efeb32d13fc846f64ad08656b",
+    "stems/pluck.flac": "4ee71509d931ed577ff0b18025fcdca82691e2e07396d679a626f8bb0fbfc5ca",
+    "stems/pulse.flac": "31929b6615f8e06ecd033f0d2b207ae15a4cf7dfb7aa13f754e3185e58b8499f"
+  }
+}

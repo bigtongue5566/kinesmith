@@ -1,0 +1,10 @@
+{
+  "name": "kinesmith",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bigtongue5566/kinesmith",
+  "repository": "https://github.com/bigtongue5566/kinesmith",
+  "description": "Agent-native motion graphics with six native engines, reproducible renders and audio-visual collaboration.",
+  "author": {"name": "Kinesmith contributors"},
+  "license": "MIT",
+  "keywords": ["motion-graphics", "animation", "blender", "threejs", "audio-visual"]
+}

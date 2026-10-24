@@ -1,0 +1,69 @@
+{
+  "contract_version": "1.0",
+  "mode": "visual-first",
+  "timebase": {
+    "fps": "24",
+    "beat_unit": "quarter-note",
+    "frame_rule": "ceil-start-ceil-end-exclusive"
+  },
+  "sources": [
+    {
+      "tool": "kinesmith",
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\examples\\collaboration\\visual-first\\picture-v1-request.json",
+      "sha256": "0cf90f3fbb14e4e3242643e93d1dac49a888503741de5e249b584899b078bf97",
+      "format_version": "1.0",
+      "project_version": "1",
+      "relative_path": "picture-v1-request.json"
+    }
+  ],
+  "capabilities": [
+    "scene-cues",
+    "revision-requests"
+  ],
+  "tempo_map": [],
+  "meter_map": [],
+  "events": [
+    {
+      "kind": "scene",
+      "start_seconds": 0.0,
+      "end_seconds": 3.0,
+      "start_frame": 0,
+      "end_frame": 72,
+      "id": "form",
+      "name": "form",
+      "intent": ""
+    },
+    {
+      "kind": "scene",
+      "start_seconds": 3.0,
+      "end_seconds": 6.0,
+      "start_frame": 72,
+      "end_frame": 144,
+      "id": "motion",
+      "name": "motion",
+      "intent": ""
+    }
+  ],
+  "audio": [],
+  "lyrics": [],
+  "licenses": [],
+  "requests": [
+    {
+      "id": "music-001",
+      "target": "music",
+      "scope": "music",
+      "text": "兩個三秒場景，前三秒留白展開，第三秒增加節奏密度；原創合成音樂，保留 6 秒畫面時長。",
+      "status": "proposed"
+    }
+  ],
+  "links": [],
+  "warnings": [],
+  "duration": {
+    "musical_seconds": null,
+    "audio_seconds": null,
+    "timeline_seconds": 6.0,
+    "offset_seconds": 0,
+    "declared_tail_seconds": null,
+    "audio_measured": false
+  }
+}

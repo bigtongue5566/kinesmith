@@ -1,0 +1,688 @@
+{
+  "format_version": 1,
+  "title": "潮間無時 · Tidal Suspension",
+  "bpm": 72.0,
+  "key": "E Dorian / extended harmony",
+  "meter": [
+    4,
+    4
+  ],
+  "length_beats": 96.0,
+  "seed": 42,
+  "genres": [
+    "Atmospheric Ambient"
+  ],
+  "sections": [
+    {
+      "name": "霧面",
+      "start": 0.0,
+      "end": 25.0,
+      "intent": ""
+    },
+    {
+      "name": "浮游",
+      "start": 25.0,
+      "end": 53.0,
+      "intent": ""
+    },
+    {
+      "name": "潮線",
+      "start": 53.0,
+      "end": 74.0,
+      "intent": ""
+    },
+    {
+      "name": "消散",
+      "start": 74.0,
+      "end": 96.0,
+      "intent": ""
+    }
+  ],
+  "tracks": [
+    {
+      "id": "horizon",
+      "name": "緩變雲層",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -16.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "pad",
+        "attack": 2.8,
+        "decay": 3.0,
+        "sustain": 0.8,
+        "release": 3.4,
+        "cutoff_hz": 2600.0,
+        "resonance": 0.7,
+        "detune_cents": 5.0,
+        "voices": 7,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.0,
+        "fm_index": 2.0,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "effects": {
+        "highpass_hz": 130.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.13,
+        "reverb_mix": 0.4,
+        "reverb_size": 0.82,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "pitch": 52,
+          "start": 0.0,
+          "duration": 14.0,
+          "velocity": 61,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 59,
+          "start": 0.17,
+          "duration": 13.83,
+          "velocity": 64,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 62,
+          "start": 0.34,
+          "duration": 13.66,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 66,
+          "start": 0.51,
+          "duration": 13.49,
+          "velocity": 70,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 69,
+          "start": 0.68,
+          "duration": 13.32,
+          "velocity": 73,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 57,
+          "start": 12.0,
+          "duration": 15.0,
+          "velocity": 61,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 61,
+          "start": 12.17,
+          "duration": 14.83,
+          "velocity": 64,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 64,
+          "start": 12.34,
+          "duration": 42.66,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 71,
+          "start": 12.51,
+          "duration": 14.49,
+          "velocity": 70,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 55,
+          "start": 25.0,
+          "duration": 17.0,
+          "velocity": 61,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 59,
+          "start": 25.17,
+          "duration": 16.83,
+          "velocity": 64,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 66,
+          "start": 25.51,
+          "duration": 16.49,
+          "velocity": 70,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 54,
+          "start": 40.0,
+          "duration": 15.0,
+          "velocity": 61,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 61,
+          "start": 40.17,
+          "duration": 14.83,
+          "velocity": 64,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 69,
+          "start": 40.51,
+          "duration": 14.49,
+          "velocity": 70,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 52,
+          "start": 53.0,
+          "duration": 40.0,
+          "velocity": 61,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 59,
+          "start": 53.17,
+          "duration": 39.83,
+          "velocity": 64,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 62,
+          "start": 53.34,
+          "duration": 17.66,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 66,
+          "start": 53.51,
+          "duration": 39.49,
+          "velocity": 70,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 71,
+          "start": 53.68,
+          "duration": 17.32,
+          "velocity": 73,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 64,
+          "start": 69.34,
+          "duration": 23.66,
+          "velocity": 67,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": [
+        {
+          "parameter": "cutoff_hz",
+          "points": [
+            [
+              0.0,
+              450.0
+            ],
+            [
+              28.0,
+              2200.0
+            ],
+            [
+              48.0,
+              950.0
+            ],
+            [
+              65.0,
+              3300.0
+            ],
+            [
+              96.0,
+              380.0
+            ]
+          ]
+        },
+        {
+          "parameter": "pan",
+          "points": [
+            [
+              0.0,
+              -0.25
+            ],
+            [
+              32.0,
+              0.2
+            ],
+            [
+              64.0,
+              -0.2
+            ],
+            [
+              96.0,
+              0.1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stones",
+      "name": "不規則鐘石",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -20.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "fm",
+        "attack": 0.008,
+        "decay": 1.2,
+        "sustain": 0.08,
+        "release": 2.0,
+        "cutoff_hz": 6000.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.006,
+        "fm_index": 1.8,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "effects": {
+        "highpass_hz": 130.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.13,
+        "reverb_mix": 0.4,
+        "reverb_size": 0.82,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "pitch": 83,
+          "start": 3.0283050139876626,
+          "duration": 2.0,
+          "velocity": 63,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 78,
+          "start": 7.454296793669761,
+          "duration": 1.0,
+          "velocity": 75,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 76,
+          "start": 14.215291141536532,
+          "duration": 3.0,
+          "velocity": 63,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 81,
+          "start": 22.047817226167584,
+          "duration": 1.6,
+          "velocity": 62,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 78,
+          "start": 31.503305214660376,
+          "duration": 2.5,
+          "velocity": 77,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 74,
+          "start": 35.011898158887796,
+          "duration": 2.0,
+          "velocity": 72,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 76,
+          "start": 46.03672463192146,
+          "duration": 3.0,
+          "velocity": 75,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 81,
+          "start": 50.71664139372051,
+          "duration": 2.0,
+          "velocity": 68,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 83,
+          "start": 58.98871496151373,
+          "duration": 2.0,
+          "velocity": 71,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 86,
+          "start": 62.995235350372774,
+          "duration": 2.0,
+          "velocity": 74,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 83,
+          "start": 74.50614037435687,
+          "duration": 3.0,
+          "velocity": 73,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 78,
+          "start": 81.01645098108195,
+          "duration": 2.0,
+          "velocity": 68,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 76,
+          "start": 87.96930461249465,
+          "duration": 4.0,
+          "velocity": 75,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    },
+    {
+      "id": "ground",
+      "name": "低音地景",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -19.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "additive",
+        "attack": 1.3,
+        "decay": 0.2,
+        "sustain": 0.55,
+        "release": 2.2,
+        "cutoff_hz": 500.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.0,
+        "fm_index": 2.0,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.12,
+          0.05
+        ]
+      },
+      "effects": {
+        "highpass_hz": 30.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.0,
+        "reverb_mix": 0.08,
+        "reverb_size": 0.5,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "pitch": 28,
+          "start": 0.0,
+          "duration": 14.0,
+          "velocity": 76,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 33,
+          "start": 12.0,
+          "duration": 15.0,
+          "velocity": 76,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 28,
+          "start": 25.0,
+          "duration": 17.0,
+          "velocity": 76,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 33,
+          "start": 40.0,
+          "duration": 15.0,
+          "velocity": 76,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 28,
+          "start": 53.0,
+          "duration": 40.0,
+          "velocity": 76,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    },
+    {
+      "id": "breath",
+      "name": "濾波呼吸",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -30.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "noise",
+        "attack": 2.0,
+        "decay": 3.0,
+        "sustain": 0.3,
+        "release": 2.0,
+        "cutoff_hz": 1500.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.0,
+        "fm_index": 2.0,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          1.0,
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "effects": {
+        "highpass_hz": 130.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.13,
+        "reverb_mix": 0.4,
+        "reverb_size": 0.82,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "pitch": 60,
+          "start": 9.0,
+          "duration": 9.0,
+          "velocity": 66,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 60,
+          "start": 28.0,
+          "duration": 9.0,
+          "velocity": 66,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 60,
+          "start": 48.0,
+          "duration": 9.0,
+          "velocity": 66,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 60,
+          "start": 72.0,
+          "duration": 9.0,
+          "velocity": 66,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    },
+    {
+      "id": "distant",
+      "name": "遠處泛音",
+      "role": "instrument",
+      "program": 0,
+      "is_drum": false,
+      "gain_db": -24.0,
+      "pan": 0.0,
+      "patch": {
+        "engine": "additive",
+        "attack": 0.7,
+        "decay": 0.2,
+        "sustain": 0.55,
+        "release": 2.4,
+        "cutoff_hz": 4800.0,
+        "resonance": 0.7,
+        "detune_cents": 12.0,
+        "voices": 5,
+        "lfo_hz": 2.0,
+        "fm_ratio": 2.0,
+        "fm_index": 2.0,
+        "drive": 1.0,
+        "sample": null,
+        "root_note": 60,
+        "wavetable": [],
+        "partials": [
+          0.0,
+          1.0,
+          0.1,
+          0.4
+        ]
+      },
+      "effects": {
+        "highpass_hz": 130.0,
+        "lowpass_hz": 18000.0,
+        "compressor_db": -18.0,
+        "ratio": 2.0,
+        "delay_seconds": 0.375,
+        "delay_mix": 0.13,
+        "reverb_mix": 0.4,
+        "reverb_size": 0.82,
+        "sidechain_from": null,
+        "duck_db": 0.0,
+        "duck_release": 0.18
+      },
+      "notes": [
+        {
+          "pitch": 71,
+          "start": 27.0,
+          "duration": 5.5,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 69,
+          "start": 39.0,
+          "duration": 5.5,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 74,
+          "start": 55.0,
+          "duration": 5.5,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 71,
+          "start": 67.0,
+          "duration": 5.5,
+          "velocity": 67,
+          "articulation": "normal"
+        },
+        {
+          "pitch": 69,
+          "start": 78.0,
+          "duration": 5.5,
+          "velocity": 67,
+          "articulation": "normal"
+        }
+      ],
+      "controls": [],
+      "bends": [],
+      "automation": []
+    }
+  ],
+  "decisions": [
+    "無鼓組；不等長且部分交疊的延伸和聲，以共同音 E/B/F# 串連。",
+    "鐘石節奏不對齊每小節；局部音域擴展後回到 E，保留長尾音與留白。",
+    "修訂同音高音符邊界：低音縮短相鄰起音，Ambient 共同音明確連結。"
+  ],
+  "target_lufs": -14.0,
+  "ceiling_db": -1.0,
+  "tail_seconds": 5.0
+}

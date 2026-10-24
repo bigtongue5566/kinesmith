@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "id": "kinesmith-three-study",
+  "title": "three / 原生動畫研究",
+  "revision": 1,
+  "fps": "24",
+  "width": 640,
+  "height": 360,
+  "duration_frames": 48,
+  "seed": 42,
+  "prompt": "以軌道、手勢與流場展示六種原生 MoGraph 技術；原創幾何、深墨色、暖白、青綠與珊瑚色。",
+  "brief": "motion-brief.md",
+  "features": "audio/features.json",
+  "audio": {
+    "source": "audio/electronic-study.wav",
+    "offset_seconds": 0,
+    "gain": 0.8
+  },
+  "licenses": [
+    {
+      "asset": "original graphics, scene code, motion concept",
+      "license": "MIT",
+      "author": "Kinesmith contributors",
+      "source": "This repository; no stock imagery or character assets"
+    },
+    {
+      "asset": "audio/electronic-study.wav",
+      "license": "CC0-1.0",
+      "author": "Kinesmith contributors",
+      "source": "scripts/make_audio_fixture.py; deterministic synthesis, no samples or voicebank"
+    },
+    {
+      "asset": "Arial or system fallback glyphs",
+      "license": "platform-provided font; not redistributed",
+      "source": "Installed OS font rendered by browser/Manim; replace if local font terms require"
+    },
+    {
+      "asset": "Blender text",
+      "license": "Blender bundled Bfont; font pixels rendered, font file not distributed",
+      "source": "Blender installation"
+    },
+    {
+      "asset": "renderer dependencies",
+      "license": "See vendor/manifest.json and THIRD_PARTY_NOTICES.md",
+      "source": "Canvas Web Standard; Rough.js MIT; p5 LGPL-2.1; Three.js MIT; Manim MIT; Blender GPL-3.0-or-later"
+    }
+  ],
+  "revisions": [],
+  "scenes": [
+    {
+      "id": "three",
+      "engine": "three",
+      "source": "scenes/three.html",
+      "start_frame": 0,
+      "duration_frames": 48,
+      "params": {}
+    }
+  ]
+}

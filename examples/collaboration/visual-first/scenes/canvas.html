@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kinesmith / Craft motion</title>
+<style>html,body{margin:0;background:#101c2e}canvas{display:block}</style><canvas id="stage"></canvas>
+<script>
+const canvas=document.querySelector('#stage'),g=canvas.getContext('2d');
+const C={ink:'#101c2e',paper:'#f2e6cf',aqua:'#65d4cf',coral:'#ff775a'};
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),ease=v=>1-Math.pow(1-clamp(v),3);
+function circle(x,y,r,color,width=2){g.beginPath();g.arc(x,y,r,0,Math.PI*2);g.strokeStyle=color;g.lineWidth=width;g.stroke()}
+function feature(ctx){if(!ctx.features)return 0;let t=(ctx.globalFrame/ctx.fps_number)-(ctx.params.audioOffset||0);if(t<0||t>=ctx.features.duration_seconds)return 0;let i=Math.min(ctx.features.frames.length-1,Math.floor(t/ctx.features.hop_seconds));return ctx.features.frames[i]?.energy||0}
+window.renderFrame=(frame,ctx)=>{
+ canvas.width=ctx.width;canvas.height=ctx.height;g.setTransform(ctx.width/640,0,0,ctx.height/360,0,0);
+ const t=ctx.time,u=t/ctx.duration,incoming=ease(t/.7),e=feature(ctx),accent=ctx.params.accent||C.aqua;
+ g.fillStyle=C.ink;g.fillRect(0,0,640,360);
+ g.fillStyle=C.paper;g.font='11px Arial';g.fillText('01 / THE CRAFT OF MOTION',34,34);
+ g.fillStyle='#8294a9';g.fillText('CANVAS / FORM + TIMING',34,330);
+ g.save();g.beginPath();g.rect(30,68,360,170);g.clip();g.translate(0,(1-incoming)*100);
+ g.fillStyle=C.paper;g.font='bold 55px Arial';g.fillText('KINE',32,129);g.fillText('SMITH',32,186);
+ g.font='15px Arial';g.fillStyle=accent;g.fillText('Craft motion, not just animate it.',35,226);g.restore();
+ g.save();g.translate(467,169);g.rotate(-.35+t*.38);
+ for(let i=0;i<5;i++){
+  let r=45+i*17+e*3,span=Math.PI*(.5+incoming*.96);
+  g.beginPath();g.arc(0,0,r,-.5+i*.5,-.5+i*.5+span);g.strokeStyle=i%2?C.paper:accent;g.lineWidth=i===4?4:1.5;g.stroke();
+ }
+ let a=t*2.5;g.fillStyle=C.coral;g.beginPath();g.arc(Math.cos(a)*114,Math.sin(a)*114,10+e*5,0,Math.PI*2);g.fill();
+ g.fillStyle=accent;g.fillRect(-8,-8,16,16);g.restore();
+ g.fillStyle='#34475c';g.fillRect(34,273,572,1);g.fillStyle=accent;g.fillRect(34,271,572*clamp(u),3);
+ g.font='11px Arial';g.fillStyle=C.paper;g.fillText('IDEA',34,300);g.fillText('FORM',280,300);g.fillText('MOTION',554,300);
+ window.kinesmithDiagnostics=[];
+};
+</script></html>

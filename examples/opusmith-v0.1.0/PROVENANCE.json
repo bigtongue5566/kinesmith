@@ -1,0 +1,9 @@
+{
+  "upstream": "https://github.com/bigtongue5566/opusmith",
+  "release": "v0.1.0",
+  "tag_object": "8889ebe577195643cd3e9ea5d1c2e077edad8249",
+  "checked_date": "2026-10-25",
+  "license": "MIT",
+  "files": {"score.json": "examples/projects/ambient/score.json"},
+  "purpose": "保留舊版讀取能力的真實 Opusmith Score fixture。"
+}

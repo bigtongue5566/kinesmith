@@ -1,0 +1,13 @@
+{
+  "upstream": "https://github.com/bigtongue5566/opusmith",
+  "release": "v0.2.0",
+  "commit": "328e630f33af4b8b0ebe178895d1f87120532875",
+  "checked_date": "2026-10-25",
+  "license": "MIT",
+  "files": {
+    "score.json": "examples/projects/seams-of-dawn/versions/v003/score.json",
+    "lead.ustx": "examples/projects/seams-of-dawn/versions/v003/vocals/lead-v3/project.ustx"
+  },
+  "purpose": "原樣保留的真實 Opusmith Score/USTX 相容性 fixture；沒有附帶人聲、聲庫、角色圖像或模型權重。",
+  "limitations": "樂譜歌詞是音符時間，不是實測演唱／音素時間。需要音訊時讀取使用者的原始完整專案或 Release 作品包。"
+}
