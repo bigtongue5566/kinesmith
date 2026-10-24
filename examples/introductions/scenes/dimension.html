@@ -1,0 +1,34 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>Kinesmith / 走進空間</title>
+<style>body{margin:0}canvas{display:block}</style><canvas id="stage"></canvas>
+<script type="module">
+import * as THREE from '/vendor/three/three.module.min.js';
+import {fontReady,text,footer,reveal,clamp,ease} from './drawing.js';
+const c=document.querySelector('#stage'),r=new THREE.WebGLRenderer({canvas:c,antialias:true,preserveDrawingBuffer:true});
+r.setClearColor('#182320',1);r.outputColorSpace=THREE.SRGBColorSpace;r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.35;
+const world=new THREE.Scene(),cam=new THREE.PerspectiveCamera(32,16/9,.1,100);cam.position.set(0,1,12);cam.lookAt(0,0,0);
+world.add(new THREE.HemisphereLight('#f1efdf','#253a22',2.2));
+for(const [color,power,x,y,z] of [['#fff0ca',120,-4,5,5],['#d5f36b',110,5,1,3],['#f65335',70,1,-4,2]]){let l=new THREE.PointLight(color,power);l.position.set(x,y,z);world.add(l)}
+const sculpture=new THREE.Group();sculpture.position.set(2.3,0,0);world.add(sculpture);
+const rings=[];
+for(let i=0;i<5;i++){
+ const mat=new THREE.MeshStandardMaterial({color:i%2?'#d5f36b':'#f65335',metalness:.58,roughness:.25});
+ const ring=new THREE.Mesh(new THREE.TorusGeometry(1.28,.115,20,100),mat);sculpture.add(ring);rings.push(ring);
+}
+const core=new THREE.Mesh(new THREE.IcosahedronGeometry(.53,1),new THREE.MeshStandardMaterial({color:'#f1efdf',metalness:.7,roughness:.19}));sculpture.add(core);
+const overlay=document.createElement('canvas');overlay.width=1920;overlay.height=1080;const g=overlay.getContext('2d');
+const os=new THREE.Scene(),oc=new THREE.OrthographicCamera(-640,640,360,-360,.1,10);oc.position.z=2;
+const tex=new THREE.CanvasTexture(overlay);tex.colorSpace=THREE.SRGBColorSpace;
+os.add(new THREE.Mesh(new THREE.PlaneGeometry(1280,720),new THREE.MeshBasicMaterial({map:tex,transparent:true,depthTest:false})));
+window.kinesmithReady=fontReady;
+window.renderFrame=(frame,ctx)=>{
+ const t=ctx.time;r.setSize(ctx.width,ctx.height,false);cam.aspect=ctx.width/ctx.height;cam.updateProjectionMatrix();
+ const e=ease(t/1.2);sculpture.scale.setScalar(.2+.8*e);sculpture.rotation.set(.25+t*.12,-.4+t*.19,.05);
+ rings.forEach((ring,i)=>{let q=clamp((t-i*.1)/1.8);ring.rotation.set(i*.57+Math.sin(t*.35+i)*.2,i*.46,0);ring.position.z=(1-q)*(i-2)*.8});core.rotation.set(t*.4,t*.5,.2);
+ g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,1920,1080);g.scale(1.5,1.5);window.kinesmithDiagnostics=[];
+ text(g,'03 / NATIVE TOOLS, NEW DIMENSIONS',64,62,16,'#d5f36b',700);
+ reveal(g,t,.1,()=>{text(g,'從平面，',64,233,59,'#f1efdf',750);text(g,'走進空間。',64,312,59,'#f1efdf',750)});
+ reveal(g,t,.5,()=>{text(g,'幾何、材質、光線與鏡頭。',64,407,26,'#f1efdf',450);text(g,'Three.js · Manim · Blender',64,472,23,'#d5f36b',600)});
+ text(g,'本鏡頭以 Three.js 原生渲染',64,612,18,'#9ba897',450);footer(g,'KINESMITH / CRAFT MOTION',3,t,'#38463c','#f1efdf');tex.needsUpdate=true;
+ r.autoClear=true;r.render(world,cam);r.autoClear=false;r.clearDepth();r.render(os,oc);
+};
+</script></html>

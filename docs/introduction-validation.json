@@ -1,0 +1,300 @@
+{
+  "kinesmith": {
+    "video": "outputs\\introductions\\kinesmith-introduction.mp4",
+    "sha256": "b508cc32a5410e5fcb6d3447bd94773d31aa08dd02c515b31b495d95db4511a6",
+    "project_sha256": "67f0ab32e8bf8aa737ad8ef71c93b417ddca5e054b9f2c93d58626811a1acfe2",
+    "measurements": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "frame_count": 1440,
+      "duration_seconds": 48.0,
+      "container_duration_seconds": 48.0,
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "fps_rational": "30/1",
+      "audio_codec": "aac"
+    },
+    "technical_checks_passed": true,
+    "text_bounds_diagnostics": [],
+    "audio": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples": 2304000,
+      "duration_seconds": 48.0,
+      "peak_dbfs": -1.9268778723354236,
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.92,
+      "mono_rms": 0.12835735940565862,
+      "first_50ms_rms": 0.21037916498229572,
+      "final_50ms_rms": 0.000211538138789614,
+      "cues": [
+        {
+          "frame": 0,
+          "time_seconds": 0,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2436283146653306
+        },
+        {
+          "frame": 180,
+          "time_seconds": 6,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2965810279505701
+        },
+        {
+          "frame": 360,
+          "time_seconds": 12,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.32472019405466224
+        },
+        {
+          "frame": 540,
+          "time_seconds": 18,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.30871651784909787
+        },
+        {
+          "frame": 720,
+          "time_seconds": 24,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.30787556436235286
+        },
+        {
+          "frame": 900,
+          "time_seconds": 30,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2966508615557077
+        },
+        {
+          "frame": 1080,
+          "time_seconds": 36,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.30916063068626864
+        },
+        {
+          "frame": 1260,
+          "time_seconds": 42,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.28202149499947027
+        },
+        {
+          "frame": 1380,
+          "time_seconds": 46,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.22682528362338586
+        }
+      ],
+      "sha256": "8b27c16b92a00a7670a53fb133c7204f46ef735d40c3c5cb567e6c59611ed6b5",
+      "subjective_listening": "not_performed",
+      "passed": true
+    },
+    "visual_review": "representative_and_cut_frames_inspected",
+    "full_motion_playback": "not_performed",
+    "subjective_listening": "not_performed",
+    "encoded_audio": {
+      "decoded_audio_samples": 2304000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "integrated_lufs": -16.01,
+      "true_peak_dbtp": -1.94,
+      "cue_waveform_alignment": [
+        {
+          "frame": 0,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 180,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 360,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 540,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 720,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 900,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 1080,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 1260,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 1380,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        }
+      ],
+      "subjective_listening": "not_performed",
+      "passed": true
+    }
+  },
+  "codex": {
+    "video": "outputs\\introductions\\codex-explained.mp4",
+    "sha256": "f30b30a6e181378b30f49617b795faa08909a7e6fd327437c6efc8410120425d",
+    "project_sha256": "51d2b86d62e5fea86795145ead8fa2e7ccf0dea51cb7f03dfd649f72f22719e3",
+    "measurements": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "frame_count": 1440,
+      "duration_seconds": 48.0,
+      "container_duration_seconds": 48.0,
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "fps_rational": "30/1",
+      "audio_codec": "aac"
+    },
+    "technical_checks_passed": true,
+    "text_bounds_diagnostics": [],
+    "audio": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples": 2304000,
+      "duration_seconds": 48.0,
+      "peak_dbfs": -1.000536468690093,
+      "integrated_lufs": -16.02,
+      "true_peak_dbtp": -1.0,
+      "mono_rms": 0.12025116065255965,
+      "first_50ms_rms": 0.16743946657704828,
+      "final_50ms_rms": 4.82249464480207e-05,
+      "cues": [
+        {
+          "frame": 0,
+          "time_seconds": 0,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2007122071302709
+        },
+        {
+          "frame": 180,
+          "time_seconds": 6,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2663884199813409
+        },
+        {
+          "frame": 360,
+          "time_seconds": 12,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2739432763705519
+        },
+        {
+          "frame": 540,
+          "time_seconds": 18,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2493193581510356
+        },
+        {
+          "frame": 720,
+          "time_seconds": 24,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.245375699459972
+        },
+        {
+          "frame": 900,
+          "time_seconds": 30,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.24979947984647893
+        },
+        {
+          "frame": 1080,
+          "time_seconds": 36,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.2526301831203636
+        },
+        {
+          "frame": 1260,
+          "time_seconds": 42,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.22427074018695456
+        },
+        {
+          "frame": 1380,
+          "time_seconds": 46,
+          "event_error_frames": 0,
+          "measured_window_rms": 0.21897130935647752
+        }
+      ],
+      "sha256": "e68288450d1793d04226a6cc81d3fb228b88c2339ced86f0d69b5c9e4d7b5538",
+      "subjective_listening": "not_performed",
+      "passed": true
+    },
+    "visual_review": "representative_and_cut_frames_inspected",
+    "full_motion_playback": "not_performed",
+    "subjective_listening": "not_performed",
+    "encoded_audio": {
+      "decoded_audio_samples": 2304000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "integrated_lufs": -16.03,
+      "true_peak_dbtp": -1.02,
+      "cue_waveform_alignment": [
+        {
+          "frame": 0,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 180,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 360,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 540,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 720,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 900,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 1080,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 1260,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        },
+        {
+          "frame": 1380,
+          "audio_offset_samples": 0,
+          "audio_offset_frames": 0.0
+        }
+      ],
+      "subjective_listening": "not_performed",
+      "passed": true
+    }
+  }
+}

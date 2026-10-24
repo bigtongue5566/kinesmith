@@ -1,0 +1,99 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>Kinesmith — 把想法鍛造成動態</title>
+<style>html,body{margin:0}canvas{display:block}</style><canvas id="stage"></canvas>
+<script src="/vendor/rough/rough.js"></script><script type="module">
+import {fontReady,surface,text,rect,line,dot,reveal,chip,footer,arrow,check,ease,clamp,mix} from './drawing.js';
+const canvas=document.querySelector('#stage');
+const C={ink:'#182320',paper:'#f1efdf',red:'#f65335',lime:'#d5f36b',grey:'#8c968a',soft:'#dfdfcd'};
+window.kinesmithReady=fontReady;
+function rosette(g,x,y,r,t,color){
+ g.save();g.translate(x,y);g.rotate(-.35+t*.18);
+ for(let i=0;i<14;i++){g.save();g.rotate(i*Math.PI/7);rect(g,r*.18,-r*.16,r*.76,r*.32,r*.16,color);g.restore()}
+ dot(g,0,0,r*.27,C.ink);dot(g,0,0,r*.12,C.paper);g.restore();
+}
+function header(g,n,title,t,dark=false){
+ const ink=dark?C.paper:C.ink;text(g,n,64,62,16,dark?C.lime:C.red,700);
+ reveal(g,t,0,()=>text(g,title,64,145,49,ink,750));
+}
+function tile(g,x,y,w,h,type,t){
+ g.save();g.beginPath();g.roundRect(x,y,w,h,10);g.clip();rect(g,x,y,w,h,10,type===1?C.lime:C.ink);
+ g.translate(x+w/2,y+h/2);
+ if(type===0){g.rotate(t*.15);for(let j=0;j<5;j++){g.strokeStyle=j%2?C.red:C.paper;g.lineWidth=11;g.beginPath();g.arc(0,0,30+j*22,j*.4,j*.4+Math.PI*1.5);g.stroke()}}
+ if(type===1){g.fillStyle=C.ink;g.font='800 82px Studio';g.textAlign='center';g.fillText('動',0,25);g.textAlign='left';dot(g,74*Math.sin(t),60,12,C.red)}
+ if(type===2){for(let j=0;j<16;j++){let a=j/16*Math.PI*2;dot(g,Math.cos(a+t*.25)*75,Math.sin(a+t*.25)*75,6+(j%3)*4,j%2?C.red:C.lime)}}
+ g.restore();
+}
+window.renderFrame=(frame,ctx)=>{
+ const g=surface(canvas,ctx),s=ctx.params.chapter,t=Math.min(ctx.time,s===7?4.25:6),p=ease(t/.9);
+ const dark=[0,3,5,7].includes(s),bg=dark?C.ink:C.paper,fg=dark?C.paper:C.ink;
+ rect(g,0,0,1280,720,0,bg);
+ if(s===0){
+  text(g,'AGENTIC MOTION GRAPHICS STUDIO',64,62,16,C.lime,650);
+  reveal(g,t,.05,()=>text(g,'Kine',59,260,150,C.paper,850));
+  reveal(g,t,.19,()=>text(g,'smith',59,410,150,C.paper,850));
+  g.save();g.translate(968,300);g.scale(p,p);rosette(g,0,0,190,Math.min(t,3),C.red);g.restore();
+  reveal(g,t,.65,()=>text(g,'把想法，鍛造成動態。',64,507,46,C.lime,700));
+  reveal(g,t,1.05,()=>text(g,'讓 Codex 與 Claude Code 成為動態視覺創作夥伴。',64,563,26,C.paper,450));
+  line(g,835,537,1160,537,C.grey,1);text(g,'Craft motion,',840,581,24,C.paper,500);text(g,'not just animate it.',840,616,24,C.paper,500);
+ }
+ if(s===1){
+  header(g,'01 / FROM A THOUGHT TO A FILM','一句想法，展開一部作品。',t);
+  reveal(g,t,.2,()=>{rect(g,64,200,1152,90,15,C.ink);text(g,'「做一支有節奏、有空間感的品牌介紹。」',95,257,31,C.paper,500)});
+  let q=ease((t-.6)/1.1);arrow(g,640,306,640,333+q*20,C.red,4);
+  for(let i=0;i<3;i++){let x=64+i*395;reveal(g,t,.85+i*.16,()=>{tile(g,x,377,362,192,i,t);text(g,['視覺概念','分鏡與節奏','原生程式動畫'][i],x,611,25,C.ink,650)})}
+ }
+ if(s===2){
+  header(g,'02 / FORM, TYPE & PROCEDURE','形狀、文字，都有節奏。',t);
+  const rc=rough.canvas(canvas);g.save();g.translate(0,8);
+  for(let i=0;i<3;i++){let x=64+395*i;rect(g,x,210,362,314,12,i===1?C.ink:C.soft)}
+  g.save();g.translate(245,367);g.rotate(-.5+Math.sin(t*.7)*.25);rect(g,-100,-100,200,200,45,C.red);dot(g,35,-35,72,C.lime);g.restore();
+  text(g,'動',640,406,130,C.paper,850,'center');line(g,531,432,531+210*ease((t-.4)/1),432,C.lime,9);
+  // Rough.js draws directly into the same transformed native Canvas context.
+  rc.circle(1035,367,192,{seed:19,stroke:C.ink,strokeWidth:3,roughness:1.6,fill:C.lime,fillStyle:'hachure',hachureGap:9});
+  for(let j=0;j<40;j++){let a=j*2.399+t*.13,r=15+Math.sqrt(j)*12;dot(g,1035+Math.cos(a)*r,367+Math.sin(a)*r,2+(j%3),C.red)}
+  g.restore();
+  ['幾何與形變','動態字排','手繪與程序圖形'].forEach((x,i)=>text(g,x,64+395*i,584,23,C.ink,600));
+  text(g,'Canvas API · Rough.js · p5.js：依作品選擇原生工具。',64,631,23,C.grey,450);
+ }
+ if(s===4){
+  header(g,'04 / PRECISE TIME, EDITABLE SOURCE','每一格，都能重現。',t);
+  const x0=235,x1=1178,y=255,play=mix(x0,x1,clamp(t/5));
+  ['場景','圖層','配樂'].forEach((label,i)=>text(g,label,64,y+51+i*104,25,C.ink,600));
+  for(let i=0;i<9;i++){const x=x0+(x1-x0)*i/8;line(g,x,215,x,559,C.soft,1);text(g,`${i*24}f`,x,202,16,C.grey,500,'center')}
+  for(let i=0;i<4;i++){let x=x0+i*235;rect(g,x,y,222,76,8,[C.red,C.lime,C.ink,C.red][i]);text(g,`SCENE 0${i+1}`,x+15,y+47,18,i===2?C.paper:C.ink,650)}
+  rect(g,x0+100,y+104,360,76,8,C.soft);rect(g,x0+480,y+104,415,76,8,C.soft);
+  for(let i=0;i<150;i++){let x=x0+i*6.25,h=8+28*Math.abs(Math.sin(i*.47)*Math.cos(i*.13));line(g,x,502-h,x,502+h,C.ink,2)}
+  line(g,play,226,play,552,C.red,3);dot(g,play,223,6,C.red);
+  chip(g,'整數影格',64,591,C.ink,C.paper,176);chip(g,'可編輯來源',258,591,C.lime,C.ink,192);chip(g,'可重現渲染',468,591,C.soft,C.ink,192);
+  text(g,'時間軸示意',1216,625,16,C.grey,450,'right');
+ }
+ if(s===5){
+  header(g,'05 / AUDIO ↔ VISUAL','音樂與畫面，彼此回應。',t,true);
+  const pulse=Math.exp(-((t% .5)/.12));
+  text(g,'Opusmith',64,253,38,C.paper,700);text(g,'Kinesmith',950,253,38,C.paper,700);
+  for(let i=0;i<66;i++){let x=68+i*6.2,h=12+56*Math.abs(Math.sin(i*.4+t*2)*Math.sin(i*.1+1));line(g,x,397-h,x,397+h,C.lime,3)}
+  for(let j=0;j<5;j++){let r=32+j*20+pulse*8;g.beginPath();g.arc(1060,397,r,-.5+j*.5,4.8+j*.5);g.strokeStyle=j%2?C.paper:C.red;g.lineWidth=7;g.stroke()}
+  arrow(g,515,357,805,357,C.red,4);arrow(g,805,427,515,427,C.lime,4);
+  dot(g,mix(515,805,(t%2)/2),357,7,C.paper);dot(g,mix(805,515,(t%2)/2),427,7,C.paper);
+  text(g,'節拍・段落・歌詞時間',64,518,26,C.paper,500);text(g,'場景・情緒・修訂需求',850,518,26,C.paper,500);
+  ['Music-First','Visual-First','Joint Creation'].forEach((a,i)=>chip(g,a,64+290*i,582,i===1?C.red:C.lime,C.ink,263));
+ }
+ if(s===6){
+  header(g,'06 / REVISE WITH INTENT','只改你指定的那一幕。',t);
+  for(let i=0;i<3;i++){
+   const x=64+395*i;tile(g,x,245,362,222,i,t*.4);
+   if(i===1){g.save();g.beginPath();g.roundRect(x,245,362,222,10);g.clip();const w=362*ease((t-.9)/1.3);rect(g,x,245,w,222,0,C.red);text(g,'動',x+181,396,94,C.paper,850,'center');g.restore();
+    g.strokeStyle=C.red;g.lineWidth=3;g.strokeRect(x-8,237,378,238);chip(g,'指定場景',x+80,501,C.red,C.paper,202)
+   }else{check(g,x+181,519,C.ink,1.3);text(g,'保留原有內容',x+181,578,24,C.grey,500,'center')}
+  }
+  text(g,'來源、作品版本、素材授權與渲染報告，一起留下。',64,630,25,C.ink,500);
+ }
+ if(s===7){
+  const q=ease(t/.9);g.save();g.translate(640,192);g.scale(q,q);rosette(g,0,0,86,Math.min(t,2),C.red);g.restore();
+  reveal(g,t,.18,()=>text(g,'Kinesmith',640,387,108,C.paper,800,'center'));
+  reveal(g,t,.55,()=>text(g,'Craft motion, not just animate it.',640,454,34,C.lime,550,'center'));
+  reveal(g,t,.9,()=>text(g,'Codex  +  Claude Code',640,532,25,C.paper,500,'center'));
+  reveal(g,t,1.2,()=>text(g,'github.com/bigtongue5566/kinesmith',640,594,24,C.paper,450,'center'));
+ }
+ footer(g,'KINESMITH / CRAFT MOTION',s,t,dark?'#38463c':'#d4d7c8',fg);
+};
+</script></html>

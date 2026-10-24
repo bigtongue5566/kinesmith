@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>Kinesmith / 音樂與視覺</title>
+<style>body{margin:0}canvas{display:block}</style><canvas id="stage"></canvas>
+<script type="module">
+import {fontReady,surface,text,rect,line,dot,reveal,chip,footer,arrow,mix} from './drawing.js';
+const canvas=document.querySelector('#stage');
+const C={ink:'#182320',paper:'#f1efdf',red:'#f65335',lime:'#d5f36b'};
+window.kinesmithReady=fontReady;
+window.renderFrame=(frame,ctx)=>{
+ const g=surface(canvas,ctx),t=ctx.time,pulse=Math.exp(-((t%.5)/.12));
+ rect(g,0,0,1280,720,0,C.ink);
+ text(g,'05 / AUDIO ↔ VISUAL',64,62,16,C.lime,700);
+ reveal(g,t,0,()=>text(g,'音樂與畫面，彼此回應。',64,145,49,C.paper,750));
+ text(g,'Opusmith',64,253,38,C.paper,700);text(g,'Kinesmith',950,253,38,C.paper,700);
+ for(let i=0;i<66;i++){
+  const x=68+i*6.2,h=12+56*Math.abs(Math.sin(i*.4+t*2)*Math.sin(i*.1+1));
+  line(g,x,397-h,x,397+h,C.lime,3);
+ }
+ for(let j=0;j<5;j++){
+  const r=32+j*20+pulse*8;g.beginPath();g.arc(1060,397,r,-.5+j*.5,4.8+j*.5);
+  g.strokeStyle=j%2?C.paper:C.red;g.lineWidth=7;g.stroke();
+ }
+ arrow(g,515,357,805,357,C.red,4);arrow(g,805,427,515,427,C.lime,4);
+ dot(g,mix(515,805,(t%2)/2),357,7,C.paper);dot(g,mix(805,515,(t%2)/2),427,7,C.paper);
+ // Keep text below the outer radius at the loudest authored beat.
+ text(g,'節拍・段落・歌詞時間',64,554,26,C.paper,500);
+ text(g,'場景・情緒・修訂需求',850,554,26,C.paper,500);
+ ['Music-First','Visual-First','Joint Creation'].forEach((a,i)=>chip(g,a,64+290*i,600,i===1?C.red:C.lime,C.ink,263));
+ footer(g,'KINESMITH / CRAFT MOTION',5,t,'#38463c',C.paper);
+};
+</script></html>

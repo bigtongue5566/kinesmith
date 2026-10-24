@@ -11,7 +11,7 @@ from kinesmith.project import ROOT
 def main():
     entries = []
     excluded = {'.render-cache', '__pycache__', '.venv', '.cache', 'media'}
-    for folder in ('examples/gallery', 'examples/collaboration', 'outputs'):
+    for folder in ('examples/gallery', 'examples/collaboration', 'examples/introductions', 'outputs'):
         for path in (ROOT / folder).rglob('*'):
             relative = path.relative_to(ROOT)
             if path.is_file() and not excluded.intersection(relative.parts):

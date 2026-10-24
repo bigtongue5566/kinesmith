@@ -41,10 +41,14 @@
 
 本機 Python 3.11.13、Playwright 1.64.1／Chromium 156.0.8078.4、Manim 0.19.2、bpy 4.2.0、FFmpeg 7.1；完整依賴由 uv.lock 固定。Browser 使用離線 route.fulfill 供應本地素材與固定 seed；Blender 使用 CPU Cycles、4 threads；每個原生引擎逐影格輸出，非螢幕錄製。原生影格、editable.blend 與消費來源快照保存在作品 .render-cache，交付的獨立 .blend 另存 outputs/editable-orbital.blend。最後另比對雙平台安裝副本的全部核心 .py，與交付原始碼一致；Plugin ZIP 每個檔案皆符合 source-manifest SHA256，三個交付 ZIP 完整性檢查通過。
 
+## 新增完整介紹作品
+
+2026-10-25 新增「Kinesmith：把想法鍛造成動態」及「Codex 是什麼？」兩部作品，各 48 秒、1920×1080、30fps、1440 個真實渲染影格，配上不同的原創電子配樂。兩片完整解碼、文字邊界、AAC 量測與 9 個 Cue 波形對齊通過；另有實際代表／切點連續影格視覺抽查、Kinesmith 單幕修訂與其餘七幕逐影格雜湊保留證據。詳細數據及未測項目見 [介紹作品 Motion Report](introduction-films.md) 與 `introduction-validation.json`。這是新增作品驗證，未以此宣稱重新驗證全部平台或全部六種引擎。
+
 ## 實際限制
 
 - 尚未在 Codex／Claude 登入模型回合中實際測試 Skills 遵循與原生角色委派；已驗證的是原生可發現性、安裝及安裝後真實渲染。創作使用目前 Agent，沒有額外呼叫其他模型。
 - 沒有宣稱已主觀聆聽配樂／演唱、完成全片連續觀看或逐音素歌唱對齊；技術同步與代表影格檢查不能取代這些項目。
-- 真實驗收環境是 Windows x64、640×360、24 FPS；分數 FPS 另有影片測試。1080p／4K、長片、大量圖層、Linux／macOS、各 GPU 未逐一實機驗證。可用格式並非所有環境一定有相同編碼器。
+- 初版六引擎驗收環境是 Windows x64、640×360、24 FPS；分數 FPS 另有影片測試。新增介紹作品已實測 Windows x64、1920×1080、30fps；4K、長片、大量圖層、Linux／macOS、各 GPU 未逐一實機驗證。可用格式並非所有環境一定有相同編碼器。
 - 像素級重現性限相同工具／字型／渲染環境；未承諾跨 GPU／作業系統位元相同。更新 Opusmith 時先偵測能力、驗證新 Schema，再新增 profile；未知版本維持明確降級。
 - 所有外部字型、聲庫、角色、取樣與新增素材都要保留個別授權紀錄；本範例的特定條款查核不能推廣為所有素材皆可商用。

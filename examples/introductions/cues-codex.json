@@ -1,0 +1,73 @@
+[
+  {
+    "frame": 0,
+    "time_seconds": 0,
+    "title": "Codex 是什麼？OpenAI 的 AI 程式開發代理。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 1 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 180,
+    "time_seconds": 6,
+    "title": "先理解，再動手：讀取專案脈絡與既有規範。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 2 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 360,
+    "time_seconds": 12,
+    "title": "把需求，變成可檢查的修改。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 3 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 540,
+    "time_seconds": 18,
+    "title": "執行、測試、再修正。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 4 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 720,
+    "time_seconds": 24,
+    "title": "在桌面 App、CLI、IDE 或 Web 協作。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 5 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 900,
+    "time_seconds": 30,
+    "title": "Skills 保存方法，Plugin 讓別人也能安裝。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 6 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 1080,
+    "time_seconds": 36,
+    "title": "你定方向，也審查差異與驗證結果。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 7 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 1260,
+    "time_seconds": 42,
+    "title": "從一個清楚的任務開始，把開發工作一步步做到完成。",
+    "sound_event": "authored keys onset / chord boundary",
+    "visual_event": "chapter 8 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 1380,
+    "time_seconds": 46,
+    "sound_event": "final C-major resolution",
+    "visual_event": "final card settled; hold to end",
+    "tolerance_frames": 1
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "id": "kinesmith-introduction",
+  "title": "Kinesmith：把想法鍛造成動態",
+  "revision": 2,
+  "fps": "30",
+  "width": 1920,
+  "height": 1080,
+  "duration_frames": 1440,
+  "seed": 640,
+  "prompt": "新增一支介紹 Kinesmith 專案的完整短片",
+  "brief": "brief-kinesmith.md",
+  "dependencies": [
+    "assets/NotoSansTC-VF.ttf"
+  ],
+  "audio": {
+    "source": "audio/kinesmith-score.wav",
+    "offset_seconds": 0,
+    "gain": 1
+  },
+  "licenses": [
+    {
+      "asset": "scene code, original graphics and animation",
+      "license": "MIT",
+      "author": "Kinesmith contributors",
+      "source": "This repository"
+    },
+    {
+      "asset": "audio/kinesmith-score.wav and MIDI composition",
+      "license": "CC0-1.0",
+      "author": "Kinesmith contributors",
+      "source": "examples/introductions/compose.py; no samples"
+    },
+    {
+      "asset": "NotoSansTC-VF.ttf",
+      "license": "OFL-1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/notosanstc",
+      "notice": "assets/OFL-NotoSansTC.txt; unmodified font"
+    },
+    {
+      "asset": "render tools and codecs",
+      "license": "See THIRD_PARTY_NOTICES.md",
+      "source": "Canvas Web Standard; Rough.js MIT; Three.js MIT; FFmpeg build configuration"
+    }
+  ],
+  "revisions": [
+    {
+      "revision": 1,
+      "prompt": "範例不夠，增加 Kinesmith 與 Codex 的介紹作品。",
+      "date": "2026-10-25"
+    },
+    {
+      "revision": 2,
+      "scene": "kinesmith-06",
+      "prompt": "修正 30–36 秒字幕與圓環相交：字幕下移並增加按鈕上方留白。只修改此幕，其餘七幕與配樂維持不變。",
+      "timestamp": "2026-10-24T21:21:21.128717+00:00",
+      "previous_source_sha256": "137f8c950ebd4b1df345c8fa9c06a250e186ed05a5193f84ffa9e77ff3d7c3d1",
+      "source_sha256": "1995cf37d0c1db21e6373bb5a525454b023986b5e0f42916ff200f41a39eec83",
+      "params": {
+        "chapter": 5
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "kinesmith-01",
+      "engine": "canvas",
+      "source": "scenes/kinesmith.html",
+      "start_frame": 0,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 0
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-02",
+      "engine": "canvas",
+      "source": "scenes/kinesmith.html",
+      "start_frame": 180,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 1
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-03",
+      "engine": "rough",
+      "source": "scenes/kinesmith.html",
+      "start_frame": 360,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 2
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-04",
+      "engine": "three",
+      "source": "scenes/dimension.html",
+      "start_frame": 540,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 3
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-05",
+      "engine": "canvas",
+      "source": "scenes/kinesmith.html",
+      "start_frame": 720,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 4
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-06",
+      "engine": "canvas",
+      "source": "scenes/kinesmith.kinesmith-06.v2.1995cf37d0c1.html",
+      "start_frame": 900,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 5
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-07",
+      "engine": "canvas",
+      "source": "scenes/kinesmith.html",
+      "start_frame": 1080,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 6
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "kinesmith-08",
+      "engine": "canvas",
+      "source": "scenes/kinesmith.html",
+      "start_frame": 1260,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 7
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    }
+  ]
+}

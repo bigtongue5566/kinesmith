@@ -8,6 +8,17 @@
 
 [觀看六引擎展示影片](https://github.com/bigtongue5566/kinesmith/releases/download/v0.1.0/orbital-craft.mp4) · [驗收紀錄與已知限制](docs/acceptance.md)
 
+新增兩部完整介紹作品：**Kinesmith：把想法鍛造成動態**，以及 **Codex 是什麼？** 每部 48 秒、1080p／30fps、繁體中文動態字排，搭配不同的原創配樂。包括 8 章分鏡、可編輯原生來源、字型、MIDI、Cue Sheet 與字幕，見 [介紹作品與重現方法](examples/introductions/README.md)。Codex 片為依 OpenAI 官方文件查核的獨立介紹。
+
+![Kinesmith 與 Codex 兩部介紹短片實際影格](assets/introduction-films.jpg)
+
+| 作品 | 完整影片 | 可編輯來源 |
+|---|---|---|
+| Kinesmith 專案介紹 | [觀看／下載 MP4](https://github.com/bigtongue5566/kinesmith/releases/download/examples-introductions-v1/kinesmith-introduction.mp4) | [分鏡與設計](examples/introductions/brief-kinesmith.md) |
+| Codex 是什麼？ | [觀看／下載 MP4](https://github.com/bigtongue5566/kinesmith/releases/download/examples-introductions-v1/codex-explained.mp4) | [分鏡與來源](examples/introductions/brief-codex.md) |
+
+[下載兩部介紹作品包](https://github.com/bigtongue5566/kinesmith/releases/tag/examples-introductions-v1) · [實測與視覺修訂報告](docs/introduction-films.md)。也可直接從本 repository 的 `examples/introductions/` 編輯／重現。此範例集獨立發行，不更改 Plugin v0.1.0 的版本號。
+
 Kinesmith 讓目前的 Codex／Claude Code Agent 自主做視覺概念、分鏡、2D／3D 動畫、Typography、程序化圖形、特效、渲染與修訂。共用 Skills、專業知識與作品格式，使用各平台原生 Plugin／可選 Subagents，不呼叫第二個生成模型。
 
 六個引擎保留原生能力：Canvas API、Rough.js、p5.js、Three.js、Manim Community、Blender。工程 Helpers 提供固定影格時間、跨引擎合成、FFmpeg 輸出、音訊分析、版本與查核；沒有統一動畫物件 API、常駐 Agent runtime、額外 MCP 或資料庫。

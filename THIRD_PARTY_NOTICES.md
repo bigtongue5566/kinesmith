@@ -7,3 +7,5 @@ Web 引擎散布版本為 Rough.js 4.6.6（MIT）、Three.js 0.180.0（MIT）、
 Python、Manim、Blender bpy、FFmpeg 和 Chromium 由使用者安裝開源依賴，不打包進 Plugin ZIP。其授權與 FFmpeg build 義務仍適用，不能視為 Kinesmith MIT 授權的一部分。字型、音訊、人聲聲庫、角色圖像與其他素材依各作品帳本，未知者保持 unverified。
 
 Opusmith 相容性 fixtures 保留上游 MIT 聲明及 commit/provenance。含人聲的協作驗收片段另附個別來源與授權狀態；不可把「可測試」解讀為任何未授權聲庫或角色的商業許可。
+
+兩部介紹作品另外散布未修改的 Noto Sans TC Variable 字型，採 SIL Open Font License 1.1；完整 copyright／OFL 在 `examples/introductions/assets/OFL-NotoSansTC.txt`。該字型不受本專案 MIT 取代。這兩片的原創電子配樂與 MIDI 採 CC0-1.0，合成程式仍為 MIT；沒有聲庫或取樣素材。
