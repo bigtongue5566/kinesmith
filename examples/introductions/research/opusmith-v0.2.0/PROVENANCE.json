@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/bigtongue5566/opusmith",
+  "commit": "328e630f33af4b8b0ebe178895d1f87120532875",
+  "release": "v0.2.0",
+  "release_published_at": "2026-10-24T19:54:21Z",
+  "checked_at": "2026-10-25",
+  "license": "MIT",
+  "files": {
+    "README.md": "fa8ea58bc4aeb0f808d6b57e8303ba95cdec1e88a226a3389e0b2e18221a7bc8",
+    "docs/VOCALS.md": "79d274db3d5ead7504010a152d6431dbdd996fad8814cff5a45daecd852b4c61",
+    "docs/VALIDATION.md": "b067c68a22defc884a37928ea3d1095d1aed804faceb76973442da52bd6e338f",
+    "LICENSE": "f46fb1afa3d003bc1585e825477a92bbf2479b054f85bf7f1106a8348b1e6f22"
+  }
+}

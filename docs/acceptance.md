@@ -45,6 +45,8 @@
 
 2026-10-25 新增「Kinesmith：把想法鍛造成動態」及「Codex 是什麼？」兩部作品，各 48 秒、1920×1080、30fps、1440 個真實渲染影格，配上不同的原創電子配樂。兩片完整解碼、文字邊界、AAC 量測與 9 個 Cue 波形對齊通過；另有實際代表／切點連續影格視覺抽查、Kinesmith 單幕修訂與其餘七幕逐影格雜湊保留證據。詳細數據及未測項目見 [介紹作品 Motion Report](introduction-films.md) 與 `introduction-validation.json`。這是新增作品驗證，未以此宣稱重新驗證全部平台或全部六種引擎。
 
+2026-10-25 另新增第三部 Opusmith 介紹片：同為 48 秒、1080p／30fps，真正使用 Opusmith v0.2.0 製作七軌配樂，讀取原生 Score／Stems。全片解碼、九個 Cue 對齊、六軌局部修訂保留、搬移後離線重建母帶及七軌、14 個可攜來源校驗均通過；視覺抽查與未測項目詳見 [本片 Motion Report](opusmith-introduction.md)。
+
 ## 實際限制
 
 - 尚未在 Codex／Claude 登入模型回合中實際測試 Skills 遵循與原生角色委派；已驗證的是原生可發現性、安裝及安裝後真實渲染。創作使用目前 Agent，沒有額外呼叫其他模型。

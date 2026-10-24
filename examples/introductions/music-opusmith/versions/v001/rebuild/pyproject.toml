@@ -1,0 +1,40 @@
+[project]
+name = "opusmith"
+version = "0.2.0"
+description = "Agent-native, reproducible music production for Codex and Claude Code"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "numpy>=2.1,<3",
+  "scipy>=1.14,<2",
+  "mido>=1.3,<2",
+  "soundfile>=0.13,<1",
+  "pedalboard>=0.9.17,<1",
+  "pyloudnorm>=0.1.1,<1",
+  "pydantic>=2.10,<3",
+  "httpx>=0.28,<1",
+  "imageio-ffmpeg>=0.6,<1",
+  "ruamel-yaml>=0.18,<0.19",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "ruff>=0.11,<1", "pyyaml>=6,<7", "jsonschema>=4.23,<5"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/opusmith"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".cache", ".venv", "dist", "examples/projects", "rebuild"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+

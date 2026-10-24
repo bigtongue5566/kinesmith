@@ -10,5 +10,8 @@ dist/
 **/.render-cache/
 vendor/
 outputs/
+examples/introductions/music-opusmith/**/audio/
+examples/introductions/audio/opusmith-score.wav
+examples/introductions/audio/opusmith-score.mp3
 debug.log
 *.log

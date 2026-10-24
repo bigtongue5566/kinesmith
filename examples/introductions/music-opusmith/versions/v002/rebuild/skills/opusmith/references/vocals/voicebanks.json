@@ -1,0 +1,48 @@
+{
+  "reviewed_at": "2026-10-25",
+  "openutau_version": "0.1.576",
+  "engine": {
+    "url": "https://github.com/openutau/OpenUtau/releases/download/0.1.576/OpenUtau-win-x64.zip",
+    "sha256": "475c577f8f42061abc8eef0d6648d772bef87fecd1e81cbf4e82e8a651669c56"
+  },
+  "banks": {
+    "ritsu-kire": {
+      "name": "波音リツ・キレ連続音 Ver1.0",
+      "folder": "波音リツ・キレ音源Ver1.0",
+      "url": "https://www.canon-voice.com/voice/r73_kire_ren0100.zip",
+      "sha256": "60a4601d7283cd6cc67d038afa2ca29f40559598dcf333a636675847b9fc5993",
+      "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+      "renderer": "WORLDLINE-R",
+      "license": {
+        "name": "波音リツ UTAU 音源使用規約",
+        "terms_url": "https://www.canon-voice.com/terms/",
+        "commercial_output_verified": true,
+        "credit": "歌聲：波音リツ；OpenUtau / WORLDLINE（自願署名）",
+        "evidence": "2026-10-25 核對作者現行 UTAU 規約：免費、商業利用可；現行網站規約優先於舊音源附帶規約。無神經網路聲碼器。角色插畫權利另計，不使用插畫。",
+        "terms_sha256": "e4e2b7c7a431688e916fe2cc4da60a2086d79aa58f3e63bdb155b48dd078100b"
+      }
+    },
+    "qixuan": {
+      "name": "绮萱 DiffSinger 2.7.0",
+      "folder": "Qixuan_v2.7.0_DiffSinger_OpenUtau",
+      "url": "https://github.com/yqzhishen/qixuan-diffsinger/releases/download/v2.7.0/Qixuan_v2.7.0_DiffSinger_OpenUtau.zip",
+      "sha256": "fe8ee7c95883d327a2b7facbbe832a7a53e1344918dc791ca83fc23b08034110",
+      "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerChinesePhonemizer",
+      "renderer": "DIFFSINGER",
+      "vocoder": {
+        "id": "pc_nsf_hifigan_44.1k_hop512_128bin_2025.02",
+        "url": "https://github.com/openvpi/vocoders/releases/download/pc-nsf-hifigan-44.1k-hop512-128bin-2025.02/pc_nsf_hifigan_44.1k_hop512_128bin_2025.02.oudep",
+        "weights_license": "CC-BY-NC-SA-4.0",
+        "sha256": "ba7d43142d41f6900c8264b5662ca7125a50feb8760bb8b9615c61a8f5e6902e"
+      },
+      "license": {
+        "name": "绮萱 2.7.0 自訂條款；聲碼器權重另採 CC BY-NC-SA 4.0",
+        "terms_url": "https://github.com/yqzhishen/qixuan-diffsinger/blob/main/terms_of_use/Terms_of_Use.zh-CN.md",
+        "commercial_output_verified": false,
+        "credit": "歌聲：绮萱；DiffSinger / OpenVPI；此歌聲使用 AI 技術合成",
+        "evidence": "聲庫作者明文允許合成波形／音樂作品不限額商用，要求绮萱、DiffSinger 署名及 AI 揭露。聲碼器 NOTICE 對權重採 NC，未找到其權利人對商業推理／輸出範圍的明確補充；不將 NC 自動等同輸出必然禁商用，亦不預設整條鏈已核准。本版以 evaluation 模式驗證。禁止修改或轉換模型權重；不使用角色插畫。",
+        "terms_sha256": "f0e6626dff76a94bbe795dbe1055a4871dd21f5b8a298293b4e3219bc53a3cf4"
+      }
+    }
+  }
+}

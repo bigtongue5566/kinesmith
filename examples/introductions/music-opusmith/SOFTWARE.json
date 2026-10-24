@@ -1,0 +1,105 @@
+{
+  "note": "Installed metadata only; no third-party binaries redistributed. See individual upstream terms.",
+  "packages": [
+    {
+      "name": "opusmith",
+      "version": "0.2.0",
+      "license_expression": "MIT",
+      "license_metadata": "",
+      "project_urls": []
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6",
+      "license_expression": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "license_metadata": "",
+      "project_urls": [
+        "homepage, https://numpy.org",
+        "documentation, https://numpy.org/doc/",
+        "source, https://github.com/numpy/numpy",
+        "download, https://pypi.org/project/numpy/#files",
+        "tracker, https://github.com/numpy/numpy/issues",
+        "release notes, https://numpy.org/doc/stable/release"
+      ]
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1",
+      "license_expression": null,
+      "license_metadata": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n\n 2. Redistributions in binary fo",
+      "project_urls": [
+        "homepage, https://scipy.org/",
+        "documentation, https://docs.scipy.org/doc/scipy/",
+        "source, https://github.com/scipy/scipy",
+        "download, https://github.com/scipy/scipy/releases",
+        "tracker, https://github.com/scipy/scipy/issues"
+      ]
+    },
+    {
+      "name": "mido",
+      "version": "1.3.3",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "project_urls": [
+        "documentation, https://mido.readthedocs.io",
+        "source, https://github.com/mido/mido"
+      ]
+    },
+    {
+      "name": "soundfile",
+      "version": "0.14.0",
+      "license_expression": null,
+      "license_metadata": "BSD 3-Clause License",
+      "project_urls": []
+    },
+    {
+      "name": "pedalboard",
+      "version": "0.9.26",
+      "license_expression": null,
+      "license_metadata": "GNU GENERAL PUBLIC LICENSE\n                        Version 3, 29 June 2007\n\n  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n  Everyone is permitted to copy and distribute verbatim copies\n  of this license document, but changing it is not allowed.\n\n                             Preamble\n\n   The GNU General Public License is a free, copyleft license for\n software and other kind",
+      "project_urls": []
+    },
+    {
+      "name": "pyloudnorm",
+      "version": "0.2.0",
+      "license_expression": "MIT",
+      "license_metadata": "",
+      "project_urls": [
+        "Homepage, https://github.com/csteinmetz1/pyloudnorm",
+        "Repository, https://github.com/csteinmetz1/pyloudnorm"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.1",
+      "license_expression": "MIT",
+      "license_metadata": "",
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/pydantic",
+        "Documentation, https://pydantic.dev/docs/validation/latest/get-started/",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic",
+        "Changelog, https://pydantic.dev/docs/validation/latest/get-started/changelog/"
+      ]
+    },
+    {
+      "name": "imageio-ffmpeg",
+      "version": "0.6.0",
+      "license_expression": null,
+      "license_metadata": "BSD-2-Clause",
+      "project_urls": []
+    },
+    {
+      "name": "ruamel-yaml",
+      "version": "0.18.17",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "project_urls": [
+        "Home, https://sourceforge.net/p/ruamel-yaml/",
+        "Source, https://sourceforge.net/p/ruamel-yaml/code/ci/default/tree/",
+        "Tracker, https://sourceforge.net/p/ruamel-yaml/tickets/",
+        "Documentation, https://yaml.dev/doc/ruamel.yaml"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "opusmith-introduction",
+  "title": "Opusmith：把想法，寫成音樂。",
+  "revision": 1,
+  "prompt": "再一個介紹 opusmith 這個專案",
+  "brief": "brief-opusmith.md",
+  "fps": "30",
+  "width": 1920,
+  "height": 1080,
+  "duration_frames": 1440,
+  "seed": 251025,
+  "dependencies": [
+    "assets/NotoSansTC-VF.ttf",
+    "data/opusmith-music.json"
+  ],
+  "interchange": "opusmith-music.av.json",
+  "audio": {
+    "source": "audio/opusmith-score.wav",
+    "offset_seconds": 0,
+    "gain": 1
+  },
+  "licenses": [
+    {
+      "asset": "Original animation and source",
+      "license": "MIT",
+      "source": "This repository"
+    },
+    {
+      "asset": "Original composition, MIDI and audio",
+      "license": "CC0-1.0",
+      "source": "compose-opusmith.py; no samples"
+    },
+    {
+      "asset": "NotoSansTC-VF.ttf",
+      "license": "OFL-1.1",
+      "source": "assets/OFL-NotoSansTC.txt"
+    },
+    {
+      "asset": "Opusmith runtime snapshot",
+      "license": "MIT",
+      "source": "music-opusmith/rebuild/LICENSE"
+    },
+    {
+      "asset": "DSP, renderer and codecs",
+      "license": "See THIRD_PARTY_NOTICES.md",
+      "source": "No tool binaries redistributed"
+    }
+  ],
+  "revisions": [
+    {
+      "revision": 1,
+      "date": "2026-10-25",
+      "prompt": "新增完整 Opusmith 專案介紹，配樂真正使用 Opusmith 製作。"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "opusmith-01",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 0,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 0
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-02",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 180,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 1
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-03",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 360,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 2
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-04",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 540,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 3
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-05",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 720,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 4
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-06",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 900,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 5
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-07",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 1080,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 6
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    },
+    {
+      "id": "opusmith-08",
+      "engine": "canvas",
+      "source": "scenes/opusmith.html",
+      "start_frame": 1260,
+      "duration_frames": 180,
+      "params": {
+        "chapter": 7
+      },
+      "dependencies": [
+        "scenes/drawing.js"
+      ]
+    }
+  ]
+}

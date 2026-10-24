@@ -1,6 +1,27 @@
-# 兩部完整介紹短片
+# 三部完整介紹短片
 
 本目錄提供 Kinesmith 專案介紹與「Codex 是什麼？」兩部 48 秒介紹作品。每片 1920×1080、30fps、8 個可獨立修改的章節、各自的原創電子配樂；保留程式、字型、MIDI、音符事件、Cue Sheet、字幕、分鏡與來源說明。
+
+另新增 **Opusmith：把想法寫成音樂**，同為 48 秒、1080p／30fps。黑膠唱片、實際 Piano Roll、合成器與七軌能量視覺化採原生 Canvas；配樂真正由 Opusmith v0.2.0 製作，保留兩個版本、Stems、Score、MIDI、Python 與固定依賴。初始兩部作品的影片與音樂不因新增此片而重製。
+
+Opusmith 成品、獨立 MP3／WAV 與完整音樂專案在 [獨立 Release](https://github.com/bigtongue5566/kinesmith/releases/tag/example-opusmith-introduction-v1)。大型音訊與 Stems 存在作品包，沒有全部放進 Git；只 clone 原始碼時，先下載並解壓作品包到相同目錄結構再渲染。
+
+```powershell
+# 只渲染／驗證新增 Opusmith 影片
+uv run --all-extras examples/introductions/opusmith_film.py --preflight
+uv run --all-extras examples/introductions/opusmith_film.py --render
+# 或直接使用原生渲染入口
+uv run --all-extras kinesmith render examples/introductions/project-opusmith.json --format mp4 --output outputs/opusmith-introduction/opusmith-introduction.mp4
+```
+
+完整包內的配樂可獨立搬移後離線重建；首次需要下載 Python wheels。重建會新增音樂版本，保留既有版本，影片仍使用明確選取的 `audio/opusmith-score.wav`，不會悄悄換音樂。
+
+```powershell
+uv sync --project examples/introductions/music-opusmith/rebuild --locked --no-dev
+uv run --project examples/introductions/music-opusmith/rebuild examples/introductions/music-opusmith/source.py --output examples/introductions/music-opusmith --rerender
+```
+
+本片 [分鏡](brief-opusmith.md)、[查核來源與權利](sources-opusmith.md)、[實測報告](../../docs/opusmith-introduction.md)。`opusmith_film.py --prepare <固定 Opusmith 原始碼>` 只用於本次作者重新匯入選定音樂版本／重建初始時間軸，會寫回本片 project／Cue／字幕；編輯動畫後不需重跑。`--package` 在完成檢查後封裝本片，不更新前兩片的 Release。
 
 ```powershell
 # 由 repository 根目錄執行；已安裝依賴可使用 --no-sync --offline

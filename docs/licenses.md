@@ -26,3 +26,5 @@ Codex 片修訂 3 的開場／片尾使用官方安裝包內未修改的雲形 C
 Opusmith MIT 範例、Score 與 USTX 的來源／commit／檔案校驗記錄於 examples/opusmith-v0.1.0/PROVENANCE.json 與 examples/opusmith-v0.2.0/PROVENANCE.json。含人聲的真實片段另見 examples/collaboration/music-first/PROVENANCE.json、LICENSE_REVIEW.md、vocal-receipt.json。該傳統 UTAU 聲庫的現行官方條款已逐項查核，結論只適用本範例的實際音源；其他音樂著作、取樣、人聲聲庫、角色圖像與音訊仍各自保存來源與允許的用途。OpenUtau／USTX 能成功渲染，不代表任意聲庫或角色可以商用。未知的資產授權一律保持 `unverified`，不因影片輸出成功提升狀態。
 
 正式作品的 `licenses` 帳本至少記錄 asset／tool、來源、版本或 SHA256、授權、商用及再散布限制、確認方式。請只對實際查證項目宣稱已確認；本清單不能取代使用者加入素材的授權紀錄。
+
+Opusmith 介紹片的七軌原創配樂、音符及 MIDI 採 CC0-1.0，實際使用上游 v0.2.0 原生合成與 Pedalboard。上游 runtime／研究文件維持 MIT 並附原始 LICENSE；音樂環境的實際套件版本與授權 metadata 在 `examples/introductions/music-opusmith/SOFTWARE.json`。作品包沒有聲庫、權重、取樣或第三方執行檔；DSP、FFmpeg 與字型仍依各自授權。原始來源與實測界限見 [本片 Motion Report](opusmith-introduction.md)。

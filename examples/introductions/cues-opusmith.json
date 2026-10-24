@@ -1,0 +1,73 @@
+[
+  {
+    "frame": 0,
+    "time_seconds": 0,
+    "title": "Opusmith：把想法，寫成音樂。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 1 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 180,
+    "time_seconds": 6,
+    "title": "一句想法，拆成音樂決定。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 2 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 360,
+    "time_seconds": 12,
+    "title": "音符、力度、段落，都能編輯。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 3 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 540,
+    "time_seconds": 18,
+    "title": "音色，也是一份可調的設計。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 4 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 720,
+    "time_seconds": 24,
+    "title": "從旋律，到完整分軌。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 5 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 900,
+    "time_seconds": 30,
+    "title": "歌詞與人聲，留在可調的工程。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 6 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 1080,
+    "time_seconds": 36,
+    "title": "修改一小段，保留其他聲部。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 7 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 1260,
+    "time_seconds": 42,
+    "title": "音樂與畫面，一起完成。",
+    "sound_event": "Authored FM note at chapter start",
+    "visual_event": "chapter 8 begins",
+    "tolerance_frames": 1
+  },
+  {
+    "frame": 1350,
+    "time_seconds": 45,
+    "sound_event": "D minor final chord",
+    "visual_event": "Final card settles; hold with release to 48s",
+    "tolerance_frames": 1
+  }
+]

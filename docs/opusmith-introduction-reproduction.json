@@ -1,0 +1,110 @@
+{
+  "offline_rebuild": "passed",
+  "runtime": "copied native rebuild snapshot and uv.lock; separate uv environment",
+  "master_and_stems": {
+    "master.wav": {
+      "sha256": "e3680c25600e799fb53cd03338b410ef3460660df0440d2af3cbccac2fa45ba3",
+      "identical": true
+    },
+    "stems/keys.flac": {
+      "sha256": "128726f3e69b7371ecf2c4b49ece21712d17a9cafbe6847e2dcbedf34e8c2686",
+      "identical": true
+    },
+    "stems/pluck.flac": {
+      "sha256": "39fe315746ea2d8457825ce927ea242d73a3c7a50c3075118990223e10d202f4",
+      "identical": true
+    },
+    "stems/pad.flac": {
+      "sha256": "a50067e3099f906c1bc143f0648ebe7101704b57c0fad4c181fc4aa23980e105",
+      "identical": true
+    },
+    "stems/bass.flac": {
+      "sha256": "b9641195bf7f6fc21bf63a65be4cad64add9e15042a00b60e0ea96c7bef4580d",
+      "identical": true
+    },
+    "stems/kick.flac": {
+      "sha256": "59f96c10920948f663a65f98541a70280ef998d61d50ebc5c8173922555a349f",
+      "identical": true
+    },
+    "stems/snare.flac": {
+      "sha256": "bf6efedbd2596f52372f30139403a7ca36661c6ab254a75fe25230a904e275b1",
+      "identical": true
+    },
+    "stems/hat.flac": {
+      "sha256": "731ad8cd4aceb6060ec3db0c2cf2035662346efbe706c0ab2eac2fec1e25980f",
+      "identical": true
+    }
+  },
+  "relocated_contract_sources": [
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\project.json",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\project.json",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\CURRENT.json",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\CURRENT.json",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\version.json",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\version.json",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\score.json",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\score.json",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\multitrack.mid",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\multitrack.mid",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\assets.json",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\assets.json",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\master.wav",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\master.wav",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\bass.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\bass.flac",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\hat.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\hat.flac",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\keys.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\keys.flac",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\kick.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\kick.flac",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\pad.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\pad.flac",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\pluck.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\pluck.flac",
+      "status": "unchanged"
+    },
+    {
+      "path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\snare.flac",
+      "resolved_path": "C:\\Users\\BigTongue\\Documents\\git project\\kinesmith\\.cache\\opusmith-introduction\\portable-sources\\music-opusmith\\versions\\v002\\audio\\stems\\snare.flac",
+      "status": "unchanged"
+    }
+  ]
+}

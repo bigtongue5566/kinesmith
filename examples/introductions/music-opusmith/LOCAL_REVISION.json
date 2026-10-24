@@ -1,0 +1,53 @@
+{
+  "from_version": "v001",
+  "to_version": "v002",
+  "changed_track": "pluck",
+  "beat_range": [
+    96,
+    100
+  ],
+  "stems": [
+    {
+      "track": "keys",
+      "unchanged": true,
+      "before_sha256": "128726f3e69b7371ecf2c4b49ece21712d17a9cafbe6847e2dcbedf34e8c2686",
+      "after_sha256": "128726f3e69b7371ecf2c4b49ece21712d17a9cafbe6847e2dcbedf34e8c2686"
+    },
+    {
+      "track": "pluck",
+      "unchanged": false,
+      "before_sha256": "abe951c47832aeedc9b7b88eee8f8f93f6e32f2c166cbb9f9825fc57938c140b",
+      "after_sha256": "39fe315746ea2d8457825ce927ea242d73a3c7a50c3075118990223e10d202f4"
+    },
+    {
+      "track": "pad",
+      "unchanged": true,
+      "before_sha256": "a50067e3099f906c1bc143f0648ebe7101704b57c0fad4c181fc4aa23980e105",
+      "after_sha256": "a50067e3099f906c1bc143f0648ebe7101704b57c0fad4c181fc4aa23980e105"
+    },
+    {
+      "track": "bass",
+      "unchanged": true,
+      "before_sha256": "b9641195bf7f6fc21bf63a65be4cad64add9e15042a00b60e0ea96c7bef4580d",
+      "after_sha256": "b9641195bf7f6fc21bf63a65be4cad64add9e15042a00b60e0ea96c7bef4580d"
+    },
+    {
+      "track": "kick",
+      "unchanged": true,
+      "before_sha256": "59f96c10920948f663a65f98541a70280ef998d61d50ebc5c8173922555a349f",
+      "after_sha256": "59f96c10920948f663a65f98541a70280ef998d61d50ebc5c8173922555a349f"
+    },
+    {
+      "track": "snare",
+      "unchanged": true,
+      "before_sha256": "bf6efedbd2596f52372f30139403a7ca36661c6ab254a75fe25230a904e275b1",
+      "after_sha256": "bf6efedbd2596f52372f30139403a7ca36661c6ab254a75fe25230a904e275b1"
+    },
+    {
+      "track": "hat",
+      "unchanged": true,
+      "before_sha256": "731ad8cd4aceb6060ec3db0c2cf2035662346efbe706c0ab2eac2fec1e25980f",
+      "after_sha256": "731ad8cd4aceb6060ec3db0c2cf2035662346efbe706c0ab2eac2fec1e25980f"
+    }
+  ]
+}
