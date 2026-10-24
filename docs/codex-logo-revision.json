@@ -1,0 +1,76 @@
+{
+  "before_revision": 1,
+  "after_revision": 3,
+  "before_video_sha256": "f30b30a6e181378b30f49617b795faa08909a7e6fd327437c6efc8410120425d",
+  "after_video_sha256": "8d8ecec0fda0ecda763275f45223ad07e7ae069028f66059943b13bbc64e83eb",
+  "scenes": [
+    {
+      "scene": "codex-01",
+      "unchanged": false,
+      "cache_hit": false,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-02",
+      "unchanged": true,
+      "cache_hit": true,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-03",
+      "unchanged": true,
+      "cache_hit": true,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-04",
+      "unchanged": true,
+      "cache_hit": true,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-05",
+      "unchanged": true,
+      "cache_hit": true,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-06",
+      "unchanged": true,
+      "cache_hit": true,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-07",
+      "unchanged": true,
+      "cache_hit": true,
+      "frame_count": 180
+    },
+    {
+      "scene": "codex-08",
+      "unchanged": false,
+      "cache_hit": false,
+      "frame_count": 180
+    }
+  ],
+  "unchanged_frames": 1080,
+  "kinesmith_video": {
+    "sha256": "b508cc32a5410e5fcb6d3447bd94773d31aa08dd02c515b31b495d95db4511a6",
+    "unchanged": true
+  },
+  "scores": {
+    "kinesmith": {
+      "sha256": "8b27c16b92a00a7670a53fb133c7204f46ef735d40c3c5cb567e6c59611ed6b5",
+      "unchanged": true
+    },
+    "codex": {
+      "sha256": "e68288450d1793d04226a6cc81d3fb228b88c2339ced86f0d69b5c9e4d7b5538",
+      "unchanged": true
+    }
+  },
+  "brand_asset": {
+    "path": "examples/introductions/assets/codex-official.png",
+    "sha256": "8e82b26c98a10e45798ce48124515720657f7735fb8d0853b3f087eaa8a6b74e",
+    "rights": "OpenAI brand asset; see assets/CODEX-BRAND.md"
+  }
+}

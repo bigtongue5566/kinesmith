@@ -21,6 +21,8 @@ Kinesmith 自有程式、Skills、知識內容與原創動畫範例採 MIT；原
 
 `examples/introductions/` 的兩部 1080p 介紹短片已依上述方式內附 Noto Sans TC Variable 原字型及 OFL-1.1 完整聲明，在 project dependencies 記錄字型檔，並由瀏覽器完成載入才逐格渲染。兩支原創配樂與 MIDI 採 CC0-1.0，使用 `compose.py` 的振盪器與噪聲合成，無取樣、聲庫或外部生成服務；圖形與程式採 MIT。Codex 的片名與產品資訊只作描述，影片明確標示為獨立介紹，沒有官方背書。
 
+Codex 片修訂 3 的開場／片尾使用官方安裝包內未修改的雲形 Codex App 圖示。該圖示仍是 OpenAI 品牌資產，依 [OpenAI Marks 條款](https://openai.com/brand/#usage-terms)，不受本專案 MIT／配樂 CC0 授權涵蓋；在 project licenses 與 `assets/CODEX-BRAND.md` 保存來源及 SHA256。原始圖示為 104×104 RGBA，本片只按原比例縮放顯示，未重繪圖案或改變顏色；不把它作為 Kinesmith 的自有品牌。
+
 Opusmith MIT 範例、Score 與 USTX 的來源／commit／檔案校驗記錄於 examples/opusmith-v0.1.0/PROVENANCE.json 與 examples/opusmith-v0.2.0/PROVENANCE.json。含人聲的真實片段另見 examples/collaboration/music-first/PROVENANCE.json、LICENSE_REVIEW.md、vocal-receipt.json。該傳統 UTAU 聲庫的現行官方條款已逐項查核，結論只適用本範例的實際音源；其他音樂著作、取樣、人聲聲庫、角色圖像與音訊仍各自保存來源與允許的用途。OpenUtau／USTX 能成功渲染，不代表任意聲庫或角色可以商用。未知的資產授權一律保持 `unverified`，不因影片輸出成功提升狀態。
 
 正式作品的 `licenses` 帳本至少記錄 asset／tool、來源、版本或 SHA256、授權、商用及再散布限制、確認方式。請只對實際查證項目宣稱已確認；本清單不能取代使用者加入素材的授權紀錄。

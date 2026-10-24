@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "id": "codex-introduction",
   "title": "Codex 是什麼？",
-  "revision": 1,
+  "revision": 3,
   "fps": "30",
   "width": 1920,
   "height": 1080,
@@ -41,6 +41,13 @@
       "asset": "render tools and codecs",
       "license": "See THIRD_PARTY_NOTICES.md",
       "source": "Canvas Web Standard; Rough.js MIT; Three.js MIT; FFmpeg build configuration"
+    },
+    {
+      "asset": "assets/codex-official.png",
+      "license": "OpenAI brand asset; not MIT or CC0",
+      "source": "Official OpenAI.Codex 26.1021.3705.0 package; assets/CODEX-BRAND.md",
+      "sha256": "8e82b26c98a10e45798ce48124515720657f7735fb8d0853b3f087eaa8a6b74e",
+      "usage": "Independent factual product introduction; preserve original artwork and follow OpenAI Marks terms"
     }
   ],
   "revisions": [
@@ -48,20 +55,43 @@
       "revision": 1,
       "prompt": "範例不夠，增加 Kinesmith 與 Codex 的介紹作品。",
       "date": "2026-10-25"
+    },
+    {
+      "revision": 2,
+      "scene": "codex-01",
+      "prompt": "使用者指出 Codex logo 錯誤：開場改用官方安裝包內未修改的 Codex 雲形 App 圖示，保留原比例與顏色。",
+      "timestamp": "2026-10-24T21:35:14.403970+00:00",
+      "previous_source_sha256": "5a56339496c7f741ffe0bd22714215dd6936daa47f9ef4aab63ddc4d570e4c99",
+      "source_sha256": "1c66af7af4a64bd40ddb0c5cf5cfc5960f85995602367bc162ea70ef569c62f1",
+      "params": {
+        "chapter": 0
+      }
+    },
+    {
+      "revision": 3,
+      "scene": "codex-08",
+      "prompt": "片尾同步採用相同的正式 Codex 雲形 App 圖示；其他六幕與配樂不變。",
+      "timestamp": "2026-10-24T21:35:14.931155+00:00",
+      "previous_source_sha256": "5a56339496c7f741ffe0bd22714215dd6936daa47f9ef4aab63ddc4d570e4c99",
+      "source_sha256": "1c66af7af4a64bd40ddb0c5cf5cfc5960f85995602367bc162ea70ef569c62f1",
+      "params": {
+        "chapter": 7
+      }
     }
   ],
   "scenes": [
     {
       "id": "codex-01",
       "engine": "canvas",
-      "source": "scenes/codex.html",
+      "source": "scenes/codex.codex-01.v2.1c66af7af4a6.html",
       "start_frame": 0,
       "duration_frames": 180,
       "params": {
         "chapter": 0
       },
       "dependencies": [
-        "scenes/drawing.js"
+        "scenes/drawing.js",
+        "assets/codex-official.png"
       ]
     },
     {
@@ -145,14 +175,15 @@
     {
       "id": "codex-08",
       "engine": "canvas",
-      "source": "scenes/codex.html",
+      "source": "scenes/codex.codex-08.v3.1c66af7af4a6.html",
       "start_frame": 1260,
       "duration_frames": 180,
       "params": {
         "chapter": 7
       },
       "dependencies": [
-        "scenes/drawing.js"
+        "scenes/drawing.js",
+        "assets/codex-official.png"
       ]
     }
   ]

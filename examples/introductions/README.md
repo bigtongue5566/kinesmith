@@ -17,7 +17,7 @@ uv run --all-extras kinesmith render examples/introductions/project-codex.json -
 
 成品與報告在 `outputs/introductions/`。`verify.py` 會實際解碼每一影格、檢查尺寸／FPS／時長、測量配樂響度與峰值、核對共用 Cue、產生 Contact Sheet；主觀視覺檢查另外記錄，不將產生縮圖等同已經看過。沒有播放／試聽能力時不宣稱全片觀賞或音色品質通過。
 
-目前 Kinesmith 片為修訂 2，已修正 30–36 秒字幕與圓環相交；Codex 片為修訂 1。最終作品直接用現有 `project-*.json` 渲染即可。要只更新其中一片並保留另一片的檢查紀錄，可執行 `uv run --all-extras examples/introductions/verify.py --render --only kinesmith`。
+目前 Kinesmith 片為修訂 2，已修正 30–36 秒字幕與圓環相交；Codex 片為修訂 3，開場與片尾已使用正式雲形 Codex App 圖示。最終作品直接用現有 `project-*.json` 渲染即可。要只更新其中一片並保留另一片的檢查紀錄，可執行 `uv run --all-extras examples/introductions/verify.py --render --only kinesmith`。
 
 修改 `project-*.json` 的指定章節參數，或用 `kinesmith revise ... --scene ... --source ... --prompt ...` 為該場景分叉來源，再重新渲染。`scenes/drawing.js` 是這兩部作品的 Canvas 繪圖便利函式；不是跨引擎動畫物件 API。各原生 HTML 可直接編輯。
 

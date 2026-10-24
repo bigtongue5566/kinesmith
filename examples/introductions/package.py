@@ -28,7 +28,7 @@ def main():
     for path in ROOT.rglob('*'):
         if path.is_file() and not excluded.intersection(path.relative_to(ROOT).parts):
             files.append((path.relative_to(REPO).as_posix(), path))
-    for name in ('kinesmith-introduction.mp4', 'codex-explained.mp4', 'verification.json', 'motion-report.md', 'local-revision.json'):
+    for name in ('kinesmith-introduction.mp4', 'codex-explained.mp4', 'verification.json', 'motion-report.md', 'local-revision.json', 'codex-logo-revision.json'):
         path = OUT/name
         if not path.is_file():
             raise FileNotFoundError(path)

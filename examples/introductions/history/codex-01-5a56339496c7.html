@@ -1,0 +1,87 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>Codex 是什麼？</title>
+<style>html,body{margin:0}canvas{display:block}</style><canvas id="stage"></canvas>
+<script type="module">
+import {fontReady,surface,text,rect,line,dot,reveal,chip,footer,arrow,check,ease,clamp,mix} from './drawing.js';
+const canvas=document.querySelector('#stage');
+const C={paper:'#f4f2e9',ink:'#183a30',green:'#257b5d',mint:'#c7e7d1',orange:'#e66840',grey:'#76897d',soft:'#e1e5d8',white:'#fffdf6'};
+window.kinesmithReady=fontReady;
+function heading(g,k,title,t){text(g,k,64,62,16,C.green,700);reveal(g,t,.05,()=>text(g,title,64,145,49,C.ink,750))}
+function file(g,x,y,w,label,color=C.white){rect(g,x,y,w,142,12,color);rect(g,x+20,y+23,28,32,4,C.green);line(g,x+27,y+31,x+39,y+31,C.mint,2);line(g,x+27,y+38,x+39,y+38,C.mint,2);text(g,label,x+20,y+99,24,C.ink,650);line(g,x+20,y+117,x+w-25,y+117,C.soft,3)}
+function terminal(g,x,y,w,h){rect(g,x,y,w,h,14,C.ink);dot(g,x+23,y+22,4,C.orange);dot(g,x+39,y+22,4,C.mint);dot(g,x+55,y+22,4,C.grey)}
+function caret(g,x,y,size,color){line(g,x,y,x+size*.4,y+size*.4,color,7);line(g,x+size*.4,y+size*.4,x,y+size*.8,color,7);line(g,x+size*.65,y+size*.8,x+size*1.2,y+size*.8,color,7)}
+window.renderFrame=(frame,ctx)=>{
+ const g=surface(canvas,ctx),s=ctx.params.chapter,t=Math.min(ctx.time,s===7?4.25:6),p=ease(t/.8);
+ rect(g,0,0,1280,720,0,C.paper);
+ if(s===0){
+  text(g,'A FIELD GUIDE / OPENAI CODEX',64,62,16,C.green,700);
+  reveal(g,t,.05,()=>text(g,'Codex',58,296,146,C.ink,800));
+  reveal(g,t,.3,()=>text(g,'是什麼？',64,414,80,C.green,750));
+  reveal(g,t,.7,()=>text(g,'OpenAI 的 AI 程式開發代理。',64,507,36,C.ink,600));
+  reveal(g,t,1.1,()=>text(g,'與你一起理解、修改與驗證程式。',64,568,28,C.grey,450));
+  g.save();g.translate(1003,327);g.rotate(-.08*(1-p));g.scale(p,p);rect(g,-168,-160,336,320,36,C.green);caret(g,-85,-50,120,C.paper);dot(g,143,-134,37,C.orange);g.restore();
+ }
+ if(s===1){
+  heading(g,'01 / CONTEXT BEFORE CODE','先理解，再動手。',t);
+  reveal(g,t,.2,()=>{rect(g,64,205,1152,81,12,C.white);text(g,'「讓這個購物清單支援搜尋，沿用現有設計。」',91,256,30,C.ink,550)});
+  const labels=['README.md','src / app','tests / search'];
+  for(let i=0;i<3;i++)reveal(g,t,.65+i*.2,()=>file(g,64+i*395,365,362,labels[i],i===1?C.mint:C.white));
+  for(let i=0;i<2;i++)arrow(g,436+i*395,437,454+i*395,437,C.green,2);
+  reveal(g,t,1.5,()=>text(g,'讀取專案脈絡，找出修改位置與既有規範。',64,603,29,C.ink,500));
+ }
+ if(s===2){
+  heading(g,'02 / CHANGES YOU CAN INSPECT','把需求，變成可檢查的修改。',t);
+  terminal(g,64,205,800,360);text(g,'cart.py  /  修訂差異示意',91,260,21,C.mint,500);
+  text(g,'def total(items):',101,328,33,C.paper,600);
+  rect(g,91,352,744,58,6,'#704e3a');text(g,'−  return sum(items)',107,392,29,'#ffe5cc',500);
+  reveal(g,t,.7,()=>{rect(g,91,426,744,60,6,C.green);text(g,'+  return sum(items or [])',107,467,29,C.paper,500)});
+  reveal(g,t,1,()=>{chip(g,'寫程式',924,245,C.mint,C.ink,250);chip(g,'修正錯誤',924,325,C.mint,C.ink,250);chip(g,'重構與解說',924,405,C.mint,C.ink,250)});
+  reveal(g,t,1.4,()=>text(g,'修改留在檔案與差異紀錄裡，方便你接著編輯。',64,619,28,C.ink,500));
+ }
+ if(s===3){
+  heading(g,'03 / RUN → OBSERVE → IMPROVE','執行、測試、再修正。',t);
+  const xs=[239,640,1041],q=ease((t-.5)/1.2);
+  for(let i=0;i<2;i++)arrow(g,xs[i]+112,354,xs[i]+112+(175*q),354,C.grey,3);
+  for(let i=0;i<3;i++)reveal(g,t,.3+i*.35,()=>{dot(g,xs[i],354,103,i===2?C.green:i===0?C.orange:C.ink);text(g,['執行','觀察','修正'][i],xs[i],368,36,C.paper,700,'center');text(g,['呼叫專案工具','讀取錯誤與結果','再次驗證修改'][i],xs[i],518,25,C.ink,600,'center')});
+  reveal(g,t,1.9,()=>{rect(g,232,566,816,58,8,C.mint);check(g,267,594,C.green,.7);text(g,'assert total(None) == 0',308,606,26,C.ink,550);text(g,'PASS',1005,605,23,C.green,700,'right')});
+  text(g,'開發流程示意；實際工具依專案而定。',64,653,17,C.grey,450);
+ }
+ if(s===4){
+  heading(g,'04 / WORK WHERE YOU BUILD','在熟悉的工作環境協作。',t);
+  const labels=['桌面 App','終端機 CLI','IDE / Web'];
+  for(let i=0;i<3;i++)reveal(g,t,.15+i*.2,()=>{
+   const x=64+i*395;rect(g,x,235,362,275,14,i===1?C.ink:C.white);line(g,x,273,x+362,273,i===1?'#3d594a':C.soft,2);
+   for(let j=0;j<3;j++)dot(g,x+20+j*15,255,3,i===1?C.mint:C.grey);
+   if(i===0){rect(g,x+19,295,78,193,6,C.soft);for(let j=0;j<4;j++)rect(g,x+116,304+j*45,210-j*25,24,5,j===1?C.mint:C.soft)}
+   if(i===1){caret(g,x+25,310,34,C.mint);text(g,'codex',x+88,339,30,C.paper,550);for(let j=0;j<4;j++)line(g,x+27,380+j*27,x+280-j*28,380+j*27,j===3?C.mint:C.grey,4)}
+   if(i===2){rect(g,x+18,293,90,196,5,C.soft);for(let j=0;j<7;j++)line(g,x+132,310+j*25,x+322-(j%3)*36,310+j*25,j%3?C.grey:C.green,4)}
+   text(g,labels[i],x,561,28,C.ink,650);
+  });
+  text(g,'同一個目標，接上程式碼、工具與可審查的成果。',64,625,27,C.ink,500);text(g,'介面概念示意',1216,653,16,C.grey,450,'right');
+ }
+ if(s===5){
+  heading(g,'05 / TEACH A REUSABLE WORKFLOW','把你的方法，變成 Skills。',t);
+  for(let i=2;i>=0;i--){g.save();g.translate(221+i*30,345+i*18);g.rotate(-.12+i*.06);rect(g,-142,-115,284,270,12,i===0?C.ink:i===1?C.mint:C.soft);if(i===0){text(g,'SKILL.md',-112,-41,32,C.paper,650);for(let j=0;j<4;j++)line(g,-110,2+j*26,88-j*15,2+j*26,C.mint,4)}g.restore()}
+  arrow(g,465,378,702,378,C.green,4);
+  reveal(g,t,.6,()=>{rect(g,766,220,450,306,16,C.green);text(g,'Kinesmith',801,282,37,C.paper,700);
+   g.save();g.translate(988,405);g.rotate(Math.min(t,4)*.3);for(let i=0;i<8;i++){g.rotate(Math.PI/4);rect(g,15,-12,87,24,12,i%2?C.mint:C.orange)}g.restore();
+  });
+  text(g,'指引 + 參考資料 + 工具',64,583,26,C.ink,600);text(g,'例如：延伸到動態視覺創作。',766,583,25,C.ink,600);
+  text(g,'Skills 保存可重用的方法，Plugin 讓別人也能安裝。',64,637,26,C.grey,450);
+ }
+ if(s===6){
+  heading(g,'06 / YOUR INTENT, YOUR REVIEW','你定方向，也審查結果。',t);
+  const labels=['目標與驗收條件','可存取的範圍','變更內容與測試'];
+  for(let i=0;i<3;i++)reveal(g,t,.15+i*.2,()=>{let y=227+i*113;rect(g,64,y,1152,88,12,i===1?C.mint:C.white);text(g,`0${i+1}`,90,y+55,29,C.green,650);text(g,labels[i],163,y+55,31,C.ink,600);line(g,738,y+44,1115,y+44,C.soft,9);line(g,738,y+44,738+310*ease((t-.5-i*.2)/.9),y+44,C.green,9);dot(g,738+310*ease((t-.5-i*.2)/.9),y+44,12,C.ink)});
+  text(g,'依設定的權限操作；審查差異與驗證結果後再採用。',64,630,27,C.ink,500);
+ }
+ if(s===7){
+  reveal(g,t,.05,()=>text(g,'從一個清楚的任務開始。',640,174,49,C.ink,750,'center'));
+  reveal(g,t,.3,()=>{rect(g,134,233,1012,109,18,C.ink);caret(g,164,271,30,C.mint);text(g,'幫我新增搜尋功能，補上測試。',235,299,36,C.paper,550)});
+  reveal(g,t,.75,()=>text(g,'Codex',640,478,99,C.green,800,'center'));
+  reveal(g,t,1.1,()=>text(g,'把開發工作，一步步做到完成。',640,552,32,C.ink,550,'center'));
+  text(g,'Kinesmith 製作・非 OpenAI 官方影片',640,610,18,C.grey,500,'center');
+  text(g,'內容依 OpenAI 官方文件查核｜2026.10.25',640,642,16,C.grey,450,'center');
+ }
+ footer(g,'CODEX / AN INDEPENDENT INTRODUCTION',s,t,C.soft,C.ink);
+};
+</script></html>

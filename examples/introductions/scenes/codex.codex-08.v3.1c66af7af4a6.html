@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>Codex / 官方識別修訂</title>
+<style>body{margin:0}canvas{display:block}</style><canvas id="stage"></canvas>
+<script type="module">
+import {fontReady,surface,text,rect,line,reveal,footer,ease} from './drawing.js';
+const canvas=document.querySelector('#stage'),logo=new Image();logo.src='/assets/codex-official.png';
+const C={paper:'#f4f2e9',ink:'#183a30',green:'#257b5d',mint:'#c7e7d1',grey:'#76897d',soft:'#e1e5d8',white:'#fffdf6'};
+window.kinesmithReady=Promise.all([fontReady,logo.decode()]);
+window.renderFrame=(frame,ctx)=>{
+ const g=surface(canvas,ctx),s=ctx.params.chapter,t=Math.min(ctx.time,s===7?4.25:6),p=ease(t/.8);
+ rect(g,0,0,1280,720,0,C.paper);
+ if(s===0){
+  text(g,'A FIELD GUIDE / OPENAI CODEX',64,62,16,C.green,700);
+  reveal(g,t,.05,()=>text(g,'Codex',58,296,146,C.ink,800));
+  reveal(g,t,.3,()=>text(g,'是什麼？',64,414,80,C.green,750));
+  reveal(g,t,.7,()=>text(g,'OpenAI 的 AI 程式開發代理。',64,507,36,C.ink,600));
+  reveal(g,t,1.1,()=>text(g,'與你一起理解、修改與驗證程式。',64,568,28,C.grey,450));
+  // Original official RGBA PNG: preserve its shape, gradient, colour and ratio.
+  g.save();g.translate(1003,327);g.scale(p,p);rect(g,-168,-160,336,320,36,C.white);
+  g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';g.drawImage(logo,-120,-120,240,240);g.restore();
+ }
+ if(s===7){
+  reveal(g,t,.05,()=>text(g,'從一個清楚的任務開始。',640,174,49,C.ink,750,'center'));
+  reveal(g,t,.3,()=>{
+   rect(g,134,233,1012,109,18,C.ink);
+   // This small prompt remains a terminal illustration, not the product logo.
+   line(g,164,271,176,283,C.mint,4);line(g,176,283,164,295,C.mint,4);line(g,186,295,201,295,C.mint,4);
+   text(g,'幫我新增搜尋功能，補上測試。',235,299,36,C.paper,550);
+  });
+  reveal(g,t,.75,()=>{g.drawImage(logo,428,394,96,96);text(g,'Codex',700,478,99,C.green,800,'center')});
+  reveal(g,t,1.1,()=>text(g,'把開發工作，一步步做到完成。',640,552,32,C.ink,550,'center'));
+  text(g,'Kinesmith 製作・非 OpenAI 官方影片',640,610,18,C.grey,500,'center');
+  text(g,'內容依 OpenAI 官方文件查核｜2026.10.25',640,642,16,C.grey,450,'center');
+ }
+ footer(g,'CODEX / AN INDEPENDENT INTRODUCTION',s,t,C.soft,C.ink);
+};
+</script></html>

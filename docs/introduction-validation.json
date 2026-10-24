@@ -150,8 +150,8 @@
   },
   "codex": {
     "video": "outputs\\introductions\\codex-explained.mp4",
-    "sha256": "f30b30a6e181378b30f49617b795faa08909a7e6fd327437c6efc8410120425d",
-    "project_sha256": "51d2b86d62e5fea86795145ead8fa2e7ccf0dea51cb7f03dfd649f72f22719e3",
+    "sha256": "8d8ecec0fda0ecda763275f45223ad07e7ae069028f66059943b13bbc64e83eb",
+    "project_sha256": "1ed8c149b2e336d097976e0a063620184ea86f79d2b0641d01be90357e627de0",
     "measurements": {
       "width": 1920,
       "height": 1080,

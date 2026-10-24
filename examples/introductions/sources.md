@@ -8,6 +8,6 @@
 - 本專案 `README.md`、`docs/rendering.md`、`docs/opusmith.md` 與既有實際渲染紀錄：Kinesmith 功能與限制。影片沒有把核心免費開源工具誤說成 Codex／Claude 的帳號或服務一律免費。
 - [Noto Sans TC 官方字型來源與 OFL](https://github.com/google/fonts/tree/main/ofl/notosanstc)：`assets/NotoSansTC-VF.ttf` 為本機已安裝的未修改 Noto Sans TC 檔案，附官方 OFL-1.1 授權 `assets/OFL-NotoSansTC.txt`，商用及隨作品重分發依該授權。
 
-Codex、OpenAI、Claude Code 等名稱僅用於描述相容性與產品事實；沒有使用官方商標圖案，也不代表官方背書。影片的 `>_` 是自行畫出的通用終端提示圖形。
+Codex、OpenAI、Claude Code 等名稱僅用於描述相容性與產品事實，不代表官方背書。Codex 片的開場與片尾已依使用者修正採用 OpenAI 官方安裝包內的雲形 Codex App 圖示，原始 PNG 未修改；來源、雜湊與品牌條款見 `assets/CODEX-BRAND.md`。該品牌圖示不適用本專案 MIT 或配樂 CC0。其餘 CLI／輸入框的 `>_` 僅為通用終端示意。
 
-本作品圖形、分鏡、HTML／JavaScript／Python 程式採本儲存庫 MIT；原創配樂、音符、MIDI 採 CC0-1.0，無第三方取樣、人聲、聲庫或庫存影像。FFmpeg、Rough.js、Three.js 等工具保留原有授權，詳根目錄 `THIRD_PARTY_NOTICES.md`。
+本作品原創圖形、分鏡、HTML／JavaScript／Python 程式採本儲存庫 MIT；原創配樂、音符、MIDI 採 CC0-1.0，無第三方取樣、人聲、聲庫或庫存影像。官方 Codex 品牌圖示依 OpenAI Marks 條款；FFmpeg、Rough.js、Three.js 等工具保留原有授權，詳根目錄 `THIRD_PARTY_NOTICES.md`。
